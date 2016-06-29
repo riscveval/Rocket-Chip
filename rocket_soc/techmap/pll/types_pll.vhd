@@ -43,6 +43,10 @@ package types_pll is
     i_clk_adc         : in     std_logic;
     o_clk_bus         : out    std_logic;
     o_clk_adc         : out    std_logic;
+    -- DDR3 needs
+    o_clk200          : out    std_logic;  --200 MHz
+    o_clk2x           : out    std_logic;  --120 MHz
+    o_clk2x_unbuf     : out    std_logic;  --120 MHz
     o_locked          : out    std_logic);
   end component;
 
@@ -74,6 +78,9 @@ package types_pll is
     CLK_IN1_N   : in     std_logic;
     CLK_OUT1	: out    std_logic;
     CLK_OUT2    : out    std_logic;
+    CLK_OUT3    : out    std_logic;
+    CLK_OUT4    : out    std_logic;
+    CLK_OUT5    : out    std_logic;
     RESET	: in std_logic;
     LOCKED	: out std_logic );
   end component;

@@ -1,0 +1,1254 @@
+m255
+K4
+z0
+Eaccumulator
+Z0 w1466709051
+Z1 DPx7 gnsslib 12 types_fse_v2 0 22 8In:lIi`F9kdnj=4YYnN91
+Z2 DPx7 techmap 7 gencomp 0 22 MEBZF8MjYzhR9GNKbV^NX0
+Z3 DPx7 gnsslib 10 types_gnss 0 22 [k:fc4;0idVEg;9QImYdX0
+Z4 DPx7 ambalib 11 types_amba4 0 22 ?km8mT[XNiI;aaSfeQF6G0
+Z5 DPx7 techmap 9 types_mem 0 22 5RM6[`b5O4U4PM^BE_12b2
+Z6 DPx4 ieee 11 numeric_std 0 22 WES[o8HS0jHV[MIXQk2Ha1
+Z7 DPx9 commonlib 12 types_common 0 22 2nT<HT6l6WTkV@j07g9R[2
+Z8 DPx3 std 6 textio 0 22 Y8d?=bLj9m4jiPLbo;>GT0
+Z9 DPx4 ieee 14 std_logic_1164 0 22 1bm?@Gd;P>[>_lN8Do9gP3
+Z10 dE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/prj/modelsim
+Z11 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/accum.vhd
+Z12 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/accum.vhd
+l0
+L21
+VfDZOMb[]KjLH0gXXkB`fT3
+Z13 OL;C;10.2c;57
+32
+Z14 !s110 1467234277
+Z15 !s108 1467234277.946000
+Z16 !s90 -reportprogress|300|-work|gnsslib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/accum.vhd|
+Z17 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/accum.vhd|
+Z18 o-work gnsslib -2002 -explicit
+Z19 tExplicit 1
+!s100 mI@zdGCXf6WM22Qz[MB1b3
+!i10b 1
+!i111 0
+Artl
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 11 accumulator 0 22 fDZOMb[]KjLH0gXXkB`fT3
+l101
+L32
+VmmL_hUHdbN>QLn<n@3P?J2
+R13
+32
+R14
+R15
+R16
+R17
+R18
+R19
+!s100 UXIAUSTQWDWV^TlMTOZNR3
+!i10b 1
+!i111 0
+Eafifo
+Z20 w1466709051
+Z21 DPx4 ieee 15 std_logic_arith 0 22 I`lKR?Ob>E^B_e2VdVLiQ0
+Z22 DPx4 ieee 18 std_logic_unsigned 0 22 @_jbHPR7i^Jh?`2fDCO`m3
+R8
+R9
+R10
+Z23 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/sync/afifo.vhd
+Z24 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/sync/afifo.vhd
+l0
+L5
+VR09>1SiUH^CkNXOcNSjH72
+R13
+32
+R14
+Z25 !s108 1467234277.133000
+Z26 !s90 -reportprogress|300|-work|gnsslib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/sync/afifo.vhd|
+Z27 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/sync/afifo.vhd|
+R18
+R19
+!s100 2kZIP]Ze:i_Z]2_XjiP<e0
+!i10b 1
+!i111 0
+Artl
+R21
+R22
+R8
+R9
+DEx4 work 5 afifo 0 22 R09>1SiUH^CkNXOcNSjH72
+l56
+L25
+VTOj[CF`mhYR7lL[_JdeA50
+R13
+32
+R14
+R25
+R26
+R27
+R18
+R19
+!s100 mimV[YzZ^W^I=UU_fXECl0
+!i10b 1
+!i111 0
+Eaxi_rfctrl
+R20
+R4
+R6
+R7
+R8
+R9
+R10
+Z28 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/rf3b/axi_rfctrl.vhd
+Z29 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/rf3b/axi_rfctrl.vhd
+l0
+L21
+VJK@JdhO7;8WX9^HgjLeOh0
+R13
+32
+Z30 !s110 1467234276
+Z31 !s108 1467234276.831000
+Z32 !s90 -reportprogress|300|-work|gnsslib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/rf3b/axi_rfctrl.vhd|
+Z33 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/rf3b/axi_rfctrl.vhd|
+R18
+R19
+!s100 [^kf^ckS=h3K81cH:34Qk3
+!i10b 1
+!i111 0
+Artl
+R4
+R6
+R7
+R8
+R9
+DEx4 work 10 axi_rfctrl 0 22 JK@JdhO7;8WX9^HgjLeOh0
+l100
+L54
+V2JnQiLH`l;_3<gMk=d4Q[3
+R13
+32
+R30
+R31
+R32
+R33
+R18
+R19
+!s100 n_FAl6;H1k85GEh0L_bh11
+!i10b 1
+!i111 0
+Eaxifsebridge
+R20
+R3
+R1
+Z34 DPx7 gnsslib 10 types_sync 0 22 OaOZ^HQFWMm@iT`liAOM63
+R4
+R2
+R6
+R7
+R8
+R9
+R10
+Z35 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/axi2fse.vhd
+Z36 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/axi2fse.vhd
+l0
+L29
+VlnL64KVbDId6FP]9D=7d30
+R13
+32
+R14
+Z37 !s108 1467234277.820000
+Z38 !s90 -reportprogress|300|-work|gnsslib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/axi2fse.vhd|
+Z39 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/axi2fse.vhd|
+R18
+R19
+!s100 XOP77nC1M64cA[jln=z6P3
+!i10b 1
+!i111 0
+Artl
+R3
+R1
+R34
+R4
+R2
+R6
+R7
+R8
+R9
+DEx4 work 12 axifsebridge 0 22 lnL64KVbDId6FP]9D=7d30
+l88
+L43
+VSHRUE]j8Q<P??GP2kVC520
+R13
+32
+R14
+R37
+R38
+R39
+R18
+R19
+!s100 LREY=^`DUJPQnH2^8fKE63
+!i10b 1
+!i111 0
+Ecarriernco
+R20
+R3
+R4
+R2
+R1
+R6
+R7
+R8
+R9
+R10
+Z40 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/carr_nco.vhd
+Z41 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/carr_nco.vhd
+l0
+L15
+VK7TA0>L8BCX;O=A3[A^BJ1
+R13
+32
+Z42 !s110 1467234278
+Z43 !s108 1467234278.006000
+Z44 !s90 -reportprogress|300|-work|gnsslib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/carr_nco.vhd|
+Z45 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/carr_nco.vhd|
+R18
+R19
+!s100 OnW]n4MLGZCH<gXg4[kY]2
+!i10b 1
+!i111 0
+Artl
+R3
+R4
+R2
+R1
+R6
+R7
+R8
+R9
+DEx4 work 10 carriernco 0 22 K7TA0>L8BCX;O=A3[A^BJ1
+l134
+L22
+VKRl`i`E[oP4ZnIPE<l>YK2
+R13
+32
+R42
+R43
+R44
+R45
+R18
+R19
+!s100 iCYV=TFz7P;UN>2GMiN[i0
+!i10b 1
+!i111 0
+Edecimator
+R20
+R1
+R4
+R2
+R3
+R6
+R7
+R8
+R9
+R10
+Z46 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/decim.vhd
+Z47 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/decim.vhd
+l0
+L16
+VB><4ak_bmm[fC^XET?Ri>3
+R13
+32
+R42
+Z48 !s108 1467234278.069000
+Z49 !s90 -reportprogress|300|-work|gnsslib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/decim.vhd|
+Z50 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/decim.vhd|
+R18
+R19
+!s100 2^X15]1o>z_9C2g;ff^WY3
+!i10b 1
+!i111 0
+Artl
+R1
+R4
+R2
+R3
+R6
+R7
+R8
+R9
+DEx4 work 9 decimator 0 22 B><4ak_bmm[fC^XET?Ri>3
+l37
+L23
+VfHn0;AVd8Q_jinK0WONbm0
+R13
+32
+R42
+R48
+R49
+R50
+R18
+R19
+!s100 YG@1OQje0QeCloa66Y<Wd1
+!i10b 1
+!i111 0
+Edivphase
+R20
+R1
+R4
+R2
+R3
+R6
+R7
+R8
+R9
+R10
+Z51 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/divphase.vhd
+Z52 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/divphase.vhd
+l0
+L16
+V1j^Mj6R4=h=[9c=G6KmL01
+R13
+32
+R42
+Z53 !s108 1467234278.132000
+Z54 !s90 -reportprogress|300|-work|gnsslib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/divphase.vhd|
+Z55 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/divphase.vhd|
+R18
+R19
+!s100 czOcKO9X0gMWe8Jfb6P2U1
+!i10b 1
+!i111 0
+Artl
+R1
+R4
+R2
+R3
+R6
+R7
+R8
+R9
+DEx4 work 8 divphase 0 22 1j^Mj6R4=h=[9c=G6KmL01
+l28
+L23
+V?BL_bc;CDAz@6V:C<SMOJ3
+R13
+32
+R42
+R53
+R54
+R55
+R18
+R19
+!s100 @gL0z[@RDRWGocLmOj=eX3
+!i10b 1
+!i111 0
+Efifosection
+R20
+R1
+R4
+R2
+R3
+R6
+R7
+R8
+R9
+R10
+Z56 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/fifo.vhd
+Z57 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/fifo.vhd
+l0
+L16
+V6g35C@PLaUg_eb=T8Y]f62
+R13
+32
+R42
+Z58 !s108 1467234278.194000
+Z59 !s90 -reportprogress|300|-work|gnsslib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/fifo.vhd|
+Z60 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/fifo.vhd|
+R18
+R19
+!s100 E:o9:6n@5Zeoh[WEBh8f30
+!i10b 1
+!i111 0
+Artl
+R1
+R4
+R2
+R3
+R6
+R7
+R8
+R9
+DEx4 work 11 fifosection 0 22 6g35C@PLaUg_eb=T8Y]f62
+l45
+L33
+V0aJVTmV:1<[PfieJD4cJ:1
+R13
+32
+R42
+R58
+R59
+R60
+R18
+R19
+!s100 Ga0nzzF0::Bmd1>L`HlZ31
+!i10b 1
+!i111 0
+Efsecontrol
+Z61 w1466704597
+R1
+R2
+R3
+R4
+R6
+R7
+R8
+R9
+R10
+Z62 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/control.vhd
+Z63 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/control.vhd
+l0
+L25
+Vlm7MMfX_:hF<3YZXof;a83
+R13
+32
+R14
+Z64 !s108 1467234277.881000
+Z65 !s90 -reportprogress|300|-work|gnsslib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/control.vhd|
+Z66 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/control.vhd|
+R18
+R19
+!s100 FdFTL7mcd0COD@@hdZGnH3
+!i10b 1
+!i111 0
+Artl
+R1
+R2
+R3
+R4
+R6
+R7
+R8
+R9
+DEx4 work 10 fsecontrol 0 22 lm7MMfX_:hF<3YZXof;a83
+l111
+L35
+V?6TKTJz@PGzgHilf<Q^4l2
+R13
+32
+R14
+R64
+R65
+R66
+R18
+R19
+!s100 Rk4><1<fPZ[a>nILEgDzS1
+!i10b 1
+!i111 0
+Egnssengine
+R20
+R3
+R4
+R6
+R7
+R2
+R8
+R9
+R10
+Z67 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/gnssengine_stub/nasti_gnssstub.vhd
+Z68 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/gnssengine_stub/nasti_gnssstub.vhd
+l0
+L25
+VAY@iRH8WKjiPk_7dPBi1l3
+!s100 1LLgTfnH9fN0K2TNXkPEj1
+R13
+32
+Z69 !s110 1467234279
+!i10b 1
+Z70 !s108 1467234279.511000
+Z71 !s90 -reportprogress|300|-work|gnsslib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/gnssengine_stub/nasti_gnssstub.vhd|
+Z72 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/gnssengine_stub/nasti_gnssstub.vhd|
+!i111 0
+R18
+R19
+Aarch_gnssengine
+R3
+R4
+R6
+R7
+R2
+R8
+R9
+Z73 DEx4 work 10 gnssengine 0 22 AY@iRH8WKjiPk_7dPBi1l3
+l75
+L38
+Z74 V8O4T]JbLOkeM47QY;i8lU1
+Z75 !s100 TYgI;Z0LVP[Y3eZ]Tc6T81
+R13
+32
+R69
+!i10b 1
+R70
+R71
+R72
+!i111 0
+R18
+R19
+Egraycounter
+R20
+R21
+R22
+R8
+R9
+R10
+Z76 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/sync/greycnt.vhd
+Z77 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/sync/greycnt.vhd
+l0
+L6
+VHA=Wg@gKLMZF>?NFoWV671
+R13
+32
+R14
+Z78 !s108 1467234277.190000
+Z79 !s90 -reportprogress|300|-work|gnsslib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/sync/greycnt.vhd|
+Z80 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/sync/greycnt.vhd|
+R18
+R19
+!s100 ?2fKCHJOWYgdKS>C=UdN?0
+!i10b 1
+!i111 0
+Artl
+R21
+R22
+R8
+R9
+DEx4 work 11 graycounter 0 22 HA=Wg@gKLMZF>?NFoWV671
+l24
+L18
+VRV]FOQH6=gLaN>7Jc8FC62
+R13
+32
+R14
+R78
+R79
+R80
+R18
+R19
+!s100 Q[J^Aj;`fAa9Z_X4W?Zlc3
+!i10b 1
+!i111 0
+Elpfilter
+R20
+R3
+R4
+R2
+R1
+R6
+R7
+R8
+R9
+R10
+Z81 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/lpf.vhd
+Z82 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/lpf.vhd
+l0
+L15
+V?En0llf24E2[3HOSV7KYN1
+R13
+32
+R42
+Z83 !s108 1467234278.256000
+Z84 !s90 -reportprogress|300|-work|gnsslib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/lpf.vhd|
+Z85 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/lpf.vhd|
+R18
+R19
+!s100 1jA_RZ9=h<E>Y:7nOPN0O2
+!i10b 1
+!i111 0
+Artl
+R3
+R4
+R2
+R1
+R6
+R7
+R8
+R9
+DEx4 work 8 lpfilter 0 22 ?En0llf24E2[3HOSV7KYN1
+l38
+L25
+VX@;[PGBoRJJGg;hR9iLkk0
+R13
+32
+R42
+R83
+R84
+R85
+R18
+R19
+!s100 <3i3<1zX09CmfXKMN3;kQ1
+!i10b 1
+!i111 0
+Ematrix1024
+R20
+R3
+R4
+R2
+R1
+R6
+R7
+R8
+R9
+R10
+Z86 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/matrix1024.vhd
+Z87 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/matrix1024.vhd
+l0
+L15
+V`^QCiZz6Bf>zHF_gc=>W40
+R13
+32
+R42
+Z88 !s108 1467234278.657000
+Z89 !s90 -reportprogress|300|-work|gnsslib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/matrix1024.vhd|
+Z90 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/matrix1024.vhd|
+R18
+R19
+!s100 Hg1Ei9DC1V`>7b`VA^gA^3
+!i10b 1
+!i111 0
+Artl
+R3
+R4
+R2
+R1
+R6
+R7
+R8
+R9
+DEx4 work 10 matrix1024 0 22 `^QCiZz6Bf>zHF_gc=>W40
+l52
+L28
+Vd2nAi`[hC4B]]K<2Ig84c1
+R13
+32
+R42
+R88
+R89
+R90
+R18
+R19
+!s100 8Wbb1G=Z4z2[LJYFEGVD50
+!i10b 1
+!i111 0
+Ematrix24
+R20
+R3
+R4
+R2
+R1
+R6
+R7
+R8
+R9
+R10
+Z91 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/matrix24.vhd
+Z92 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/matrix24.vhd
+l0
+L15
+V^l:Z5JfITz5oYHKn80U8X0
+R13
+32
+R42
+Z93 !s108 1467234278.380000
+Z94 !s90 -reportprogress|300|-work|gnsslib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/matrix24.vhd|
+Z95 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/matrix24.vhd|
+R18
+R19
+!s100 [o:OXB[^3jJOTT1=lTC871
+!i10b 1
+!i111 0
+Artl
+R3
+R4
+R2
+R1
+R6
+R7
+R8
+R9
+DEx4 work 8 matrix24 0 22 ^l:Z5JfITz5oYHKn80U8X0
+l37
+L28
+V49cYgbBYeabcRJJ@9C@C:0
+R13
+32
+R42
+R93
+R94
+R95
+R18
+R19
+!s100 BD4AY4fZZ<9C5[^^LNRPE2
+!i10b 1
+!i111 0
+Ematrixcorrelator
+R20
+R1
+R4
+R2
+R3
+R6
+R7
+R8
+R9
+R10
+Z96 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/matrix.vhd
+Z97 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/matrix.vhd
+l0
+L16
+VFR:0fh7Z=S5NFY[0gic8a3
+R13
+32
+R42
+Z98 !s108 1467234278.319000
+Z99 !s90 -reportprogress|300|-work|gnsslib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/matrix.vhd|
+Z100 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/matrix.vhd|
+R18
+R19
+!s100 7a?:chzBk`^Hl:_Qd:[dL1
+!i10b 1
+!i111 0
+Artl
+R1
+R4
+R2
+R3
+R6
+R7
+R8
+R9
+DEx4 work 16 matrixcorrelator 0 22 FR:0fh7Z=S5NFY[0gic8a3
+l63
+L34
+VjNZ2=O;>RISHOY[[`VZQ^1
+R13
+32
+R42
+R98
+R99
+R100
+R18
+R19
+!s100 6<5m5]g64@zA:;0Bg]<D[1
+!i10b 1
+!i111 0
+Eprngeneratorfse
+R61
+R1
+R4
+R2
+R3
+R6
+R7
+R8
+R9
+R10
+Z101 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/prngenfse.vhd
+Z102 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/prngenfse.vhd
+l0
+L16
+VmiS5D430`kJJA5Pz?BRkM0
+R13
+32
+R42
+Z103 !s108 1467234278.762000
+Z104 !s90 -reportprogress|300|-work|gnsslib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/prngenfse.vhd|
+Z105 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/prngenfse.vhd|
+R18
+R19
+!s100 :D3WFeX:l9U>K6k<?UP_;2
+!i10b 1
+!i111 0
+Artl
+R1
+R4
+R2
+R3
+R6
+R7
+R8
+R9
+DEx4 work 15 prngeneratorfse 0 22 miS5D430`kJJA5Pz?BRkM0
+l63
+L30
+V<^UkMhZJbYd2Q3O>4d_m81
+R13
+32
+R42
+R103
+R104
+R105
+R18
+R19
+!s100 daoZjXPE[nfU@zcfjKCcL0
+!i10b 1
+!i111 0
+Eprngeneratorfsegal
+R20
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+Z106 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/prngenfsegal.vhd
+Z107 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/prngenfsegal.vhd
+l0
+L18
+VK8GgCSGBcNFA0^E>G7:5O3
+R13
+32
+R42
+Z108 !s108 1467234278.828000
+Z109 !s90 -reportprogress|300|-work|gnsslib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/prngenfsegal.vhd|
+Z110 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/prngenfsegal.vhd|
+R18
+R19
+!s100 b06H@HDDd_kF>zQ5mTY<F1
+!i10b 1
+!i111 0
+Artl
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 18 prngeneratorfsegal 0 22 K8GgCSGBcNFA0^E>G7:5O3
+l51
+L31
+VOVN_ZV^SXT1eHkg6mlZ5?1
+R13
+32
+R42
+R108
+R109
+R110
+R18
+R19
+!s100 HhCKmbLTRGe]NM?8XG4B@1
+!i10b 1
+!i111 0
+Eprngeneratorfseglo
+R20
+R1
+R4
+R2
+R3
+R6
+R7
+R8
+R9
+R10
+Z111 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/prngenfseglo.vhd
+Z112 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/prngenfseglo.vhd
+l0
+L16
+VG[8jUaffZ<R;ND;FM0]8@0
+R13
+32
+R42
+Z113 !s108 1467234278.889000
+Z114 !s90 -reportprogress|300|-work|gnsslib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/prngenfseglo.vhd|
+Z115 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/prngenfseglo.vhd|
+R18
+R19
+!s100 TV1jDPh5=?L3@mXkW1ia23
+!i10b 1
+!i111 0
+Artl
+R1
+R4
+R2
+R3
+R6
+R7
+R8
+R9
+DEx4 work 18 prngeneratorfseglo 0 22 G[8jUaffZ<R;ND;FM0]8@0
+l43
+L25
+VCmfk`N2d_mCL04zFc;G943
+R13
+32
+R42
+R113
+R114
+R115
+R18
+R19
+!s100 Q8QB7P::jLBoFekFh[<3]2
+!i10b 1
+!i111 0
+Eprngeneratorfsegps
+R20
+R1
+R4
+R2
+R3
+R6
+R7
+R8
+R9
+R10
+Z116 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/prngenfsegps.vhd
+Z117 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/prngenfsegps.vhd
+l0
+L16
+VUcRl94e^jNH5cobYz4d?@2
+R13
+32
+R69
+Z118 !s108 1467234279.222000
+Z119 !s90 -reportprogress|300|-work|gnsslib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/prngenfsegps.vhd|
+Z120 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/prngenfsegps.vhd|
+R18
+R19
+!s100 R1<:U1[A1eY7IXd`GaU8]2
+!i10b 1
+!i111 0
+Artl
+R1
+R4
+R2
+R3
+R6
+R7
+R8
+R9
+DEx4 work 18 prngeneratorfsegps 0 22 UcRl94e^jNH5cobYz4d?@2
+l45
+L26
+VNCHTFcEHZ:ZE>eWXJGV`<2
+R13
+32
+R69
+R118
+R119
+R120
+R18
+R19
+!s100 Xm2F3[^PQ29z0@:659PTP0
+!i10b 1
+!i111 0
+Ereclk
+R20
+R34
+R6
+R7
+R8
+R9
+R10
+Z121 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/sync/reclk.vhd
+Z122 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/sync/reclk.vhd
+l0
+L15
+VlP8lf^aM==S=ZRUB74z9b2
+R13
+32
+R14
+Z123 !s108 1467234277.244000
+Z124 !s90 -reportprogress|300|-work|gnsslib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/sync/reclk.vhd|
+Z125 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/sync/reclk.vhd|
+R18
+R19
+!s100 ]EEmdA[8knQHjzRmhSeL`3
+!i10b 1
+!i111 0
+Artl
+R34
+R6
+R7
+R8
+R9
+DEx4 work 5 reclk 0 22 lP8lf^aM==S=ZRUB74z9b2
+l34
+L22
+VPIFX`^RLd8U70U93hJcBg3
+R13
+32
+R14
+R123
+R124
+R125
+R18
+R19
+!s100 m`;:CJXRaaz6hZ8=7@nb02
+!i10b 1
+!i111 0
+Erecorder
+R20
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+Z126 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/recorder.vhd
+Z127 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/recorder.vhd
+l0
+L18
+V75=^7oQIfNLGdkDChJ0SO1
+R13
+32
+R69
+Z128 !s108 1467234279.317000
+Z129 !s90 -reportprogress|300|-work|gnsslib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/recorder.vhd|
+Z130 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/recorder.vhd|
+R18
+R19
+!s100 Y7I[:^aQog<;TLznbi_201
+!i10b 1
+!i111 0
+Artl
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 8 recorder 0 22 75=^7oQIfNLGdkDChJ0SO1
+l62
+L29
+VoO^S8kXl3L>:z7U5<=V`52
+R13
+32
+R69
+R128
+R129
+R130
+R18
+R19
+!s100 W8dckCnT[@YTCQo:2493W2
+!i10b 1
+!i111 0
+Erequant
+R20
+R3
+R4
+R2
+R1
+R6
+R7
+R8
+R9
+R10
+Z131 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/requant.vhd
+Z132 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/requant.vhd
+l0
+L17
+V3G@79m0440eh[AJbzknSg1
+R13
+32
+R69
+Z133 !s108 1467234279.386000
+Z134 !s90 -reportprogress|300|-work|gnsslib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/requant.vhd|
+Z135 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/requant.vhd|
+R18
+R19
+!s100 5BLHQjTSGWK@QMI8HzPN82
+!i10b 1
+!i111 0
+Artl
+R3
+R4
+R2
+R1
+R6
+R7
+R8
+R9
+DEx4 work 7 requant 0 22 3G@79m0440eh[AJbzknSg1
+l59
+L24
+V_95P6BVjJSMlkV1AegMfX2
+R13
+32
+R69
+R133
+R134
+R135
+R18
+R19
+!s100 bJOO[n;Y]XHQ@<Bcf_1S?2
+!i10b 1
+!i111 0
+Etopfse
+R61
+R34
+R1
+R3
+R4
+R6
+R7
+R2
+R8
+R9
+R10
+Z136 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/topfse.vhd
+Z137 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/topfse.vhd
+l0
+L24
+VCea6@<5L<0QalR;EWV?2N3
+R13
+32
+R69
+Z138 !s108 1467234279.448000
+Z139 !s90 -reportprogress|300|-work|gnsslib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/topfse.vhd|
+Z140 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/topfse.vhd|
+R18
+R19
+!s100 ?L<<9^2`3Inij@`nQQHj22
+!i10b 1
+!i111 0
+Artl
+R34
+R1
+R3
+R4
+R6
+R7
+R2
+R8
+R9
+DEx4 work 6 topfse 0 22 Cea6@<5L<0QalR;EWV?2N3
+l82
+L39
+V4bhACRS5[4;SJhF]h=U8a0
+!s100 N<J9EOUH?:A8Pc`Vmleh03
+R13
+32
+R69
+R138
+R139
+R140
+R18
+R19
+!i10b 1
+!i111 0
+Ptypes_fse_v2
+R3
+R7
+R4
+R2
+R6
+R8
+R9
+R61
+R10
+Z141 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/types_fse_v2.vhd
+Z142 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/types_fse_v2.vhd
+l0
+L23
+V8In:lIi`F9kdnj=4YYnN91
+R13
+32
+b1
+R14
+Z143 !s108 1467234277.766000
+Z144 !s90 -reportprogress|300|-work|gnsslib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/types_fse_v2.vhd|
+Z145 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/fse_v2/types_fse_v2.vhd|
+R18
+R19
+!s100 4QCS9UlK50FX2]N`T8o8j3
+!i10b 1
+!i111 0
+Bbody
+DPx4 work 12 types_fse_v2 0 22 8In:lIi`F9kdnj=4YYnN91
+R3
+R7
+R4
+R2
+R6
+R8
+R9
+l0
+L362
+VSRBcPQE==>B<<N?Tf;z?;2
+R13
+32
+R14
+R143
+R144
+R145
+R18
+R19
+nbody
+!s100 OdFXoMHCk]`mYTkL6AHz^3
+!i10b 1
+!i111 0
+Ptypes_gnss
+R4
+R2
+R7
+R6
+R8
+R9
+R20
+R10
+8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/types_gnss.vhd
+FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/types_gnss.vhd
+l0
+L45
+V[k:fc4;0idVEg;9QImYdX0
+R13
+32
+R18
+R19
+Z146 !s110 1467234272
+!s100 Gh<2R?A8;oe]h7^2eU9Qb2
+!i10b 1
+!s108 1467234272.228000
+!s90 -reportprogress|300|-work|gnsslib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/types_gnss.vhd|
+!s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/types_gnss.vhd|
+!i111 0
+Ptypes_sync
+R6
+R8
+R9
+R20
+R10
+8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/sync/types_sync.vhd
+FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/sync/types_sync.vhd
+l0
+L14
+VOaOZ^HQFWMm@iT`liAOM63
+R13
+32
+R30
+R18
+R19
+!s100 YaTX==ej0VS[W5R?^IJ^32
+!i10b 1
+!s108 1467234276.895000
+!s90 -reportprogress|300|-work|gnsslib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/sync/types_sync.vhd|
+!s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/gnsslib/sync/types_sync.vhd|
+!i111 0

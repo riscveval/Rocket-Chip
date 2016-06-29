@@ -1,0 +1,1786 @@
+m255
+K4
+z2
+13
+cModel Technology
+Z0 dE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/prj/modelsim
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+Eand2b1l
+Z1 w1381681189
+Z2 DPx3 std 6 textio 0 22 Y8d?=bLj9m4jiPLbo;>GT0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 1bm?@Gd;P>[>_lN8Do9gP3
+Z4 dE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/prj/modelsim
+Z5 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/AND2B1L.vhd
+Z6 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/AND2B1L.vhd
+l0
+L27
+VH[Q^[iLi0>kokznD`Qej21
+Z7 OL;C;10.2c;57
+32
+Z8 !s110 1467234274
+Z9 !s108 1467234274.127000
+Z10 !s90 -reportprogress|300|-work|unisim|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/AND2B1L.vhd|
+Z11 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/AND2B1L.vhd|
+Z12 o-work unisim -2002 -explicit
+Z13 tExplicit 1
+!s100 Q?a5^[06If`2:Zcce5hLa1
+!i10b 1
+!i111 0
+Aand2b1l_v
+R2
+R3
+DEx4 work 7 and2b1l 0 22 H[Q^[iLi0>kokznD`Qej21
+l37
+L36
+V7LBJncKXHgb@WLB1_zX_U2
+!s100 j4O2^jPCccViQQ]e@eZCQ2
+R7
+32
+R8
+R9
+R10
+R11
+R12
+R13
+!i10b 1
+!i111 0
+Ebscntrl_iserdese1_vhd
+R1
+Z14 DPx6 unisim 11 vcomponents 0 22 MbEjViE6CIzf7EOd1SbG32
+Z15 DPx4 ieee 16 vital_primitives 0 22 K@cAeTTCUI1@nH5nDE1Pb0
+Z16 DPx4 ieee 12 vital_timing 0 22 4Obk6FzZz7P8i2>0<?dVb3
+Z17 DPx6 unisim 4 vpkg 0 22 6P:J]9QBmVih2ao3i[O1<0
+Z18 DPx4 ieee 15 std_logic_arith 0 22 I`lKR?Ob>E^B_e2VdVLiQ0
+R2
+R3
+R4
+Z19 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/ISERDESE1.vhd
+Z20 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/ISERDESE1.vhd
+l0
+L41
+VF4?WD?1`1EnDJ><AQ;P=g2
+R7
+32
+Z21 !s110 1467234272
+Z22 !s108 1467234272.629000
+Z23 !s90 -reportprogress|300|-work|unisim|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/ISERDESE1.vhd|
+Z24 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/ISERDESE1.vhd|
+R12
+R13
+!s100 f@VPbDJk:1AE3b_5n`E1D3
+!i10b 1
+!i111 0
+Abscntrl_iserdese1_vhd_v
+R14
+R15
+R16
+R17
+R18
+R2
+R3
+DEx4 work 21 bscntrl_iserdese1_vhd 0 22 F4?WD?1`1EnDJ><AQ;P=g2
+l85
+L64
+VIJO1Z_edn@4j3:MLLzc>N2
+R7
+32
+R21
+R22
+R23
+R24
+R12
+R13
+!s100 Ul@aOD7hnzc=<695@Zc2H0
+!i10b 1
+!i111 0
+Ebufg
+Z25 w1381681180
+R2
+R3
+R4
+Z26 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/BUFG.vhd
+Z27 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/BUFG.vhd
+l0
+L24
+VTHbcZoZOiC04A7PEk8PTA3
+R7
+32
+R21
+Z28 !s108 1467234272.438000
+Z29 !s90 -reportprogress|300|-work|unisim|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/BUFG.vhd|
+Z30 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/BUFG.vhd|
+R12
+R13
+!s100 k?G;a><5MgSSh=:^;<4Xj3
+!i10b 1
+!i111 0
+Abufg_v
+R2
+R3
+DEx4 work 4 bufg 0 22 THbcZoZOiC04A7PEk8PTA3
+l33
+L32
+VgKG@JWgRL?SnRCUBf`_nh3
+R7
+32
+R21
+R28
+R29
+R30
+R12
+R13
+!s100 BDKl_6Ne`XS:hV=9FJ`]V0
+!i10b 1
+!i111 0
+Ebufio
+Z31 w1381681188
+R2
+R3
+R4
+Z32 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/BUFIO.vhd
+Z33 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/BUFIO.vhd
+l0
+L24
+V1R;5i?IV;`QaQ0;aB<4`H0
+R7
+32
+Z34 !s110 1467234273
+Z35 !s108 1467234273.146000
+Z36 !s90 -reportprogress|300|-work|unisim|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/BUFIO.vhd|
+Z37 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/BUFIO.vhd|
+R12
+R13
+!s100 o8kYV5cU=4mQT@>0i^i4U2
+!i10b 1
+!i111 0
+Abufio_v
+R2
+R3
+DEx4 work 5 bufio 0 22 1R;5i?IV;`QaQ0;aB<4`H0
+l34
+L33
+V1OFh2H=H@2TWlUV_[_EE_0
+R7
+32
+R34
+R35
+R36
+R37
+R12
+R13
+!s100 i@807igo8NGOVhgEj4U5O2
+!i10b 1
+!i111 0
+Ebufr
+R1
+R15
+R16
+R17
+R2
+R3
+R4
+Z38 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/BUFR.vhd
+Z39 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/BUFR.vhd
+l0
+L43
+V4XSKf9c28iKX[^g[cb_W`2
+R7
+32
+R34
+Z40 !s108 1467234273.315000
+Z41 !s90 -reportprogress|300|-work|unisim|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/BUFR.vhd|
+Z42 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/BUFR.vhd|
+R12
+R13
+!s100 _E63Y`BMP_eh@7[>fZnP82
+!i10b 1
+!i111 0
+Abufr_v
+R15
+R16
+R17
+R2
+R3
+DEx4 work 4 bufr 0 22 4XSKf9c28iKX[^g[cb_W`2
+l90
+L61
+V]zf3PMeG:BAOa9cWC[gB<0
+R7
+32
+R34
+R40
+R41
+R42
+R12
+R13
+!s100 ;QXfD8S2<gb@J>YWmPAm@0
+!i10b 1
+!i111 0
+Edout_oserdese1_vhd
+R1
+R18
+R2
+R3
+R4
+Z43 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/OSERDESE1.vhd
+Z44 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/OSERDESE1.vhd
+l0
+L2302
+V3hZUmoz5dBFio_BU[;BBW2
+R7
+32
+R34
+Z45 !s108 1467234273.936000
+Z46 !s90 -reportprogress|300|-work|unisim|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/OSERDESE1.vhd|
+Z47 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/OSERDESE1.vhd|
+R12
+R13
+!s100 nFbLZc?e96anRT[B]8NEo0
+!i10b 1
+!i111 0
+Adout_oserdese1_vhd_v
+R18
+R2
+R3
+DEx4 work 18 dout_oserdese1_vhd 0 22 3hZUmoz5dBFio_BU[;BBW2
+l2376
+L2326
+VG3M[W`egY;H`0k8g6=DAU1
+R7
+32
+R34
+R45
+R46
+R47
+R12
+R13
+!s100 lj@m6VOXWdK34Lba`EeQ82
+!i10b 1
+!i111 0
+Efdre
+R25
+R2
+R3
+R4
+Z48 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/FDRE.vhd
+Z49 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/FDRE.vhd
+l0
+L26
+V_Lc?8IkiWSA<C348bJhjK0
+R7
+32
+R34
+Z50 !s108 1467234273.531000
+Z51 !s90 -reportprogress|300|-work|unisim|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/FDRE.vhd|
+Z52 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/FDRE.vhd|
+R12
+R13
+!s100 _:jMOWSl3iIkgACPn[@a42
+!i10b 1
+!i111 0
+Afdre_v
+R2
+R3
+DEx4 work 4 fdre 0 22 _Lc?8IkiWSA<C348bJhjK0
+l43
+L41
+V>F_NORF9ZgQ19OB]gVf1g2
+R7
+32
+R34
+R50
+R51
+R52
+R12
+R13
+!s100 a];Cn@SX_W8FHAQU=TnE[2
+!i10b 1
+!i111 0
+Efdrse
+R25
+R2
+R3
+R4
+Z53 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/FDRSE.vhd
+Z54 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/FDRSE.vhd
+l0
+L26
+VSIQBmeiO;Ibj1;PQeSDdj1
+R7
+32
+R21
+Z55 !s108 1467234272.903000
+Z56 !s90 -reportprogress|300|-work|unisim|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/FDRSE.vhd|
+Z57 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/FDRSE.vhd|
+R12
+R13
+!s100 a1OzoAO]ff[lk70F0Zf9g1
+!i10b 1
+!i111 0
+Afdrse_v
+R2
+R3
+DEx4 work 5 fdrse 0 22 SIQBmeiO;Ibj1;PQeSDdj1
+l44
+L42
+V2<^]3^>khM3mZng45E<kJ3
+R7
+32
+R21
+R55
+R56
+R57
+R12
+R13
+!s100 g:`E]]0m6KSX:B@]GmhQT1
+!i10b 1
+!i111 0
+Efdse
+R25
+R2
+R3
+R4
+Z58 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/FDSE.vhd
+Z59 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/FDSE.vhd
+l0
+L26
+V2<YK92GAcSR0ke7aMj0oS0
+R7
+32
+R34
+Z60 !s108 1467234273.586000
+Z61 !s90 -reportprogress|300|-work|unisim|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/FDSE.vhd|
+Z62 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/FDSE.vhd|
+R12
+R13
+!s100 Zi`HgCTNHfn7[KMeEeTgm3
+!i10b 1
+!i111 0
+Afdse_v
+R2
+R3
+DEx4 work 4 fdse 0 22 2<YK92GAcSR0ke7aMj0oS0
+l43
+L41
+VIR`nCKWlX<PjnXPVB]DZ>3
+R7
+32
+R34
+R60
+R61
+R62
+R12
+R13
+!s100 Bd^E=jO9IPZK2RXkm?[6F2
+!i10b 1
+!i111 0
+Efifo_addr_oserdese1_vhd
+R1
+R18
+R2
+R3
+R4
+R43
+R44
+l0
+L1856
+VW06SRmca<@5QehPX`>;@03
+R7
+32
+R34
+R45
+R46
+R47
+R12
+R13
+!s100 `X`K0TL0e=R1Ij3mSRH]K0
+!i10b 1
+!i111 0
+Afifo_addr_oserdese1_vhd_v
+R18
+R2
+R3
+DEx4 work 23 fifo_addr_oserdese1_vhd 0 22 W06SRmca<@5QehPX`>;@03
+l1930
+L1874
+VHXhPI^lzNeGF=kIIV5Fc72
+R7
+32
+R34
+R45
+R46
+R47
+R12
+R13
+!s100 =5icCb@V`B`J658aTEUQn1
+!i10b 1
+!i111 0
+Efifo_reset_oserdese1_vhd
+R1
+R18
+R2
+R3
+R4
+R43
+R44
+l0
+L1675
+VU<]YEzC]bh]5YQol`^YTD1
+R7
+32
+R34
+R45
+R46
+R47
+R12
+R13
+!s100 hB@@?P`BXHzhcF]hdFXB53
+!i10b 1
+!i111 0
+Afifo_reset_oserdese1_vhd_v
+R18
+R2
+R3
+DEx4 work 24 fifo_reset_oserdese1_vhd 0 22 U<]YEzC]bh]5YQol`^YTD1
+l1723
+L1694
+VnibPBakPcdKZaD9GknOL^0
+R7
+32
+R34
+R45
+R46
+R47
+R12
+R13
+!s100 SOnLC5FHN?V<A6h0V7m^62
+!i10b 1
+!i111 0
+Efifo_tdpipe_oserdese1_vhd
+R1
+R18
+R2
+R3
+R4
+R43
+R44
+l0
+L1496
+VDmBS8ao`[XMQDCo>JA;Il3
+R7
+32
+R34
+R45
+R46
+R47
+R12
+R13
+!s100 50XVgC^fib<hn[GeWdR`n3
+!i10b 1
+!i111 0
+Afifo_tdpipe_oserdese1_vhd_v
+R18
+R2
+R3
+DEx4 work 25 fifo_tdpipe_oserdese1_vhd 0 22 DmBS8ao`[XMQDCo>JA;Il3
+l1542
+L1516
+Vdilz35dhMYHec>d>S2n5Q1
+R7
+32
+R34
+R45
+R46
+R47
+R12
+R13
+!s100 QAYWmCZ0L4gZLm0jfUBz<3
+!i10b 1
+!i111 0
+Eibufgds
+R25
+R2
+R3
+R4
+Z63 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/IBUFGDS.vhd
+Z64 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/IBUFGDS.vhd
+l0
+L28
+V=LWKkYacIklK:g2Tl6E2K0
+R7
+32
+R21
+Z65 !s108 1467234272.739000
+Z66 !s90 -reportprogress|300|-work|unisim|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/IBUFGDS.vhd|
+Z67 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/IBUFGDS.vhd|
+R12
+R13
+!s100 C;HbhS5GE]RS02[<OS2MC1
+!i10b 1
+!i111 0
+Aibufgds_v
+R2
+R3
+DEx4 work 7 ibufgds 0 22 =LWKkYacIklK:g2Tl6E2K0
+l46
+L45
+VN@IOTY_D2Da<D?c;cOehQ3
+R7
+32
+R21
+R65
+R66
+R67
+R12
+R13
+!s100 =bAl028zAFm?`lP7G@@no1
+!i10b 1
+!i111 0
+Eice_iserdese1_vhd
+R1
+R14
+R15
+R16
+R17
+R18
+R2
+R3
+R4
+R19
+R20
+l0
+L372
+V9AzH2E9Li1V>N2ZOZ:i;e1
+R7
+32
+R21
+R22
+R23
+R24
+R12
+R13
+!s100 gERkdnWHSFN1>Z6a64GRF2
+!i10b 1
+!i111 0
+Aice_iserdese1_vhd_v
+R14
+R15
+R16
+R17
+R18
+R2
+R3
+DEx4 work 17 ice_iserdese1_vhd 0 22 9AzH2E9Li1V>N2ZOZ:i;e1
+l403
+L389
+VaCE6`9SDMkCL?@DdQIJGe3
+R7
+32
+R21
+R22
+R23
+R24
+R12
+R13
+!s100 LnbCcB^A;D>nkC^`3Ri0I1
+!i10b 1
+!i111 0
+Eidelayctrl
+R31
+R15
+R16
+R17
+R2
+R3
+R4
+Z68 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/IDELAYCTRL.vhd
+Z69 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/IDELAYCTRL.vhd
+l0
+L33
+V4F_UY4nNgXn@`Ac8BH@Mh1
+R7
+32
+R21
+Z70 !s108 1467234272.490000
+Z71 !s90 -reportprogress|300|-work|unisim|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/IDELAYCTRL.vhd|
+Z72 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/IDELAYCTRL.vhd|
+R12
+R13
+!s100 ^XICI;:>kQelT5oBBQ5PW0
+!i10b 1
+!i111 0
+Aidelayctrl_v
+R15
+R16
+R17
+R2
+R3
+DEx4 work 10 idelayctrl 0 22 4F_UY4nNgXn@`Ac8BH@Mh1
+l72
+L44
+V2b;OY52M5SlcocdJC2Dz71
+R7
+32
+R21
+R70
+R71
+R72
+R12
+R13
+!s100 a@gTlFfFknm:E5:V?_Hg10
+!i10b 1
+!i111 0
+Eiobuf
+Z73 w1381681182
+R2
+R3
+R4
+Z74 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/IOBUF.vhd
+Z75 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/IOBUF.vhd
+l0
+L28
+VTMTa;@X;YRBTW@7Kfn2U?0
+R7
+32
+R21
+Z76 !s108 1467234272.688000
+Z77 !s90 -reportprogress|300|-work|unisim|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/IOBUF.vhd|
+Z78 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/IOBUF.vhd|
+R12
+R13
+!s100 `_b48hmNg4PDDX4o<UkBS3
+!i10b 1
+!i111 0
+Aiobuf_v
+R2
+R3
+DEx4 work 5 iobuf 0 22 TMTa;@X;YRBTW@7Kfn2U?0
+l48
+L47
+Vj`>8>JiJ39WI=0@Fl:dRa3
+R7
+32
+R21
+R76
+R77
+R78
+R12
+R13
+!s100 m@@H4o^Jdc5;08ghJNY]=2
+!i10b 1
+!i111 0
+Eiobufds_diff_out
+R1
+R2
+R3
+R4
+Z79 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/IOBUFDS_DIFF_OUT.vhd
+Z80 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/IOBUFDS_DIFF_OUT.vhd
+l0
+L27
+V;@Y]ZNBV3gMWITOfKB;eM3
+R7
+32
+R21
+Z81 !s108 1467234272.794000
+Z82 !s90 -reportprogress|300|-work|unisim|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/IOBUFDS_DIFF_OUT.vhd|
+Z83 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/IOBUFDS_DIFF_OUT.vhd|
+R12
+R13
+!s100 ggIfZ8UKenBE?M>7gc>S62
+!i10b 1
+!i111 0
+Aiobufds_diff_out_v
+R2
+R3
+DEx4 work 16 iobufds_diff_out 0 22 ;@Y]ZNBV3gMWITOfKB;eM3
+l48
+L47
+V;_KJPd_@HhiDGX[Mak9km3
+R7
+32
+R21
+R81
+R82
+R83
+R12
+R13
+!s100 O_So?5O08dQ389gm>7Xb=0
+!i10b 1
+!i111 0
+Eiodelaye1
+R1
+R15
+R16
+R17
+R18
+R2
+R3
+R4
+Z84 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/IODELAYE1.vhd
+Z85 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/IODELAYE1.vhd
+l0
+L36
+VQ`=88<>lX9JWX]TcHN4<U2
+R7
+32
+R21
+Z86 !s108 1467234272.848000
+Z87 !s90 -reportprogress|300|-work|unisim|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/IODELAYE1.vhd|
+Z88 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/IODELAYE1.vhd|
+R12
+R13
+!s100 O`0zWJB40F6Mc?T55N7??1
+!i10b 1
+!i111 0
+Aiodelaye1_v
+R15
+R16
+R17
+R18
+R2
+R3
+DEx4 work 9 iodelaye1 0 22 Q`=88<>lX9JWX]TcHN4<U2
+l207
+L70
+VaR2M[AkaLhg]W57VFj@V=3
+R7
+32
+R21
+R86
+R87
+R88
+R12
+R13
+!s100 z=S9F[P5zA<^?kCJU4J7:1
+!i10b 1
+!i111 0
+Eiodlyctrl_npre_oserdese1_vhd
+R1
+R18
+R2
+R3
+R4
+R43
+R44
+l0
+L2096
+VL1b_LmE>]Zb8Bm:`o?C9P0
+R7
+32
+R34
+R45
+R46
+R47
+R12
+R13
+!s100 76MQhcF?n04DFAlfihbC[2
+!i10b 1
+!i111 0
+Aiodlyctrl_npre_oserdese1_vhd_v
+R18
+R2
+R3
+DEx4 work 28 iodlyctrl_npre_oserdese1_vhd 0 22 L1b_LmE>]Zb8Bm:`o?C9P0
+l2154
+L2114
+VfEHN9UO:VePTSCYld?hCT3
+R7
+32
+R34
+R45
+R46
+R47
+R12
+R13
+!s100 0Uo?Uhjkde=CUR@h[nTdN1
+!i10b 1
+!i111 0
+Eiserdese1
+R1
+R14
+R15
+R16
+R17
+R18
+R2
+R3
+R4
+R19
+R20
+l0
+L511
+VZTaPC6dHZ6Bbzo?A6>R4f2
+R7
+32
+R21
+R22
+R23
+R24
+R12
+R13
+!s100 Efg_IO`J?QY;<NmmzOX:A2
+!i10b 1
+!i111 0
+Aiserdese1_v
+R14
+R15
+R16
+R17
+R18
+R2
+R3
+DEx4 work 9 iserdese1 0 22 ZTaPC6dHZ6Bbzo?A6>R4f2
+l794
+L564
+V^ZE0B:WenbF<;`;eA?k2M1
+R7
+32
+R21
+R22
+R23
+R24
+R12
+R13
+!s100 z<Tb?g_iGzi6Z8KUb9S5g1
+!i10b 1
+!i111 0
+Elut4
+Z89 w1381681183
+R14
+R15
+R16
+R17
+R2
+R3
+R4
+Z90 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/LUT4.vhd
+Z91 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/LUT4.vhd
+l0
+L31
+Vi_KCcBD>WU^Qf>8Ed>JZU1
+R7
+32
+R34
+Z92 !s108 1467234273.639000
+Z93 !s90 -reportprogress|300|-work|unisim|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/LUT4.vhd|
+Z94 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/LUT4.vhd|
+R12
+R13
+!s100 Q6n>5b:I^b01fC3P:SfD?0
+!i10b 1
+!i111 0
+Alut4_v
+R14
+R15
+R16
+R17
+R2
+R3
+DEx4 work 4 lut4 0 22 i_KCcBD>WU^Qf>8Ed>JZU1
+l76
+L46
+VM<heQS7BORNaego1ULmnc3
+R7
+32
+R34
+R92
+R93
+R94
+R12
+R13
+!s100 7_<Z4c=aT8CXPDS>>UjJV0
+!i10b 1
+!i111 0
+Elut6
+R1
+R14
+R15
+R16
+R17
+R2
+R3
+R4
+Z95 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/LUT6.vhd
+Z96 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/LUT6.vhd
+l0
+L31
+V<dCB;9_KnAae@;6=k6LGV1
+R7
+32
+R8
+Z97 !s108 1467234274.064000
+Z98 !s90 -reportprogress|300|-work|unisim|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/LUT6.vhd|
+Z99 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/LUT6.vhd|
+R12
+R13
+!s100 <RaO?Q_am]`>fIH`kmoa21
+!i10b 1
+!i111 0
+Alut6_v
+R14
+R15
+R16
+R17
+R2
+R3
+DEx4 work 4 lut6 0 22 <dCB;9_KnAae@;6=k6LGV1
+l93
+L48
+VKAK4Zj2NQQ:<KzWb2Qh[i0
+R7
+32
+R8
+R97
+R98
+R99
+R12
+R13
+!s100 `gM1;Vhhfk2B3Hc]I=nA61
+!i10b 1
+!i111 0
+Elut6_2
+R1
+R14
+R15
+R16
+R17
+R2
+R3
+R4
+Z100 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/LUT6_2.vhd
+Z101 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/LUT6_2.vhd
+l0
+L29
+VKE;cO2:?FP3cbh^ohmibO0
+R7
+32
+R34
+Z102 !s108 1467234273.703000
+Z103 !s90 -reportprogress|300|-work|unisim|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/LUT6_2.vhd|
+Z104 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/LUT6_2.vhd|
+R12
+R13
+!s100 Q92mZ68]RD?>=RbSLg<jb0
+!i10b 1
+!i111 0
+Alut6_2_v
+R14
+R15
+R16
+R17
+R2
+R3
+DEx4 work 6 lut6_2 0 22 KE;cO2:?FP3cbh^ohmibO0
+l122
+L47
+V<43`6Xm2AKj>Hh2WRSY3@3
+R7
+32
+R34
+R102
+R103
+R104
+R12
+R13
+!s100 z;A<KUOJ3hNjgPK?mghJH2
+!i10b 1
+!i111 0
+Emmcm_adv
+R1
+R14
+R15
+R16
+R17
+Z105 DPx4 ieee 11 numeric_std 0 22 WES[o8HS0jHV[MIXQk2Ha1
+R18
+Z106 DPx4 ieee 16 std_logic_signed 0 22 8FY=586_D?ni<6VI>V>_P1
+R2
+R3
+R4
+Z107 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/MMCM_ADV.vhd
+Z108 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/MMCM_ADV.vhd
+l0
+L116
+V0L@j9oIakoQc5`]KEOkAC3
+R7
+32
+R21
+Z109 !s108 1467234272.553000
+Z110 !s90 -reportprogress|300|-work|unisim|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/MMCM_ADV.vhd|
+Z111 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/MMCM_ADV.vhd|
+R12
+R13
+!s100 Lk6S;gAUZGkk6Mm[F8Cij1
+!i10b 1
+!i111 0
+Ammcm_adv_v
+R14
+R15
+R16
+R17
+R105
+R18
+R106
+R2
+R3
+DEx4 work 8 mmcm_adv 0 22 0L@j9oIakoQc5`]KEOkAC3
+l1035
+L201
+V:UB`2BRz1<Pc?7@XLh0>=1
+R7
+32
+R21
+R109
+R110
+R111
+R12
+R13
+!s100 ALTK`0^ek@fF=a8:D:HH40
+!i10b 1
+!i111 0
+Emuxcy
+R89
+R2
+R3
+R4
+Z112 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/MUXCY.vhd
+Z113 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/MUXCY.vhd
+l0
+L25
+VAkWM1^Zc4TblbY[FAlEbS0
+R7
+32
+R34
+Z114 !s108 1467234273.371000
+Z115 !s90 -reportprogress|300|-work|unisim|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/MUXCY.vhd|
+Z116 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/MUXCY.vhd|
+R12
+R13
+!s100 `1FWOV8o_LlQ8_hH6^i?N1
+!i10b 1
+!i111 0
+Amuxcy_v
+R2
+R3
+DEx4 work 5 muxcy 0 22 AkWM1^Zc4TblbY[FAlEbS0
+l36
+L35
+Vj?_NgKRd5]k]cb]@9fZj<2
+R7
+32
+R34
+R114
+R115
+R116
+R12
+R13
+!s100 LgEIBDgPKe<7m:cJI;Znn1
+!i10b 1
+!i111 0
+Eobuf
+Z117 w1381681184
+R2
+R3
+R4
+Z118 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/OBUF.vhd
+Z119 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/OBUF.vhd
+l0
+L24
+VJg<cc1A`?[B5=h9QQmcl21
+R7
+32
+R34
+Z120 !s108 1467234273.764000
+Z121 !s90 -reportprogress|300|-work|unisim|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/OBUF.vhd|
+Z122 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/OBUF.vhd|
+R12
+R13
+!s100 =5:l_S1[AK@V<akmh:P7O2
+!i10b 1
+!i111 0
+Aobuf_v
+R2
+R3
+DEx4 work 4 obuf 0 22 Jg<cc1A`?[B5=h9QQmcl21
+l39
+L38
+V`:G9^09k9l>Ll@mdz[h2L2
+R7
+32
+R34
+R120
+R121
+R122
+R12
+R13
+!s100 U@Hk4EN1;QCC0lNZ`cQ0g3
+!i10b 1
+!i111 0
+Eobufds
+R117
+R2
+R3
+R4
+Z123 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/OBUFDS.vhd
+Z124 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/OBUFDS.vhd
+l0
+L27
+ViN;[cLgHFN^XAJn;3bmb_1
+R7
+32
+R34
+Z125 !s108 1467234273.819000
+Z126 !s90 -reportprogress|300|-work|unisim|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/OBUFDS.vhd|
+Z127 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/OBUFDS.vhd|
+R12
+R13
+!s100 E=eJGg1XWH;`@>j<a=ER43
+!i10b 1
+!i111 0
+Aobufds_v
+R2
+R3
+DEx4 work 6 obufds 0 22 iN;[cLgHFN^XAJn;3bmb_1
+l43
+L42
+VffSb14gOhW3@dBdlgIb;33
+R7
+32
+R34
+R125
+R126
+R127
+R12
+R13
+!s100 lfh4V;X`Ybjg8DDl0[P^e2
+!i10b 1
+!i111 0
+Eoddr
+R31
+R15
+R16
+R17
+R2
+R3
+R4
+Z128 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/ODDR.vhd
+Z129 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/ODDR.vhd
+l0
+L37
+VQRW^[G<00VmaJcEjTY_oP0
+R7
+32
+R34
+Z130 !s108 1467234273.873000
+Z131 !s90 -reportprogress|300|-work|unisim|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/ODDR.vhd|
+Z132 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/ODDR.vhd|
+R12
+R13
+!s100 C0T?XkInZ8K[JH[A4lO9c0
+!i10b 1
+!i111 0
+Aoddr_v
+R15
+R16
+R17
+R2
+R3
+DEx4 work 4 oddr 0 22 QRW^[G<00VmaJcEjTY_oP0
+l88
+L59
+VZaPeZ=XA;Z>7b=m[aO_<51
+R7
+32
+R34
+R130
+R131
+R132
+R12
+R13
+!s100 ^iWPU0FB85WY]399179nz0
+!i10b 1
+!i111 0
+Eor2l
+R1
+R2
+R3
+R4
+Z133 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/OR2L.vhd
+Z134 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/OR2L.vhd
+l0
+L27
+V`cYfCCgLD@faXQ_fIc_Mb2
+R7
+32
+R34
+Z135 !s108 1467234273.478000
+Z136 !s90 -reportprogress|300|-work|unisim|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/OR2L.vhd|
+Z137 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/OR2L.vhd|
+R12
+R13
+!s100 YA9Jo2>[9HzNKDf7T@VFD1
+!i10b 1
+!i111 0
+Aor2l_v
+R2
+R3
+DEx4 work 4 or2l 0 22 `cYfCCgLD@faXQ_fIc_Mb2
+l37
+L36
+VSI]LSC;?knUfajJi^fZMZ0
+R7
+32
+R34
+R135
+R136
+R137
+R12
+R13
+!s100 `>B2;^4mJVlc?If@z=TGz2
+!i10b 1
+!i111 0
+Eoserdese1
+R1
+R14
+R15
+R16
+R17
+R18
+R2
+R3
+R4
+R43
+R44
+l0
+L2943
+VQI9PRA1BHdfl29;DB6eP?1
+R7
+32
+R34
+R45
+R46
+R47
+R12
+R13
+!s100 Y>Bf6hWSFzmQX?6j:NSJk1
+!i10b 1
+!i111 0
+Aoserdese1_v
+R14
+R15
+R16
+R17
+R18
+R2
+R3
+DEx4 work 9 oserdese1 0 22 QI9PRA1BHdfl29;DB6eP?1
+l3219
+L2995
+VRCj;=7=_:bzG;`gO;hnAZ2
+R7
+32
+R34
+R45
+R46
+R47
+R12
+R13
+!s100 3IiV7V[8e:O]Kzz;O^PMN0
+!i10b 1
+!i111 0
+Eplg_oserdese1_vhd
+R1
+R18
+R2
+R3
+R4
+R43
+R44
+l0
+L132
+VG9[eTA:I7d;k2:jnb]m3>1
+R7
+32
+R34
+R45
+R46
+R47
+R12
+R13
+!s100 kdZc6QPiUDmU^@VXM=XeE1
+!i10b 1
+!i111 0
+Aplg_oserdese1_vhd_v
+R18
+R2
+R3
+DEx4 work 17 plg_oserdese1_vhd 0 22 G9[eTA:I7d;k2:jnb]m3>1
+l196
+L148
+V>lJea4k@PQDRA>IOJF_l^2
+R7
+32
+R34
+R45
+R46
+R47
+R12
+R13
+!s100 <BOgfbjVKAC[YNS^;IVZA2
+!i10b 1
+!i111 0
+Eram32m
+R1
+R14
+R15
+R16
+R17
+R2
+R3
+R4
+Z138 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/RAM32M.vhd
+Z139 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/RAM32M.vhd
+l0
+L30
+Vl;0i@;bPjd>JzlSRHA1TA3
+R7
+32
+R34
+Z140 !s108 1467234273.253000
+Z141 !s90 -reportprogress|300|-work|unisim|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/RAM32M.vhd|
+Z142 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/RAM32M.vhd|
+R12
+R13
+!s100 OAldU5AjCU@PY3AVXn@P93
+!i10b 1
+!i111 0
+Aram32m_v
+R14
+R15
+R16
+R17
+R2
+R3
+DEx4 work 6 ram32m 0 22 l;0i@;bPjd>JzlSRHA1TA3
+l63
+L57
+V>kd1LnH;mgcXRZoF=JAR41
+R7
+32
+R34
+R140
+R141
+R142
+R12
+R13
+!s100 U1nM0XVGVYbaVo9n>`^g<2
+!i10b 1
+!i111 0
+Eram64x1d
+Z143 w1381681187
+R15
+R16
+R17
+R2
+R3
+R4
+Z144 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/RAM64X1D.vhd
+Z145 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/RAM64X1D.vhd
+l0
+L27
+Ve<0V0jlG<W=ajlWfUAJf<0
+!s100 B17U2zT]O[T2PX=;E3QX:3
+R7
+32
+R8
+!i10b 1
+Z146 !s108 1467234274.181000
+Z147 !s90 -reportprogress|300|-work|unisim|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/RAM64X1D.vhd|
+Z148 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/RAM64X1D.vhd|
+!i111 0
+R12
+R13
+Aram64x1d_v
+R15
+R16
+R17
+R2
+R3
+Z149 DEx4 work 8 ram64x1d 0 22 e<0V0jlG<W=ajlWfUAJf<0
+l57
+L54
+Z150 VUcLge>4:3e_]><zod1:Vh0
+Z151 !s100 2H=SD<;Tlhm<^VX<i?zTK1
+R7
+32
+R8
+!i10b 1
+R146
+R147
+R148
+!i111 0
+R12
+R13
+Erank12d_oserdese1_vhd
+R1
+R18
+R2
+R3
+R4
+R43
+R44
+l0
+L405
+VMVEQQjFF_AM:d;>i2cz6i2
+R7
+32
+R34
+R45
+R46
+R47
+R12
+R13
+!s100 ;J;N]DIS=3Ld9YFzQzQc;1
+!i10b 1
+!i111 0
+Arank12d_oserdese1_vhd_v
+R18
+R2
+R3
+DEx4 work 21 rank12d_oserdese1_vhd 0 22 MVEQQjFF_AM:d;>i2cz6i2
+l545
+L441
+VLhM2iV?>h0ZN]ZFh2OH603
+R7
+32
+R34
+R45
+R46
+R47
+R12
+R13
+!s100 ]Qeg>]A]<[h95kZLHKbCM3
+!i10b 1
+!i111 0
+Eselfheal_oserdese1_vhd
+R1
+R14
+R15
+R16
+R17
+R18
+R2
+R3
+R4
+R43
+R44
+l0
+L50
+VoWB`V5<@Q?fhAC^E=Czk:2
+R7
+32
+R34
+R45
+R46
+R47
+R12
+R13
+!s100 aNRY_SXaX45_kYK4l9Cz<2
+!i10b 1
+!i111 0
+Aselfheal_oserdese1_vhd_v
+R14
+R15
+R16
+R17
+R18
+R2
+R3
+DEx4 work 22 selfheal_oserdese1_vhd 0 22 oWB`V5<@Q?fhAC^E=Czk:2
+l85
+L65
+VWH;WeGd@UfamlVXn[fnG22
+R7
+32
+R34
+R45
+R46
+R47
+R12
+R13
+!s100 ILz_7BXdH7I1ahnj8^<HL0
+!i10b 1
+!i111 0
+Esrlc32e
+R1
+R105
+R2
+R3
+R4
+Z152 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/SRLC32E.vhd
+Z153 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/SRLC32E.vhd
+l0
+L27
+V:jZ=[NXhmgdf3zc7Xe[0H2
+R7
+32
+R34
+Z154 !s108 1467234273.198000
+Z155 !s90 -reportprogress|300|-work|unisim|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/SRLC32E.vhd|
+Z156 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/SRLC32E.vhd|
+R12
+R13
+!s100 T`Rf@XNWA]9i[:Mo^eIH62
+!i10b 1
+!i111 0
+Asrlc32e_v
+R105
+R2
+R3
+DEx4 work 7 srlc32e 0 22 :jZ=[NXhmgdf3zc7Xe[0H2
+l46
+L44
+VYDa0NlY8gIdJm4<ne6LNo1
+R7
+32
+R34
+R154
+R155
+R156
+R12
+R13
+!s100 _FY05iF0G=7c[?8JFkfm13
+!i10b 1
+!i111 0
+Etout_oserdese1_vhd
+R1
+R18
+R2
+R3
+R4
+R43
+R44
+l0
+L2620
+VajNhS1i39QM>oJKOOCNBZ1
+R7
+32
+R34
+R45
+R46
+R47
+R12
+R13
+!s100 ;Yh8EbEfETM5LiR^o8BFQ2
+!i10b 1
+!i111 0
+Atout_oserdese1_vhd_v
+R18
+R2
+R3
+DEx4 work 18 tout_oserdese1_vhd 0 22 ajNhS1i39QM>oJKOOCNBZ1
+l2696
+L2645
+V03m;P=5HPi4@@GXXgb64g3
+R7
+32
+R34
+R45
+R46
+R47
+R12
+R13
+!s100 =ojH`80Dmc;RnWBVS1UMU1
+!i10b 1
+!i111 0
+Etrif_oserdese1_vhd
+R1
+R18
+R2
+R3
+R4
+R43
+R44
+l0
+L908
+V4PLkR7e:>?CLOAn@QhRFm3
+R7
+32
+R34
+R45
+R46
+R47
+R12
+R13
+!s100 FJnk?@iS3cS[3oblihk4Q2
+!i10b 1
+!i111 0
+Atrif_oserdese1_vhd_v
+R18
+R2
+R3
+DEx4 work 18 trif_oserdese1_vhd 0 22 4PLkR7e:>?CLOAn@QhRFm3
+l994
+L935
+Vco963endV>VGT2??E:BY62
+R7
+32
+R34
+R45
+R46
+R47
+R12
+R13
+!s100 LVH4P<>j6Jh:a`aT=i5e^1
+!i10b 1
+!i111 0
+Etxbuffer_oserdese1_vhd
+R1
+R18
+R2
+R3
+R4
+R43
+R44
+l0
+L1169
+V@hSJR?c]zle`E3b?ai2Uc0
+R7
+32
+R34
+R45
+R46
+R47
+R12
+R13
+!s100 QKiB6QfZb0>gM@1J5kYP11
+!i10b 1
+!i111 0
+Atxbuffer_oserdese1_vhd_v
+R18
+R2
+R3
+DEx4 work 22 txbuffer_oserdese1_vhd 0 22 @hSJR?c]zle`E3b?ai2Uc0
+l1309
+L1197
+V<@2l[MX@2U:NA@U^8n2E:3
+R7
+32
+R34
+R45
+R46
+R47
+R12
+R13
+!s100 cFZfCKhUgi<?S]nkhm2OQ3
+!i10b 1
+!i111 0
+Pvcomponents
+R2
+R3
+w1467233880
+R4
+8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/unisim_vcomp.vhd
+FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/unisim_vcomp.vhd
+l0
+L3
+VMbEjViE6CIzf7EOd1SbG32
+R7
+32
+R12
+R13
+R21
+!s100 gPMHH<`96VVDo=CMo>0YG3
+!i10b 1
+!s108 1467234272.334000
+!s90 -reportprogress|300|-work|unisim|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/unisim_vcomp.vhd|
+!s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/unisim_vcomp.vhd|
+!i111 0
+Pvpkg
+R15
+R16
+R3
+R2
+Z157 w1381681178
+R4
+Z158 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/unisim_VPKG.vhd
+Z159 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/unisim_VPKG.vhd
+l0
+L51
+V6P:J]9QBmVih2ao3i[O1<0
+R7
+32
+b1
+R21
+Z160 !s108 1467234272.381000
+Z161 !s90 -reportprogress|300|-work|unisim|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/unisim_VPKG.vhd|
+Z162 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/unisim_VPKG.vhd|
+R12
+R13
+!s100 <KO[3U9fNbmKS^@YA2>H>0
+!i10b 1
+!i111 0
+Bbody
+DPx4 work 4 vpkg 0 22 6P:J]9QBmVih2ao3i[O1<0
+R15
+R16
+R3
+R2
+l0
+L716
+V[R@mS]:__hZ`Bh[[i53Jc3
+R7
+32
+R21
+R160
+R161
+R162
+R12
+R13
+nbody
+!s100 QWg7:478m`W6Rfh`Y;[a?2
+!i10b 1
+!i111 0
+Exorcy
+R31
+R2
+R3
+R4
+Z163 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/XORCY.vhd
+Z164 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/XORCY.vhd
+l0
+L24
+VQF>_R:e95JIBoZL]1V[nN3
+R7
+32
+R34
+Z165 !s108 1467234273.423000
+Z166 !s90 -reportprogress|300|-work|unisim|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/XORCY.vhd|
+Z167 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/unisim/XORCY.vhd|
+R12
+R13
+!s100 :DnoVV:959Bzi7VbiBo[S3
+!i10b 1
+!i111 0
+Axorcy_v
+R2
+R3
+DEx4 work 5 xorcy 0 22 QF>_R:e95JIBoZL]1V[nN3
+l34
+L33
+VC`l=KbH`6@2oB6=92@o4n2
+R7
+32
+R34
+R165
+R166
+R167
+R12
+R13
+!s100 ==604SDlP41MA0_o05LLa3
+!i10b 1
+!i111 0

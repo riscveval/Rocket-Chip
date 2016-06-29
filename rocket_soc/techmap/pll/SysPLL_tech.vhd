@@ -52,6 +52,10 @@ entity SysPLL_tech is
     o_clk_bus         : out    std_logic;
     --! ADC simulation clock = 26MHz (default).
     o_clk_adc         : out    std_logic;
+    -- DDR3 needs
+    o_clk200          : out    std_logic;  --200 MHz
+    o_clk2x           : out    std_logic;  --120 MHz
+    o_clk2x_unbuf     : out    std_logic;  --120 MHz
     --! PLL locked status.
     o_locked          : out    std_logic
   );
@@ -67,7 +71,9 @@ architecture rtl of SysPLL_tech is
 begin
 
    xv6 : if tech = virtex6 generate
-     pll0 : SysPLL_v6 port map (i_clkp, i_clkn, pll_clk_bus, adc_clk_unbuf, i_reset, o_locked);
+     pll0 : SysPLL_v6 port map (i_clkp, i_clkn, pll_clk_bus, adc_clk_unbuf, 
+                               o_clk200, o_clk2x, o_clk2x_unbuf, 
+                               i_reset, o_locked);
    end generate;
 
    xv7 : if tech = kintex7 generate

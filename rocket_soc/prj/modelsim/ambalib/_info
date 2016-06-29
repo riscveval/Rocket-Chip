@@ -1,0 +1,93 @@
+m255
+K4
+z0
+Eaxictrl
+Z0 w1466709051
+Z1 DPx7 ambalib 11 types_amba4 0 22 ?km8mT[XNiI;aaSfeQF6G0
+Z2 DPx4 ieee 11 numeric_std 0 22 WES[o8HS0jHV[MIXQk2Ha1
+Z3 DPx9 commonlib 12 types_common 0 22 2nT<HT6l6WTkV@j07g9R[2
+Z4 DPx3 std 6 textio 0 22 Y8d?=bLj9m4jiPLbo;>GT0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 1bm?@Gd;P>[>_lN8Do9gP3
+Z6 dE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/prj/modelsim
+Z7 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/ambalib/axictrl.vhd
+Z8 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/ambalib/axictrl.vhd
+l0
+L19
+VMjMDb5N?dLDSCPGDK_CZI2
+!s100 Yjll9528S:OJzPlSGe6Ch2
+Z9 OL;C;10.2c;57
+32
+Z10 !s110 1467234275
+!i10b 1
+Z11 !s108 1467234275.856000
+Z12 !s90 -reportprogress|300|-work|ambalib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/ambalib/axictrl.vhd|
+Z13 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/ambalib/axictrl.vhd|
+!i111 0
+Z14 o-work ambalib -2002 -explicit
+Z15 tExplicit 1
+Aarch_axictrl
+R1
+R2
+R3
+R4
+R5
+Z16 DEx4 work 7 axictrl 0 22 MjMDb5N?dLDSCPGDK_CZI2
+l44
+L33
+Z17 VP:69b3n<]Q5id=Djn`Co[3
+Z18 !s100 gVjjZUgO@A8JGY4d2RM`Z1
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i111 0
+R14
+R15
+Ptypes_amba4
+R3
+R2
+R4
+R5
+Z19 w1466970799
+R6
+Z20 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/ambalib/types_amba4.vhd
+Z21 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/ambalib/types_amba4.vhd
+l0
+L26
+V?km8mT[XNiI;aaSfeQF6G0
+R9
+32
+b1
+Z22 !s110 1467234271
+Z23 !s108 1467234271.949000
+Z24 !s90 -reportprogress|300|-work|ambalib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/ambalib/types_amba4.vhd|
+Z25 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/ambalib/types_amba4.vhd|
+R14
+R15
+!s100 NAhcWH50h2TFefd:6:@ha0
+!i10b 1
+!i111 0
+Bbody
+DPx4 work 11 types_amba4 0 22 ?km8mT[XNiI;aaSfeQF6G0
+R3
+R2
+R4
+R5
+l0
+L694
+V;@4ITlaJRjoiIZZnW>==n3
+!s100 2NRSEP=SJ]6Vz]anfG>OF1
+R9
+32
+R22
+R23
+R24
+R25
+R14
+R15
+nbody
+!i10b 1
+!i111 0

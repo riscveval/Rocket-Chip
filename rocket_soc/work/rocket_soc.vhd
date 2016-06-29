@@ -34,6 +34,7 @@ library rocketlib;
 use rocketlib.types_rocket.all;
 --! Ethernet related declarations.
 use rocketlib.grethpkg.all;
+use rocketlib.types_ddr.all;
 
 --! GNSS Sensor Ltd proprietary library
 library gnsslib;
@@ -108,6 +109,25 @@ entity rocket_soc is port
   o_antint_contr  : out std_logic;
   --! @}
   
+  --! @name DDR3 signals
+  --! @{
+   io_ddr3_dq   : inout std_logic_vector(CFG_DDR_DQ_WIDTH-1 downto 0);
+   o_ddr3_addr  : out std_logic_vector(CFG_DDR_ROW_WIDTH-1 downto 0);
+   o_ddr3_ba    : out std_logic_vector(CFG_DDR_BANK_WIDTH-1 downto 0);
+   o_ddr3_ras_n : out std_logic;
+   o_ddr3_cas_n : out std_logic;
+   o_ddr3_we_n  : out std_logic;
+   o_ddr3_reset_n : out std_logic;
+   o_ddr3_cs_n    : out std_logic_vector((CFG_DDR_CS_WIDTH*CFG_DDR_nCS_PER_RANK)-1 downto 0);
+   o_ddr3_odt     : out std_logic_vector((CFG_DDR_CS_WIDTH*CFG_DDR_nCS_PER_RANK)-1 downto 0);
+   o_ddr3_cke     : out std_logic_vector(CFG_DDR_CKE_WIDTH-1 downto 0);
+   o_ddr3_dm      : out std_logic_vector(CFG_DDR_DM_WIDTH-1 downto 0);
+   io_ddr3_dqs_p  : inout std_logic_vector(CFG_DDR_DQS_WIDTH-1 downto 0);
+   io_ddr3_dqs_n  : inout std_logic_vector(CFG_DDR_DQS_WIDTH-1 downto 0);
+   o_ddr3_ck_p    : out std_logic_vector(CFG_DDR_CK_WIDTH-1 downto 0);
+   o_ddr3_ck_n    : out std_logic_vector(CFG_DDR_CK_WIDTH-1 downto 0);
+  --! @}
+  
   --! Ethernet MAC PHY interface signals
   --! @{
   i_gmiiclk_p : in    std_ulogic;
@@ -155,6 +175,9 @@ architecture arch_rocket_soc of rocket_soc is
   signal bus_nrst   : std_ulogic; -- Global reset and Soft Reset active LOW
   signal wClkBus    : std_ulogic; -- bus clock from the internal PLL (100MHz virtex6/40MHz Spartan6)
   signal wClkAdc    : std_ulogic; -- 26 MHz from the internal PLL
+  signal wClk200    : std_ulogic; --
+  signal wClk2x     : std_ulogic; --
+  signal wClk2xUnbuf: std_ulogic; --
   signal wPllLocked : std_ulogic; -- PLL status signal. 0=Unlocked; 1=locked.
 
   
@@ -189,6 +212,8 @@ architecture arch_rocket_soc of rocket_soc is
   signal eth_i : eth_in_type;
   signal eth_o : eth_out_type;
 
+  signal ddr_io : ddr3_io_type;
+  signal ddr_o : ddr3_out_type;
  
   signal irq_pins : std_logic_vector(CFG_IRQ_TOTAL-1 downto 0);
 begin
@@ -221,6 +246,9 @@ begin
     i_clk_adc   => ib_clk_adc,
     o_clk_bus   => wClkBus,
     o_clk_adc   => wClkAdc,
+	 o_clk200    => wClk200,
+	 o_clk2x     => wClk2x,
+	 o_clk2x_unbuf => wClk2xUnbuf,
     o_locked    => wPllLocked
   );
   wSysReset <= ib_rst or not wPllLocked;
@@ -657,6 +685,41 @@ end generate;
   o_etx_er <= eth_o.tx_er;
   o_emdc <= eth_o.mdc;
   o_erstn <= wNReset;
+
+
+  --!
+  ddr_io.dq <= io_ddr3_dq;
+  ddr_io.dqs_p <= io_ddr3_dqs_p;
+  ddr_io.dqs_n <= io_ddr3_dqs_n;
+  
+  ddr3 : ddr_axi4 generic map (
+      xindex => CFG_NASTI_SLAVE_DDR,
+      xaddr => 16#40000#,
+      xmask => 16#3FFFF#
+  ) port map (
+    rstn        => wNReset,
+    clk200      => wClk200,
+    clk         => wClkBus,
+    clk2x       => wClk2x,
+    clk2x_unbuf => wClk2xUnbuf,
+    o_cfg  => slv_cfg(CFG_NASTI_SLAVE_DDR),
+    i_axi  => axisi,
+    o_axi  => axiso(CFG_NASTI_SLAVE_DDR),
+    io_ddr3 => ddr_io,
+    o_ddr3  => ddr_o
+  );
+  o_ddr3_addr  <= ddr_o.addr;
+  o_ddr3_ba    <= ddr_o.ba;
+  o_ddr3_ras_n <= ddr_o.ras_n;
+  o_ddr3_cas_n <= ddr_o.cas_n;
+  o_ddr3_we_n  <= ddr_o.we_n;
+  o_ddr3_reset_n <= ddr_o.reset_n;
+  o_ddr3_cs_n    <= ddr_o.cs_n;
+  o_ddr3_odt     <= ddr_o.odt;
+  o_ddr3_cke     <= ddr_o.cke;
+  o_ddr3_dm      <= ddr_o.dm;
+  o_ddr3_ck_p    <= ddr_o.ck_p;
+  o_ddr3_ck_n    <= ddr_o.ck_n;
 
 
   --! @brief Plug'n'Play controller of the current configuration with the

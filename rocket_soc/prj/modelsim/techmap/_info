@@ -1,0 +1,1123 @@
+m255
+K4
+z0
+Ebootrom_inferred
+Z0 w1466709051
+Z1 DPx7 ambalib 11 types_amba4 0 22 ?km8mT[XNiI;aaSfeQF6G0
+Z2 DPx9 commonlib 12 types_common 0 22 2nT<HT6l6WTkV@j07g9R[2
+Z3 DPx4 ieee 16 std_logic_textio 0 22 E=LR>a2bb_I?VV>QDdAdh3
+Z4 DPx4 ieee 11 numeric_std 0 22 WES[o8HS0jHV[MIXQk2Ha1
+Z5 DPx3 std 6 textio 0 22 Y8d?=bLj9m4jiPLbo;>GT0
+Z6 DPx4 ieee 14 std_logic_1164 0 22 1bm?@Gd;P>[>_lN8Do9gP3
+Z7 dE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/prj/modelsim
+Z8 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/bootrom_inferred.vhd
+Z9 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/bootrom_inferred.vhd
+l0
+L21
+VnPc3;PankL=Z`KcD>1eS<3
+Z10 OL;C;10.2c;57
+32
+Z11 !s110 1467234274
+Z12 !s108 1467234274.244000
+Z13 !s90 -reportprogress|300|-work|techmap|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/bootrom_inferred.vhd|
+Z14 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/bootrom_inferred.vhd|
+Z15 o-work techmap -2002 -explicit
+Z16 tExplicit 1
+!s100 =4J10ZkReW`EOYW645?8z1
+!i10b 1
+!i111 0
+Artl
+R1
+R2
+R3
+R4
+R5
+R6
+DEx4 work 16 bootrom_inferred 0 22 nPc3;PankL=Z`KcD>1eS<3
+l60
+L32
+VCGbe^94Z>AHJ4Rb]c?3W]2
+R10
+32
+R11
+R12
+R13
+R14
+R15
+R16
+!s100 ]LN:Wzg;RIa_03LgPWlQ50
+!i10b 1
+!i111 0
+Ebootrom_tech
+Z17 w1466709051
+R1
+R4
+R2
+Z18 DPx7 techmap 9 types_mem 0 22 5RM6[`b5O4U4PM^BE_12b2
+Z19 DPx7 techmap 7 gencomp 0 22 MEBZF8MjYzhR9GNKbV^NX0
+R5
+R6
+R7
+Z20 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/bootrom_tech.vhd
+Z21 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/bootrom_tech.vhd
+l0
+L20
+VP@i5niKE6j<g<]FWF61O?2
+R10
+32
+R11
+Z22 !s108 1467234274.297000
+Z23 !s90 -reportprogress|300|-work|techmap|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/bootrom_tech.vhd|
+Z24 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/bootrom_tech.vhd|
+R15
+R16
+!s100 XITHHmZIZBYe6GiaSTB7E2
+!i10b 1
+!i111 0
+Artl
+R1
+R4
+R2
+R18
+R19
+R5
+R6
+DEx4 work 12 bootrom_tech 0 22 P@i5niKE6j<g<]FWF61O?2
+l45
+L32
+VVQiC[DfIXfIH5a]7NYQjh3
+R10
+32
+R11
+R22
+R23
+R24
+R15
+R16
+!s100 `XbLCC]OWKN<kYK^SB=PU3
+!i10b 1
+!i111 0
+Ebufgmux_tech
+R17
+R19
+R5
+R6
+R7
+Z25 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/bufg/bufgmux_tech.vhd
+Z26 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/bufg/bufgmux_tech.vhd
+l0
+L14
+V@o:j<Kk8WJV@o8<XP7HoX2
+R10
+32
+Z27 !s110 1467234275
+Z28 !s108 1467234275.414000
+Z29 !s90 -reportprogress|300|-work|techmap|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/bufg/bufgmux_tech.vhd|
+Z30 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/bufg/bufgmux_tech.vhd|
+R15
+R16
+!s100 QCZlh9@7mQZU0aC>CU@@S1
+!i10b 1
+!i111 0
+Artl
+R19
+R5
+R6
+DEx4 work 12 bufgmux_tech 0 22 @o:j<Kk8WJV@o8<XP7HoX2
+l53
+L29
+V3I1V4;``X@:=V48@V<h@X1
+R10
+32
+R27
+R28
+R29
+R30
+R15
+R16
+!s100 iGGF@>^j_ciRTdFBgmaG31
+!i10b 1
+!i111 0
+Pgencomp
+R5
+R6
+R17
+R7
+8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/gencomp/gencomp.vhd
+FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/gencomp/gencomp.vhd
+l0
+L20
+VMEBZF8MjYzhR9GNKbV^NX0
+R10
+32
+R15
+R16
+!s110 1467234271
+!s100 6?6[Rd[^WGi4fZ>EEf7Q51
+!i10b 1
+!s108 1467234271.776000
+!s90 -reportprogress|300|-work|techmap|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/gencomp/gencomp.vhd|
+!s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/gencomp/gencomp.vhd|
+!i111 0
+Eibuf_inferred
+R17
+R5
+R6
+R7
+Z31 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/bufg/ibuf_inferred.vhd
+Z32 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/bufg/ibuf_inferred.vhd
+l0
+L11
+VUmTQDN94BWb4o89U>X6H90
+R10
+32
+R27
+Z33 !s108 1467234275.522000
+Z34 !s90 -reportprogress|300|-work|techmap|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/bufg/ibuf_inferred.vhd|
+Z35 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/bufg/ibuf_inferred.vhd|
+R15
+R16
+!s100 _ei4MAlQj=nk@jh1lNQ^]2
+!i10b 1
+!i111 0
+Artl
+R5
+R6
+DEx4 work 13 ibuf_inferred 0 22 UmTQDN94BWb4o89U>X6H90
+l20
+L18
+Vf[X4j34e@DgDQJJ;EmIZK0
+R10
+32
+R27
+R33
+R34
+R35
+R15
+R16
+!s100 fAjBd;nn5njj;jlXCZK0l2
+!i10b 1
+!i111 0
+Eibuf_tech
+R17
+R19
+R5
+R6
+R7
+Z36 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/bufg/ibuf_tech.vhd
+Z37 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/bufg/ibuf_tech.vhd
+l0
+L13
+VMg=A_dm_^ngiKh1SlQcRD0
+R10
+32
+R27
+Z38 !s108 1467234275.577000
+Z39 !s90 -reportprogress|300|-work|techmap|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/bufg/ibuf_tech.vhd|
+Z40 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/bufg/ibuf_tech.vhd|
+R15
+R16
+!s100 B47IXnazhCcmSoKC>3nb[3
+!i10b 1
+!i111 0
+Artl
+R19
+R5
+R6
+DEx4 work 9 ibuf_tech 0 22 Mg=A_dm_^ngiKh1SlQcRD0
+l40
+L24
+V9PX]d>6^^CSfKNk8DoM:o3
+R10
+32
+R27
+R38
+R39
+R40
+R15
+R16
+!s100 638dichbj?ARL4d6HNYzF1
+!i10b 1
+!i111 0
+Eiobuf_inferred
+R17
+R5
+R6
+R7
+Z41 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/bufg/iobuf_inferred.vhd
+Z42 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/bufg/iobuf_inferred.vhd
+l0
+L11
+VCf5]4MKL:R;8[hU?fY@RV0
+R10
+32
+R27
+Z43 !s108 1467234275.630000
+Z44 !s90 -reportprogress|300|-work|techmap|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/bufg/iobuf_inferred.vhd|
+Z45 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/bufg/iobuf_inferred.vhd|
+R15
+R16
+!s100 9T:1eA`5j_0=mJk=8O<Wb1
+!i10b 1
+!i111 0
+Artl
+R5
+R6
+DEx4 work 14 iobuf_inferred 0 22 Cf5]4MKL:R;8[hU?fY@RV0
+l22
+L20
+VQWk1MG>Uek479WA?DUQ@43
+R10
+32
+R27
+R43
+R44
+R45
+R15
+R16
+!s100 `G;i0]_MKIW?gFk`SIg[?1
+!i10b 1
+!i111 0
+Eiobuf_tech
+R17
+R19
+R5
+R6
+R7
+Z46 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/bufg/iobuf_tech.vhd
+Z47 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/bufg/iobuf_tech.vhd
+l0
+L14
+VWENV1]6dz^f^;:C>F=YI`2
+R10
+32
+R27
+Z48 !s108 1467234275.685000
+Z49 !s90 -reportprogress|300|-work|techmap|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/bufg/iobuf_tech.vhd|
+Z50 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/bufg/iobuf_tech.vhd|
+R15
+R16
+!s100 ][o2D8U1AA10I91miM<^o3
+!i10b 1
+!i111 0
+Artl
+R19
+R5
+R6
+DEx4 work 10 iobuf_tech 0 22 WENV1]6dz^f^;:C>F=YI`2
+l56
+L27
+VnUGzYNnieY9^]XcLIzm8=2
+!s100 ^l^=_G?5oQPjb0A3zKdaI3
+R10
+32
+R27
+R48
+R49
+R50
+R15
+R16
+!i10b 1
+!i111 0
+Eobuf_inferred
+R17
+R5
+R6
+R7
+Z51 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/bufg/obuf_inferred.vhd
+Z52 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/bufg/obuf_inferred.vhd
+l0
+L12
+V`WGH>0j>^773e^_kSeOWk1
+!s100 >NR9=fcI<B^4CdeLEi]G70
+R10
+32
+R27
+!i10b 1
+Z53 !s108 1467234275.739000
+Z54 !s90 -reportprogress|300|-work|techmap|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/bufg/obuf_inferred.vhd|
+Z55 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/bufg/obuf_inferred.vhd|
+!i111 0
+R15
+R16
+Artl
+R5
+R6
+Z56 DEx4 work 13 obuf_inferred 0 22 `WGH>0j>^773e^_kSeOWk1
+l21
+L19
+Z57 VH7]d^8?lCKQV4WUklG5lh1
+Z58 !s100 kg_An;dMKjB>odMD]:ONM3
+R10
+32
+R27
+!i10b 1
+R53
+R54
+R55
+!i111 0
+R15
+R16
+Eobuf_tech
+R17
+R19
+R5
+R6
+R7
+Z59 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/bufg/obuf_tech.vhd
+Z60 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/bufg/obuf_tech.vhd
+l0
+L14
+VgMA?a7YoFD03lFTM?dK[;2
+R10
+32
+R27
+Z61 !s108 1467234275.469000
+Z62 !s90 -reportprogress|300|-work|techmap|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/bufg/obuf_tech.vhd|
+Z63 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/bufg/obuf_tech.vhd|
+R15
+R16
+!s100 oFPX>^^o]ed90g`M^T<fA3
+!i10b 1
+!i111 0
+Artl
+R19
+R5
+R6
+DEx4 work 9 obuf_tech 0 22 gMA?a7YoFD03lFTM?dK[;2
+l41
+L25
+VaIm=RBZU<nGW3LjO74WYR3
+R10
+32
+R27
+R61
+R62
+R63
+R15
+R16
+!s100 Q0bWJ6zPl;5WW4LOmZgFF3
+!i10b 1
+!i111 0
+Eram32_inferred
+R17
+R4
+R2
+R5
+R6
+R7
+Z64 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/ram32_inferred.vhd
+Z65 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/ram32_inferred.vhd
+l0
+L13
+VlkU7mHT`d0f0UEX5LNgmC2
+R10
+32
+R11
+Z66 !s108 1467234274.677000
+Z67 !s90 -reportprogress|300|-work|techmap|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/ram32_inferred.vhd|
+Z68 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/ram32_inferred.vhd|
+R15
+R16
+!s100 nG`k0gUDJ:SZZaE80A^oK2
+!i10b 1
+!i111 0
+Artl
+R4
+R2
+R5
+R6
+DEx4 work 14 ram32_inferred 0 22 lkU7mHT`d0f0UEX5LNgmC2
+l34
+L26
+VL7_DOU0=jf_;cf;eHjgJ00
+R10
+32
+R11
+R66
+R67
+R68
+R15
+R16
+!s100 h[f>IU`6e]`@_19gVG9Jm3
+!i10b 1
+!i111 0
+Eram32_tech
+R17
+R1
+R18
+R19
+R4
+R2
+R5
+R6
+R7
+Z69 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/ram32_tech.vhd
+Z70 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/ram32_tech.vhd
+l0
+L16
+V^[ZEmTL:R^UT[LNVelOJ<2
+R10
+32
+R11
+Z71 !s108 1467234274.622000
+Z72 !s90 -reportprogress|300|-work|techmap|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/ram32_tech.vhd|
+Z73 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/ram32_tech.vhd|
+R15
+R16
+!s100 zRo0778B2ACUkDQ6F=U0l1
+!i10b 1
+!i111 0
+Artl
+R1
+R18
+R19
+R4
+R2
+R5
+R6
+DEx4 work 10 ram32_tech 0 22 ^[ZEmTL:R^UT[LNVelOJ<2
+l60
+L30
+Vh[RFmFAS<il^m5i[YjE[T0
+R10
+32
+R11
+R71
+R72
+R73
+R15
+R16
+!s100 TX?Kg9fGz1A69QJM;6ed=1
+!i10b 1
+!i111 0
+Eromimage_inferred
+R17
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+Z74 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/romimage_inferred.vhd
+Z75 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/romimage_inferred.vhd
+l0
+L19
+VWUkA9mIF3bUkV]^MQT1T[2
+R10
+32
+R11
+Z76 !s108 1467234274.405000
+Z77 !s90 -reportprogress|300|-work|techmap|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/romimage_inferred.vhd|
+Z78 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/romimage_inferred.vhd|
+R15
+R16
+!s100 ZU4iz]SH:;UfWf:5Cf=G[2
+!i10b 1
+!i111 0
+Artl
+R1
+R2
+R3
+R4
+R5
+R6
+DEx4 work 17 romimage_inferred 0 22 WUkA9mIF3bUkV]^MQT1T[2
+l58
+L30
+VRWlej?WMo>KiTnS4i2ViR0
+R10
+32
+R11
+R76
+R77
+R78
+R15
+R16
+!s100 lREX[68]C52iC69@0Ho6W3
+!i10b 1
+!i111 0
+Eromimage_tech
+R17
+R1
+R4
+R2
+R18
+R19
+R5
+R6
+R7
+Z79 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/romimage_tech.vhd
+Z80 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/romimage_tech.vhd
+l0
+L20
+VY1]lRVHI1XYa77^OKckNT3
+R10
+32
+R11
+Z81 !s108 1467234274.352000
+Z82 !s90 -reportprogress|300|-work|techmap|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/romimage_tech.vhd|
+Z83 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/romimage_tech.vhd|
+R15
+R16
+!s100 T0BXL]GzBif88ILS3S]di1
+!i10b 1
+!i111 0
+Aarch_romimage_tech
+R1
+R4
+R2
+R18
+R19
+R5
+R6
+DEx4 work 13 romimage_tech 0 22 Y1]lRVHI1XYa77^OKckNT3
+l45
+L32
+Ve03zLa[mMcD19_HljGzE51
+R10
+32
+R11
+R81
+R82
+R83
+R15
+R16
+!s100 19Ch[Y:MiEC7B6_kkXQX^3
+!i10b 1
+!i111 0
+Eromprn_inferred
+R17
+R4
+R2
+R5
+R6
+R7
+Z84 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/romprn_inferred.vhd
+Z85 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/romprn_inferred.vhd
+l0
+L15
+VD9:ModDzDL_Ef_E`0=bS?3
+R10
+32
+R11
+Z86 !s108 1467234274.777000
+Z87 !s90 -reportprogress|300|-work|techmap|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/romprn_inferred.vhd|
+Z88 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/romprn_inferred.vhd|
+R15
+R16
+!s100 Va5<0mgf`TS`eDiDiAzdV0
+!i10b 1
+!i111 0
+Artl
+R4
+R2
+R5
+R6
+DEx4 work 15 romprn_inferred 0 22 D9:ModDzDL_Ef_E`0=bS?3
+l28
+L23
+V`_I:4YObR4YaXalDc9aB=2
+R10
+32
+R86
+R87
+R88
+R15
+R16
+R27
+!s100 Yl13JlXSoYj3QCU1hnlbT3
+!i10b 1
+!i111 0
+Eromprn_tech
+R17
+R1
+R18
+R19
+R4
+R2
+R5
+R6
+R7
+Z89 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/romprn_tech.vhd
+Z90 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/romprn_tech.vhd
+l0
+L16
+VYoO8XK;4lZ>bRUkin4VWl3
+R10
+32
+R11
+Z91 !s108 1467234274.719000
+Z92 !s90 -reportprogress|300|-work|techmap|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/romprn_tech.vhd|
+Z93 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/romprn_tech.vhd|
+R15
+R16
+!s100 HGioS4HV3m2MT[5SS6h6m3
+!i10b 1
+!i111 0
+Artl
+R1
+R18
+R19
+R4
+R2
+R5
+R6
+DEx4 work 11 romprn_tech 0 22 YoO8XK;4lZ>bRUkin4VWl3
+l46
+L27
+VlmLfdi_Rfc9A_[?U71fUC2
+R10
+32
+R11
+R91
+R92
+R93
+R15
+R16
+!s100 =fh4RW@GWoEI[JonWP4B>2
+!i10b 1
+!i111 0
+Esram8_inferred
+R17
+R2
+R3
+R4
+R5
+R6
+R7
+Z94 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/sram8_inferred.vhd
+Z95 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/sram8_inferred.vhd
+l0
+L15
+VgTWb2Ilo4o_3XVg`7i;:T1
+R10
+32
+R11
+Z96 !s108 1467234274.460000
+Z97 !s90 -reportprogress|300|-work|techmap|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/sram8_inferred.vhd|
+Z98 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/sram8_inferred.vhd|
+R15
+R16
+!s100 l2DVIm13_:P<RDBo;zUCe1
+!i10b 1
+!i111 0
+Aarch_sram8_inferred
+R2
+R3
+R4
+R5
+R6
+DEx4 work 14 sram8_inferred 0 22 gTWb2Ilo4o_3XVg`7i;:T1
+l37
+L29
+V?K682<g<d?XjWg_i2QlZ22
+R10
+32
+R11
+R96
+R97
+R98
+R15
+R16
+!s100 l=XB`EGmgHLLWCjoVCfWM3
+!i10b 1
+!i111 0
+Esram8_inferred_init
+R17
+R2
+R3
+R4
+R5
+R6
+R7
+Z99 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/sram8_inferred_init.vhd
+Z100 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/sram8_inferred_init.vhd
+l0
+L19
+V2zZEeXSodCHnOe>7fBHzI1
+R10
+32
+R11
+Z101 !s108 1467234274.514000
+Z102 !s90 -reportprogress|300|-work|techmap|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/sram8_inferred_init.vhd|
+Z103 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/sram8_inferred_init.vhd|
+R15
+R16
+!s100 `Hc7>iEa;6eM=U=An:Y<T0
+!i10b 1
+!i111 0
+Aarch_sram8_inferred_init
+R2
+R3
+R4
+R5
+R6
+DEx4 work 19 sram8_inferred_init 0 22 2zZEeXSodCHnOe>7fBHzI1
+l59
+L34
+VKUe4S3Tk;?KElgX=zgVa^0
+R10
+32
+R11
+R101
+R102
+R103
+R15
+R16
+!s100 QG`DZM2NG1LgJK<07Coea1
+!i10b 1
+!i111 0
+Esrambytes_tech
+R17
+R1
+R18
+R19
+R4
+R2
+R5
+R6
+R7
+Z104 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/srambytes_tech.vhd
+Z105 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/srambytes_tech.vhd
+l0
+L23
+V@=5]C9jhG^0U2DQ8EO5@F2
+R10
+32
+R11
+Z106 !s108 1467234274.569000
+Z107 !s90 -reportprogress|300|-work|techmap|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/srambytes_tech.vhd|
+Z108 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/srambytes_tech.vhd|
+R15
+R16
+!s100 WiS2E>blkD[S[2IP=b2W81
+!i10b 1
+!i111 0
+Artl
+R1
+R18
+R19
+R4
+R2
+R5
+R6
+DEx4 work 14 srambytes_tech 0 22 @=5]C9jhG^0U2DQ8EO5@F2
+l84
+L40
+VmE>Wdn=DA>?YDiMN8`ln;3
+R10
+32
+R11
+R106
+R107
+R108
+R15
+R16
+!s100 @N66nad=8[1241gDD@f_B1
+!i10b 1
+!i111 0
+Esyncram_2p_inferred
+R17
+R4
+R2
+R5
+R6
+R7
+Z109 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/syncram_2p_inferred.vhd
+Z110 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/syncram_2p_inferred.vhd
+l0
+L13
+VDzD]RakYjYkDfjmMIAU=N1
+R10
+32
+R27
+Z111 !s108 1467234275.237000
+Z112 !s90 -reportprogress|300|-work|techmap|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/syncram_2p_inferred.vhd|
+Z113 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/syncram_2p_inferred.vhd|
+R15
+R16
+!s100 bKoRk7hSSK1PQM]k=Aj<51
+!i10b 1
+!i111 0
+Aarch_syncram_2p_inferred
+R4
+R2
+R5
+R6
+DEx4 work 19 syncram_2p_inferred 0 22 DzD]RakYjYkDfjmMIAU=N1
+l51
+L30
+VQ2kk8j;lCLKESR>Lf0aG>0
+R10
+32
+R27
+R111
+R112
+R113
+R15
+R16
+!s100 jK0zfbU]oG65lMWLaUFMb3
+!i10b 1
+!i111 0
+Esyncram_2p_tech
+R17
+R1
+R18
+R19
+R4
+R2
+R5
+R6
+R7
+Z114 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/syncram_2p_tech.vhd
+Z115 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/syncram_2p_tech.vhd
+l0
+L16
+V8I]`Qhz^=_zBANb3za9Zf3
+R10
+32
+R27
+Z116 !s108 1467234275.133000
+Z117 !s90 -reportprogress|300|-work|techmap|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/syncram_2p_tech.vhd|
+Z118 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/syncram_2p_tech.vhd|
+R15
+R16
+!s100 fKSKMhG:f:MDeno@N@?>V0
+!i10b 1
+!i111 0
+Artl
+R1
+R18
+R19
+R4
+R2
+R5
+R6
+DEx4 work 15 syncram_2p_tech 0 22 8I]`Qhz^=_zBANb3za9Zf3
+l58
+L39
+VlER>?MBQTc:oH<0C2MXbD3
+R10
+32
+R27
+R116
+R117
+R118
+R15
+R16
+!s100 YkPiM<SJ8@bd0`j=ilkR<0
+!i10b 1
+!i111 0
+Esyspll_inferred
+R17
+R4
+R2
+R5
+R6
+R7
+Z119 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/pll/SysPLL_inferred.vhd
+Z120 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/pll/SysPLL_inferred.vhd
+l0
+L21
+V<?e;H]j5IW?OBVM3]2lK:0
+R10
+32
+Z121 !s110 1467147316
+Z122 !s108 1467147316.626000
+Z123 !s90 -reportprogress|300|-work|techmap|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/pll/SysPLL_inferred.vhd|
+Z124 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/pll/SysPLL_inferred.vhd|
+R15
+R16
+!s100 G<4K9T;7?=U:MLmJg=onI1
+!i10b 1
+!i111 0
+Artl
+R4
+R2
+R5
+R6
+DEx4 work 15 syspll_inferred 0 22 <?e;H]j5IW?OBVM3]2lK:0
+l38
+L35
+VgX>8YYOeJcmcdE>d?LA:`1
+R10
+32
+R121
+R122
+R123
+R124
+R15
+R16
+!s100 1XOa^iI1od3AiPDZe8h`T3
+!i10b 1
+!i111 0
+Esyspll_tech
+Z125 w1466969260
+Z126 DPx7 techmap 9 types_buf 0 22 TM=BkUj7`C0QCI7Mge?KW0
+Z127 DPx7 techmap 9 types_pll 0 22 ZOiVK>>DhQ<36PEW=DD;F0
+R19
+R4
+Z128 DPx4 ieee 15 std_logic_arith 0 22 I`lKR?Ob>E^B_e2VdVLiQ0
+Z129 DPx4 ieee 18 std_logic_unsigned 0 22 @_jbHPR7i^Jh?`2fDCO`m3
+R5
+R6
+R7
+Z130 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/pll/SysPLL_tech.vhd
+Z131 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/pll/SysPLL_tech.vhd
+l0
+L25
+V;B`6B9eRUaI_CF:z5b64<2
+R10
+32
+R27
+Z132 !s108 1467234275.352000
+Z133 !s90 -reportprogress|300|-work|techmap|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/pll/SysPLL_tech.vhd|
+Z134 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/pll/SysPLL_tech.vhd|
+R15
+R16
+!s100 a]9=EIR?m1TE53^@R>CTU3
+!i10b 1
+!i111 0
+Artl
+R126
+R127
+R19
+R4
+R128
+R129
+R5
+R6
+DEx4 work 11 syspll_tech 0 22 ;B`6B9eRUaI_CF:z5b64<2
+l71
+L65
+V3B;cKbkBWAL6Q1eNLKIA>1
+R10
+32
+R27
+R132
+R133
+R134
+R15
+R16
+!s100 lD>3hC9;G>IdGQ_Rn8B3<0
+!i10b 1
+!i111 0
+Esyspll_v6
+Z135 w1466969404
+Z136 DPx6 unisim 11 vcomponents 0 22 MbEjViE6CIzf7EOd1SbG32
+R4
+R128
+R129
+R5
+R6
+R7
+Z137 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/pll/SysPLL_v6.vhd
+Z138 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/pll/SysPLL_v6.vhd
+l0
+L78
+Vo01@8M4f2NJ:R60RMiz[g1
+R10
+32
+R27
+Z139 !s108 1467234275.289000
+Z140 !s90 -reportprogress|300|-work|techmap|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/pll/SysPLL_v6.vhd|
+Z141 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/pll/SysPLL_v6.vhd|
+R15
+R16
+!s100 b8M6OIIE_;nmVSP9b>h8]0
+!i10b 1
+!i111 0
+Axilinx
+R136
+R4
+R128
+R129
+R5
+R6
+DEx4 work 9 syspll_v6 0 22 o01@8M4f2NJ:R60RMiz[g1
+l123
+L95
+V[YbSHNB@d?C@3Gz]OBM522
+R10
+32
+R27
+R139
+R140
+R141
+R15
+R16
+!s100 ZiRd=nOXJL=Cm1cGKPIFl0
+!i10b 1
+!i111 0
+Ptypes_buf
+R19
+R4
+R5
+R6
+R17
+R7
+8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/bufg/types_buf.vhd
+FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/bufg/types_buf.vhd
+l0
+L17
+VTM=BkUj7`C0QCI7Mge?KW0
+R10
+32
+R15
+R16
+Z142 !s110 1467234272
+!s100 eXmPHPiFmPSg6Qj?fzf`o2
+!i10b 1
+!s108 1467234272.004000
+!s90 -reportprogress|300|-work|techmap|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/bufg/types_buf.vhd|
+!s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/bufg/types_buf.vhd|
+!i111 0
+Ptypes_mem
+R1
+R4
+R2
+R5
+R6
+R17
+R7
+8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/types_mem.vhd
+FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/types_mem.vhd
+l0
+L19
+V5RM6[`b5O4U4PM^BE_12b2
+R10
+32
+R142
+R15
+R16
+!s100 gE9YZVYh;@YAgMK@]<Q9z2
+!i10b 1
+!s108 1467234272.111000
+!s90 -reportprogress|300|-work|techmap|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/types_mem.vhd|
+!s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/mem/types_mem.vhd|
+!i111 0
+Ptypes_pll
+R19
+R4
+R5
+R6
+w1466969166
+R7
+8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/pll/types_pll.vhd
+FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/pll/types_pll.vhd
+l0
+L17
+VZOiVK>>DhQ<36PEW=DD;F0
+R10
+32
+R142
+R15
+R16
+!s100 _zbffn<mABOz;`ghiN9JJ1
+!i10b 1
+!s108 1467234272.056000
+!s90 -reportprogress|300|-work|techmap|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/pll/types_pll.vhd|
+!s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/techmap/pll/types_pll.vhd|
+!i111 0

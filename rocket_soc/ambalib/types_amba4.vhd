@@ -55,8 +55,10 @@ constant CFG_NASTI_SLAVE_ETHMAC   : integer := CFG_NASTI_SLAVE_FSE_GPS+1;
 constant CFG_NASTI_SLAVE_DSU      : integer := CFG_NASTI_SLAVE_ETHMAC+1;
 --! Configuration index of the Debug Support Unit module.
 constant CFG_NASTI_SLAVE_GPTIMERS : integer := CFG_NASTI_SLAVE_DSU+1;
+--! Configuration index of DDR interface.
+constant CFG_NASTI_SLAVE_DDR      : integer := CFG_NASTI_SLAVE_GPTIMERS+1;
 --! Configuration index of the Plug-n-Play module.
-constant CFG_NASTI_SLAVE_PNP      : integer := CFG_NASTI_SLAVE_GPTIMERS+1;
+constant CFG_NASTI_SLAVE_PNP      : integer := CFG_NASTI_SLAVE_DDR+1;
 --! Total number of the slaves devices.
 constant CFG_NASTI_SLAVES_TOTAL  : integer := CFG_NASTI_SLAVE_PNP+1;  
 --! @}
@@ -166,6 +168,7 @@ constant NASTI_BURST_WRAP    : std_logic_vector(1 downto 0) := "10";
 
 --! GNSS Sensor Ltd. vendor identificator.
 constant VENDOR_GNSSSENSOR        : std_logic_vector(15 downto 0) := X"00F1"; 
+constant VENDOR_XILINX            : std_logic_vector(15 downto 0) := X"0101"; 
 --! @}
 
 --! @name Master Device IDs definition:
@@ -220,6 +223,8 @@ constant GNSSSENSOR_ETHMAC        : std_logic_vector(15 downto 0) := X"007f";
 constant GNSSSENSOR_DSU           : std_logic_vector(15 downto 0) := X"0080";
 --! GP Timers device id.
 constant GNSSSENSOR_GPTIMERS      : std_logic_vector(15 downto 0) := X"0081";
+-- DDR3 (MIG) controller
+constant XILINX_DDR               : std_logic_vector(15 downto 0) := X"0082";
 --! @}
 
 --! @name Decoder of the transaction size.
