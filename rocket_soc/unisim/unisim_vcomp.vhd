@@ -25,6 +25,35 @@ component BUFG
   );
 end component;
 
+----- component IBUFG -----
+component IBUFG
+  generic (
+     CAPACITANCE : string := "DONT_CARE";
+     IBUF_DELAY_VALUE : string := "0";
+     IBUF_LOW_PWR : boolean := TRUE;
+     IOSTANDARD : string := "DEFAULT"
+  );
+  port (
+     O : out std_ulogic;
+     I : in std_ulogic
+  );
+end component;
+
+----- component IBUF -----
+component IBUF
+  generic (
+     CAPACITANCE : string := "DONT_CARE";
+     IBUF_DELAY_VALUE : string := "0";
+     IBUF_LOW_PWR : boolean := TRUE;
+     IFD_DELAY_VALUE : string := "AUTO";
+     IOSTANDARD : string := "DEFAULT"
+  );
+  port (
+     O : out std_ulogic;
+     I : in std_ulogic
+  );
+end component;
+
 ----- component OBUF -----
 component OBUF
   generic (

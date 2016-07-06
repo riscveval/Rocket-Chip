@@ -34,7 +34,9 @@ library rocketlib;
 use rocketlib.types_rocket.all;
 --! Ethernet related declarations.
 use rocketlib.grethpkg.all;
-use rocketlib.types_ddr.all;
+
+library ddrlib;
+use ddrlib.types_ddr.all;
 
 --! GNSS Sensor Ltd proprietary library
 library gnsslib;

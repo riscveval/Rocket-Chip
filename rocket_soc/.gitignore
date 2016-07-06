@@ -39,6 +39,8 @@ prj/modelsim/techmap/*
 !prj/modelsim/techmap/_info
 prj/modelsim/unisim/*
 !prj/modelsim/unisim/_info
+prj/modelsim/ddrlib/*
+!prj/modelsim/ddrlib/_info
 prj/modelsim/work/*
 !prj/modelsim/work/_info
 
