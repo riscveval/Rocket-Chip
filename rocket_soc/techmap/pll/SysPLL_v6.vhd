@@ -57,9 +57,9 @@
 ------------------------------------------------------------------------------
 -- CLK_OUT1____60.000______0.000______50.0______117.146_____82.655
 -- CLK_OUT2____15.000______0.000______50.0______154.858_____82.655
--- CLK_OUT3___200.000______0.000______50.0_______92.799_____82.655
--- CLK_OUT4___120.000______0.000______50.0______102.370_____82.655
--- CLK_OUT5___120.000______0.000______50.0______102.370_____82.655
+-- CLK_OUT3___400.000______0.000______50.0_______81.254_____82.655
+-- CLK_OUT4___200.000______0.000______50.0_______92.799_____82.655
+-- CLK_OUT5___400.000______0.000______50.0_______81.254_____82.655
 --
 ------------------------------------------------------------------------------
 -- "Input Clock   Freq (MHz)    Input Jitter (UI)"
@@ -78,8 +78,7 @@ use unisim.vcomponents.all;
 entity SysPLL_v6 is
 port
  (-- Clock in ports
-  CLK_IN1_P         : in     std_logic;
-  CLK_IN1_N         : in     std_logic;
+  CLK_IN            : in     std_logic;
   -- Clock out ports
   CLK_OUT1          : out    std_logic;
   CLK_OUT2          : out    std_logic;
@@ -88,7 +87,11 @@ port
   CLK_OUT5          : out    std_logic;
   -- Status and control signals
   RESET             : in     std_logic;
-  LOCKED            : out    std_logic
+  LOCKED            : out    std_logic;
+  -- Phase Shift Interface
+  i_PSEN     : in std_logic;           -- For enabling fine-phase shift
+  i_PSINCDEC : in std_logic;           -- = 1 increment phase shift, = 0
+  o_PSDONE   : out std_logic
  );
 end SysPLL_v6;
 
@@ -120,16 +123,9 @@ architecture xilinx of SysPLL_v6 is
   -- Unused status signals
   signal clkfbstopped_unused : std_logic;
   signal clkinstopped_unused : std_logic;
+  signal clk_pll_bufg : std_logic;
 begin
 
-
-  -- Input buffering
-  --------------------------------------
-  clkin1_buf : IBUFGDS
-  port map
-   (O  => clkin1,
-    I  => CLK_IN1_P,
-    IB => CLK_IN1_N);
 
 
   -- Clocking primitive
@@ -156,15 +152,15 @@ begin
     CLKOUT1_PHASE        => 0.000,
     CLKOUT1_DUTY_CYCLE   => 0.500,
     CLKOUT1_USE_FINE_PS  => FALSE,
-    CLKOUT2_DIVIDE       => 6,
+    CLKOUT2_DIVIDE       => 3,
     CLKOUT2_PHASE        => 0.000,
     CLKOUT2_DUTY_CYCLE   => 0.500,
     CLKOUT2_USE_FINE_PS  => FALSE,
-    CLKOUT3_DIVIDE       => 10,
+    CLKOUT3_DIVIDE       => 6,
     CLKOUT3_PHASE        => 0.000,
     CLKOUT3_DUTY_CYCLE   => 0.500,
     CLKOUT3_USE_FINE_PS  => FALSE,
-    CLKOUT4_DIVIDE       => 10,
+    CLKOUT4_DIVIDE       => 3,
     CLKOUT4_PHASE        => 0.000,
     CLKOUT4_DUTY_CYCLE   => 0.500,
     CLKOUT4_USE_FINE_PS  => FALSE,
@@ -187,7 +183,7 @@ begin
     CLKOUT6             => clkout6_unused,
     -- Input clock control
     CLKFBIN             => clkfbout_buf,
-    CLKIN1              => clkin1,
+    CLKIN1              => CLK_IN,
     CLKIN2              => '0',
     -- Tied to always select the primary input clock
     CLKINSEL            => '1',
@@ -200,10 +196,10 @@ begin
     DRDY                => drdy_unused,
     DWE                 => '0',
     -- Ports for dynamic phase shift
-    PSCLK               => '0',
-    PSEN                => '0',
-    PSINCDEC            => '0',
-    PSDONE              => psdone_unused,
+    PSCLK               => clk_pll_bufg, -- clk_bufg <= clk_pll (200 MHz)
+    PSEN                => i_PSEN,
+    PSINCDEC            => i_PSINCDEC,
+    PSDONE              => o_PSDONE,
     -- Other control and status signals
     LOCKED              => LOCKED,
     CLKINSTOPPED        => clkinstopped_unused,
@@ -224,8 +220,12 @@ begin
    (O   => CLK_OUT1,
     I   => clkout0);
 
-  CLK_OUT2 <= clkout1;
 
+
+  clkout2_buf : BUFG
+  port map
+   (O   => CLK_OUT2,
+    I   => clkout1);
 
   clkout3_buf : BUFG
   port map
@@ -234,8 +234,9 @@ begin
 
   clkout4_buf : BUFG
   port map
-   (O   => CLK_OUT4,
+   (O   => clk_pll_bufg,--CLK_OUT4,
     I   => clkout3);
+  CLK_OUT4 <= clk_pll_bufg;
 
   CLK_OUT5 <= clkout4;
 

@@ -534,7 +534,8 @@ component nasti_pnp is
     slvcfg : in  nasti_slave_cfg_vector;
     cfg    : out  nasti_slave_config_type;
     i      : in  nasti_slave_in_type;
-    o      : out nasti_slave_out_type
+    o      : out nasti_slave_out_type;
+    i_ddr_init_done : in std_logic
   );
 end component; 
 

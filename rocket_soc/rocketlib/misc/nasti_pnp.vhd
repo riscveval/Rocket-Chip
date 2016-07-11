@@ -33,7 +33,8 @@ entity nasti_pnp is
     slvcfg : in  nasti_slave_cfg_vector;
     cfg    : out  nasti_slave_config_type;
     i      : in  nasti_slave_in_type;
-    o      : out nasti_slave_out_type
+    o      : out nasti_slave_out_type;
+    i_ddr_init_done : in std_logic
   );
 end; 
  
@@ -122,7 +123,7 @@ begin
               & conv_std_logic_vector(CFG_NASTI_SLAVES_TOTAL,8)
               & conv_std_logic_vector(tech,8);
        elsif raddr_reg(n) = 3 then 
-          -- reserved
+          rtmp(0) := i_ddr_init_done;
        elsif raddr_reg(n) = 4 then 
           rtmp := r.bank0.idt(31 downto 0);
        elsif raddr_reg(n) = 5 then 

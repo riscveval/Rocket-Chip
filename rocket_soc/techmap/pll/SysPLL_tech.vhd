@@ -42,10 +42,8 @@ entity SysPLL_tech is
     --!         <td>Disable external ADC/enable internal ADC simulation.</td></tr>
     --!    </table>
     i_int_clkrf       : in     std_logic;
-    --! Differential clock input positive
-    i_clkp            : in     std_logic;
-    --! Differential clock input negative
-    i_clkn            : in     std_logic;
+    --! 
+    i_clk_tcxo        : in     std_logic;
     --! External ADC clock
     i_clk_adc         : in     std_logic;
     --! System Bus clock 100MHz/40MHz (Virtex6/Spartan6)
@@ -53,11 +51,15 @@ entity SysPLL_tech is
     --! ADC simulation clock = 26MHz (default).
     o_clk_adc         : out    std_logic;
     -- DDR3 needs
-    o_clk200          : out    std_logic;  --200 MHz
-    o_clk2x           : out    std_logic;  --120 MHz
-    o_clk2x_unbuf     : out    std_logic;  --120 MHz
+    o_clk400_buf      : out    std_logic;  --400 MHz
+    o_clk200_buf      : out    std_logic;  --200 MHz
+    o_clk400_unbuf    : out    std_logic;  --400 MHz
     --! PLL locked status.
-    o_locked          : out    std_logic
+    o_locked          : out    std_logic;
+   -- Phase Shift Interface
+    i_PSEN     : in std_logic;           -- For enabling fine-phase shift
+    i_PSINCDEC : in std_logic;           -- = 1 increment phase shift, = 0
+    o_PSDONE   : out std_logic
   );
 end SysPLL_tech;
 
@@ -68,24 +70,69 @@ architecture rtl of SysPLL_tech is
   --! Clock bus Fsys / 4 (unbuffered).
   signal adc_clk_unbuf : std_logic;
 
+  component SysPLL_inferred is
+  port (
+    CLK_IN      : in     std_logic;
+    CLK_OUT1    : out    std_logic;
+    CLK_OUT2    : out    std_logic;
+    RESET       : in     std_logic;
+    LOCKED      : out    std_logic );
+  end component;
+
+  component SysPLL_v6 is 
+  port (
+    CLK_IN            : in     std_logic;
+    -- Clock out ports
+    CLK_OUT1          : out    std_logic;
+    CLK_OUT2          : out    std_logic;
+    CLK_OUT3          : out    std_logic;
+    CLK_OUT4          : out    std_logic;
+    CLK_OUT5          : out    std_logic;
+    -- Status and control signals
+    RESET             : in     std_logic;
+    LOCKED            : out    std_logic;
+    -- Phase Shift Interface
+    i_PSEN     : in std_logic;           -- For enabling fine-phase shift
+    i_PSINCDEC : in std_logic;           -- = 1 increment phase shift, = 0
+    o_PSDONE   : out std_logic
+  );
+  end component;
+
+  component SysPLL_k7 is
+  port (
+    CLK_IN      : in     std_logic;
+    CLK_OUT1    : out    std_logic;
+    CLK_OUT2    : out    std_logic;
+    RESET     : in     std_logic;
+    LOCKED    : out    std_logic );
+  end component;
+
+  component SysPLL_micron180 is
+  port (
+    CLK_IN      : in     std_logic;
+    CLK_OUT1    : out    std_logic;
+    CLK_OUT2    : out    std_logic;
+    RESET       : in     std_logic;
+    LOCKED      : out    std_logic );
+  end component;
 begin
 
    xv6 : if tech = virtex6 generate
-     pll0 : SysPLL_v6 port map (i_clkp, i_clkn, pll_clk_bus, adc_clk_unbuf, 
-                               o_clk200, o_clk2x, o_clk2x_unbuf, 
-                               i_reset, o_locked);
+     pll0 : SysPLL_v6 port map (i_clk_tcxo, pll_clk_bus, adc_clk_unbuf, 
+                               o_clk400_buf, o_clk200_buf, o_clk400_unbuf, 
+                               i_reset, o_locked, i_PSEN, i_PSINCDEC, o_PSDONE);
    end generate;
 
    xv7 : if tech = kintex7 generate
-     pll0 : SysPLL_k7 port map (i_clkp, i_clkn, pll_clk_bus, adc_clk_unbuf, i_reset, o_locked);
+     pll0 : SysPLL_k7 port map (i_clk_tcxo, pll_clk_bus, adc_clk_unbuf, i_reset, o_locked);
    end generate;
    
    inf : if tech = inferred generate
-     pll0 : SysPLL_inferred port map (i_clkp, i_clkn, pll_clk_bus, adc_clk_unbuf, i_reset, o_locked);
+     pll0 : SysPLL_inferred port map (i_clk_tcxo, pll_clk_bus, adc_clk_unbuf, i_reset, o_locked);
    end generate;
    
    m180 : if tech = micron180 generate
-     pll0 : SysPLL_micron180 port map (i_clkp, i_clkn, pll_clk_bus, adc_clk_unbuf, i_reset, o_locked);
+     pll0 : SysPLL_micron180 port map (i_clk_tcxo, pll_clk_bus, adc_clk_unbuf, i_reset, o_locked);
    end generate;
 
 

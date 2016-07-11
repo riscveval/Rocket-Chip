@@ -17,6 +17,8 @@ library commonlib;
 use commonlib.types_util.all;
 library rocketlib;
 --use rocketlib.types_rocket.all;
+library ddrlib;
+use ddrlib.types_ddr.all;
 
 entity rocket_soc_tb is
   constant INCR_TIME : time := 3571 ps;--100 ns;--3571 ps;
@@ -75,6 +77,23 @@ architecture behavior of rocket_soc_tb is
   signal uart_wr_str : std_logic;
   signal uart_instr : string(1 to 256);
   signal uart_busy : std_logic;
+  
+  signal o_ddr3_reset_n : std_logic;
+  signal o_ddr3_phy_init_done : std_logic;
+  signal io_ddr3_dq   : std_logic_vector(CFG_DDR_DQ_WIDTH-1 downto 0);
+  signal o_ddr3_addr  : std_logic_vector(CFG_DDR_ROW_WIDTH-1 downto 0);
+  signal o_ddr3_ba    : std_logic_vector(CFG_DDR_BANK_WIDTH-1 downto 0);
+  signal o_ddr3_ras_n : std_logic;
+  signal o_ddr3_cas_n : std_logic;
+  signal o_ddr3_we_n  : std_logic;
+  signal o_ddr3_cs_n    : std_logic_vector((CFG_DDR_CS_WIDTH*CFG_DDR_nCS_PER_RANK)-1 downto 0);
+  signal o_ddr3_odt     : std_logic_vector((CFG_DDR_CS_WIDTH*CFG_DDR_nCS_PER_RANK)-1 downto 0);
+  signal o_ddr3_cke     : std_logic_vector(CFG_DDR_CKE_WIDTH-1 downto 0);
+  signal o_ddr3_dm      : std_logic_vector(CFG_DDR_DM_WIDTH-1 downto 0);
+  signal io_ddr3_dqs_p  : std_logic_vector(CFG_DDR_DQS_WIDTH-1 downto 0);
+  signal io_ddr3_dqs_n  : std_logic_vector(CFG_DDR_DQS_WIDTH-1 downto 0);
+  signal o_ddr3_ck_p    : std_logic_vector(CFG_DDR_CK_WIDTH-1 downto 0);
+  signal o_ddr3_ck_n    : std_logic_vector(CFG_DDR_CK_WIDTH-1 downto 0);
 
   signal adc_cnt : integer := 0;
   signal clk_cur: std_logic := '1';
@@ -83,6 +102,11 @@ architecture behavior of rocket_soc_tb is
   signal iErrCnt : integer := 0;
   signal iErrCheckedCnt : integer := 0;
   signal iEdclCnt : integer := 0;
+  signal clk_ref : std_logic := '1';
+  
+  constant REFCLK_FREQ           : real := 200.0;
+  constant REFCLK_HALF_PERIOD : time := (1000000.0/(2.0*REFCLK_FREQ)) * 1 ps;
+
   
 component rocket_soc is port 
 ( 
@@ -129,7 +153,24 @@ component rocket_soc is port
   o_etx_er    : out   std_ulogic;
   o_emdc      : out   std_ulogic;
   io_emdio    : inout std_logic;
-  o_erstn     : out   std_ulogic
+  o_erstn     : out   std_ulogic;
+  --! @name DDR3 signals
+  o_ddr3_reset_n  : out std_logic;
+  o_ddr3_phy_init_done : out std_logic;
+  io_ddr3_dq   : inout std_logic_vector(CFG_DDR_DQ_WIDTH-1 downto 0);
+  o_ddr3_addr  : out std_logic_vector(CFG_DDR_ROW_WIDTH-1 downto 0);
+  o_ddr3_ba    : out std_logic_vector(CFG_DDR_BANK_WIDTH-1 downto 0);
+  o_ddr3_ras_n : out std_logic;
+  o_ddr3_cas_n : out std_logic;
+  o_ddr3_we_n  : out std_logic;
+  o_ddr3_cs_n    : out std_logic_vector((CFG_DDR_CS_WIDTH*CFG_DDR_nCS_PER_RANK)-1 downto 0);
+  o_ddr3_odt     : out std_logic_vector((CFG_DDR_CS_WIDTH*CFG_DDR_nCS_PER_RANK)-1 downto 0);
+  o_ddr3_cke     : out std_logic_vector(CFG_DDR_CKE_WIDTH-1 downto 0);
+  o_ddr3_dm      : out std_logic_vector(CFG_DDR_DM_WIDTH-1 downto 0);
+  io_ddr3_dqs_p  : inout std_logic_vector(CFG_DDR_DQS_WIDTH-1 downto 0);
+  io_ddr3_dqs_n  : inout std_logic_vector(CFG_DDR_DQS_WIDTH-1 downto 0);
+  o_ddr3_ck_p    : out std_logic_vector(CFG_DDR_CK_WIDTH-1 downto 0);
+  o_ddr3_ck_n    : out std_logic_vector(CFG_DDR_CK_WIDTH-1 downto 0)
 );
 end component;
 
@@ -150,79 +191,106 @@ component uart_sim is
   );
 end component;
 
+component ddr_sim is port (
+   i_rstn          : in std_logic;
+   i_phy_init_done : in std_logic;
+
+   ddr3_dq_fpga : inout std_logic_vector(CFG_DDR_DQ_WIDTH-1 downto 0);
+   ddr3_addr_fpga : in std_logic_vector(CFG_DDR_ROW_WIDTH-1 downto 0);
+   ddr3_ba_fpga : in std_logic_vector(CFG_DDR_BANK_WIDTH-1 downto 0);
+   ddr3_ras_n_fpga : in std_logic;
+   ddr3_cas_n_fpga : in std_logic;
+   ddr3_we_n_fpga : in std_logic;
+   ddr3_cs_n_fpga : in std_logic_vector((CFG_DDR_CS_WIDTH*CFG_DDR_nCS_PER_RANK)-1 downto 0);
+   ddr3_odt_fpga : in std_logic_vector((CFG_DDR_CS_WIDTH*CFG_DDR_nCS_PER_RANK)-1 downto 0);
+   ddr3_cke_fpga : in std_logic_vector(CFG_DDR_CKE_WIDTH-1 downto 0);
+   ddr3_dm_fpga : in std_logic_vector(CFG_DDR_DM_WIDTH-1 downto 0);
+   ddr3_dqs_p_fpga : inout std_logic_vector(CFG_DDR_DQS_WIDTH-1 downto 0);
+   ddr3_dqs_n_fpga : inout std_logic_vector(CFG_DDR_DQS_WIDTH-1 downto 0);
+   ddr3_ck_p_fpga : in std_logic_vector(CFG_DDR_CK_WIDTH-1 downto 0);
+   ddr3_ck_n_fpga : in std_logic_vector(CFG_DDR_CK_WIDTH-1 downto 0)
+  );
+end component;
+
 
 begin
 
 
   -- Process of reading
-  procReadingFile : process
-    variable clk_next: std_logic;
-  begin
+--  procReadingFile : process
+--    variable clk_next: std_logic;
+--  begin
 
-    wait for INCR_TIME;
-    if (adc_cnt + 26000000) >= 70000000 then
-      adc_cnt <= (adc_cnt + 26000000) - 70000000;
-      i_clk_adc <= not i_clk_adc;
-    else
-      adc_cnt <= (adc_cnt + 26000000);
-    end if;
+--    wait for INCR_TIME;
+--    if (adc_cnt + 26000000) >= 70000000 then
+--      adc_cnt <= (adc_cnt + 26000000) - 70000000;
+--      i_clk_adc <= not i_clk_adc;
+--    else
+--      adc_cnt <= (adc_cnt + 26000000);
+--    end if;
 
-    while true loop
-      clk_next := not clk_cur;
-      if (clk_next = '1' and clk_cur = '0') then
-        check_clk_bus <= '1';
-      elsif (clk_next = '0' and clk_cur = '1') then
-        if iClkCnt >= EDCL_START_CLK and iClkCnt < (EDCL_START_CLK + EDCL_WRITE_LEN) then
-           i_rxd <= EDCL_WRITE(4*(EDCL_WRITE_LEN - (iClkCnt-EDCL_START_CLK))-1 downto 4*(EDCL_WRITE_LEN - (iClkCnt-EDCL_START_CLK))-4);
-           --i_rxdv <= '1';
-        elsif iClkCnt >= EDCL_START_CLK2 and iClkCnt < (EDCL_START_CLK2 + EDCL_WR_MRESET_LEN) then
-           i_rxd <= EDCL_WR_MRESET1(4*(EDCL_WR_MRESET_LEN - (iClkCnt-EDCL_START_CLK2))-1 downto 4*(EDCL_WR_MRESET_LEN - (iClkCnt-EDCL_START_CLK2))-4);
-           i_rxdv <= '1'; -- RESET CPU
-        elsif iClkCnt >= EDCL_START_CLK3 and iClkCnt < (EDCL_START_CLK3 + EDCL_WR_MRESET_LEN) then
-           i_rxd <= EDCL_WR_MRESET0(4*(EDCL_WR_MRESET_LEN - (iClkCnt-EDCL_START_CLK3))-1 downto 4*(EDCL_WR_MRESET_LEN - (iClkCnt-EDCL_START_CLK3))-4);
-           i_rxdv <= '1'; -- RESET CPU
-        else
-           i_rxd <= "0000";
-           i_rxdv <= '0';
-        end if;
-      end if;
+--    while true loop
+--      clk_next := not clk_cur;
+--      if (clk_next = '1' and clk_cur = '0') then
+--        check_clk_bus <= '1';
+--      elsif (clk_next = '0' and clk_cur = '1') then
+--        if iClkCnt >= EDCL_START_CLK and iClkCnt < (EDCL_START_CLK + EDCL_WRITE_LEN) then
+--           i_rxd <= EDCL_WRITE(4*(EDCL_WRITE_LEN - (iClkCnt-EDCL_START_CLK))-1 downto 4*(EDCL_WRITE_LEN - (iClkCnt-EDCL_START_CLK))-4);
+--           --i_rxdv <= '1';
+--        elsif iClkCnt >= EDCL_START_CLK2 and iClkCnt < (EDCL_START_CLK2 + EDCL_WR_MRESET_LEN) then
+--           i_rxd <= EDCL_WR_MRESET1(4*(EDCL_WR_MRESET_LEN - (iClkCnt-EDCL_START_CLK2))-1 downto 4*(EDCL_WR_MRESET_LEN - (iClkCnt-EDCL_START_CLK2))-4);
+--           i_rxdv <= '1'; -- RESET CPU
+--        elsif iClkCnt >= EDCL_START_CLK3 and iClkCnt < (EDCL_START_CLK3 + EDCL_WR_MRESET_LEN) then
+--           i_rxd <= EDCL_WR_MRESET0(4*(EDCL_WR_MRESET_LEN - (iClkCnt-EDCL_START_CLK3))-1 downto 4*(EDCL_WR_MRESET_LEN - (iClkCnt-EDCL_START_CLK3))-4);
+--           i_rxdv <= '1'; -- RESET CPU
+--        else
+--           i_rxd <= "0000";
+--           i_rxdv <= '0';
+--        end if;
+--      end if;
 
-      wait for 1 ps;
-      check_clk_bus <= '0';
-      clk_cur <= clk_next;
+--      wait for 1 ps;
+--      check_clk_bus <= '0';
+--      clk_cur <= clk_next;
 
-      wait for INCR_TIME;
-      if clk_cur = '1' then
-        iClkCnt <= iClkCnt + 1;
-      end if;
-      if (adc_cnt + 26000000) >= 70000000 then
-        adc_cnt <= (adc_cnt + 26000000) - 70000000;
-        i_clk_adc <= not i_clk_adc;
-      else
-        adc_cnt <= (adc_cnt + 26000000);
-      end if;
+ --     wait for INCR_TIME;
+ --     if clk_cur = '1' then
+ --       iClkCnt <= iClkCnt + 1;
+ --     end if;
+ --     if (adc_cnt + 26000000) >= 70000000 then
+ --       adc_cnt <= (adc_cnt + 26000000) - 70000000;
+ --       i_clk_adc <= not i_clk_adc;
+ --     else
+ --       adc_cnt <= (adc_cnt + 26000000);
+ --     end if;
 
-    end loop;
-    report "Total clocks checked: " & tost(iErrCheckedCnt) & " Errors: " & tost(iErrCnt);
-    wait for 1 sec;
-  end process procReadingFile;
+--    end loop;
+--    report "Total clocks checked: " & tost(iErrCheckedCnt) & " Errors: " & tost(iErrCnt);
+--    wait for 1 sec;
+--  end process procReadingFile;
 
 
-  i_sclk_p <= clk_cur;
-  i_sclk_n <= not clk_cur;
+  --i_sclk_p <= clk_cur;
+  --i_sclk_n <= not clk_cur;
+  clk_ref <= not clk_ref after (REFCLK_HALF_PERIOD);
+  i_sclk_p <= clk_ref;
+  i_sclk_n <= not clk_ref;
+  
+  i_rst <= '0' after 120000 ps;
 
-  procSignal : process (i_sclk_p, iClkCnt)
 
-  begin
-    if rising_edge(i_sclk_p) then
+--  procSignal : process (i_sclk_p, iClkCnt)
+
+--  begin
+--    if rising_edge(i_sclk_p) then
       
       --! @note to make sync. reset  of the logic that are clocked by
       --!       htif_clk which is clock/512 by default.
-      if iClkCnt = 15 then
-        i_rst <= '0';
-      end if;
-    end if;
-  end process procSignal;
+--      if iClkCnt = 15 then
+--        i_rst <= '0';
+--      end if;
+--    end if;
+--  end process procSignal;
 
   i_dip <= "000";
   i_int_clkrf <= '1';
@@ -258,6 +326,26 @@ begin
     rd  => i_uart1_rd,
     ctsn => i_uart1_ctsn,
     busy => uart_busy
+  );
+
+  simd0 : ddr_sim  port map (
+   i_rstn          => o_ddr3_reset_n,
+   i_phy_init_done => o_ddr3_phy_init_done,
+
+   ddr3_dq_fpga => io_ddr3_dq,
+   ddr3_addr_fpga => o_ddr3_addr,
+   ddr3_ba_fpga  => o_ddr3_ba,
+   ddr3_ras_n_fpga => o_ddr3_ras_n,
+   ddr3_cas_n_fpga => o_ddr3_cas_n,
+   ddr3_we_n_fpga => o_ddr3_we_n,
+   ddr3_cs_n_fpga => o_ddr3_cs_n,
+   ddr3_odt_fpga => o_ddr3_odt,
+   ddr3_cke_fpga => o_ddr3_cke,
+   ddr3_dm_fpga => o_ddr3_dm,
+   ddr3_dqs_p_fpga => io_ddr3_dqs_p,
+   ddr3_dqs_n_fpga => io_ddr3_dqs_n,
+   ddr3_ck_p_fpga => o_ddr3_ck_p,
+   ddr3_ck_n_fpga => o_ddr3_ck_n
   );
 
 
@@ -304,7 +392,24 @@ begin
     o_etx_er    => open,
     o_emdc      => o_emdc,
     io_emdio    => io_emdio,
-    o_erstn     => open
+    o_erstn     => open,
+    -- DDR3
+    o_ddr3_reset_n       => o_ddr3_reset_n,
+    o_ddr3_phy_init_done => o_ddr3_phy_init_done,
+    io_ddr3_dq      => io_ddr3_dq,
+    o_ddr3_addr     => o_ddr3_addr,
+    o_ddr3_ba       => o_ddr3_ba,
+    o_ddr3_ras_n    => o_ddr3_ras_n,
+    o_ddr3_cas_n    => o_ddr3_cas_n,
+    o_ddr3_we_n     => o_ddr3_we_n,
+    o_ddr3_cs_n     => o_ddr3_cs_n,
+    o_ddr3_odt      => o_ddr3_odt,
+    o_ddr3_cke      => o_ddr3_cke,
+    o_ddr3_dm       => o_ddr3_dm,
+    io_ddr3_dqs_p   => io_ddr3_dqs_p,
+    io_ddr3_dqs_n   => io_ddr3_dqs_n,
+    o_ddr3_ck_p     => o_ddr3_ck_p,
+    o_ddr3_ck_n     => o_ddr3_ck_n
  );
 
   procCheck : process (i_rst, check_clk_bus)

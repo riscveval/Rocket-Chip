@@ -9,9 +9,9 @@ use techmap.gencomp.all;
 
 package config_target is
 -- Technology and synthesis options
-  constant CFG_FABTECH : integer := inferred;
+  constant CFG_FABTECH : integer := virtex6;--inferred;
   constant CFG_MEMTECH : integer := inferred;
-  constant CFG_PADTECH : integer := inferred;
+  constant CFG_PADTECH : integer := virtex6;--inferred;
   constant CFG_JTAGTECH : integer := inferred;
 
 end;

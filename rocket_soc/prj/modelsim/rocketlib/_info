@@ -2,7 +2,7 @@ m255
 K4
 z0
 vALU
-Z0 !s110 1467747865
+Z0 !s110 1468164103
 I<W0M9h]_z`efB?_kRGKj>2
 Z1 V`JN@9S9cnhjKRR_L]QIcM3
 Z2 dE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/prj/modelsim
@@ -13,7 +13,7 @@ L0 47664
 Z6 OL;L;10.2c;57
 r1
 31
-Z7 !s108 1467747865.114000
+Z7 !s108 1468164102.879000
 Z8 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/Top.GnssConfigNoFPU.v|
 Z9 !s90 -reportprogress|300|-work|rocketlib|-O0|-novopt|+define+SYNTHESIS|+define+DEBUG_REGISTER|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/Top.GnssConfigNoFPU.v|
 Z10 o-work rocketlib -O0 -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
@@ -25,7 +25,7 @@ n@a@l@u
 !s101 -O0
 !i111 1
 vAMOALU
-Z12 !s110 1467747865
+Z12 !s110 1468164103
 Ifa^8TohV8e[]1lh[HQ3@U1
 R1
 R2
@@ -301,56 +301,56 @@ n@arbiter_9
 !s101 -O0
 !i111 1
 Eaxibridge
-R3
-Z13 DPx7 techmap 7 gencomp 0 22 MEBZF8MjYzhR9GNKbV^NX0
-Z14 DPx9 rocketlib 12 types_rocket 0 22 4Ne5OGbXfXfZO2=EzF@dd2
-Z15 DPx7 ambalib 11 types_amba4 0 22 ?km8mT[XNiI;aaSfeQF6G0
-Z16 DPx4 ieee 11 numeric_std 0 22 WES[o8HS0jHV[MIXQk2Ha1
-Z17 DPx9 commonlib 12 types_common 0 22 2nT<HT6l6WTkV@j07g9R[2
-Z18 DPx3 std 6 textio 0 22 Y8d?=bLj9m4jiPLbo;>GT0
-Z19 DPx4 ieee 14 std_logic_1164 0 22 1bm?@Gd;P>[>_lN8Do9gP3
+Z13 w1468162007
+Z14 DPx7 techmap 7 gencomp 0 22 MEBZF8MjYzhR9GNKbV^NX0
+Z15 DPx9 rocketlib 12 types_rocket 0 22 ;PF0CCBIP=1kbcc8]N<DT0
+Z16 DPx7 ambalib 11 types_amba4 0 22 ?km8mT[XNiI;aaSfeQF6G0
+Z17 DPx4 ieee 11 numeric_std 0 22 WES[o8HS0jHV[MIXQk2Ha1
+Z18 DPx9 commonlib 12 types_common 0 22 2nT<HT6l6WTkV@j07g9R[2
+Z19 DPx3 std 6 textio 0 22 Y8d?=bLj9m4jiPLbo;>GT0
+Z20 DPx4 ieee 14 std_logic_1164 0 22 1bm?@Gd;P>[>_lN8Do9gP3
 R2
-Z20 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/tilelink/axibridge.vhd
-Z21 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/tilelink/axibridge.vhd
+Z21 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/tilelink/axibridge.vhd
+Z22 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/tilelink/axibridge.vhd
 l0
 L19
 V19QS`R@IIW@6YokVjoFRK3
-Z22 OL;C;10.2c;57
+Z23 OL;C;10.2c;57
 32
-Z23 !s110 1467747861
-Z24 !s108 1467747861.655000
-Z25 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/tilelink/axibridge.vhd|
-Z26 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/tilelink/axibridge.vhd|
-Z27 o-work rocketlib -2002 -explicit
-Z28 tExplicit 1
+Z24 !s110 1468164099
+Z25 !s108 1468164099.603000
+Z26 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/tilelink/axibridge.vhd|
+Z27 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/tilelink/axibridge.vhd|
+Z28 o-work rocketlib -2002 -explicit
+Z29 tExplicit 1
 !s100 _f4I`3U;^^iM[AlaKzNEg0
 !i10b 1
 !i111 0
 Aarch_axibridge
-R13
 R14
 R15
 R16
 R17
 R18
 R19
+R20
 DEx4 work 9 axibridge 0 22 19QS`R@IIW@6YokVjoFRK3
+32
+R24
 l84
 L36
 VbGYgWe^[7Y76ah[I`[Z6M3
-R22
-32
 R23
-R24
 R25
 R26
 R27
 R28
+R29
 !s100 eCaUV?S3^XC;d>C@OPN[c2
 !i10b 1
 !i111 0
 vBasicCrossbar_0
-R12
+Z30 !s110 1468164102
 Id`PT6YioWgPaIim^Lnb@`3
 R1
 R2
@@ -373,7 +373,7 @@ n@basic@crossbar_0
 !s101 -O0
 !i111 1
 vBasicCrossbar_1
-R12
+R30
 II1kF8biSgoID2DaHDeak90
 R1
 R2
@@ -396,7 +396,7 @@ n@basic@crossbar_1
 !s101 -O0
 !i111 1
 vBasicCrossbar_2
-R12
+R30
 IV:N>oEhE69R^eg<eAHHfB3
 R1
 R2
@@ -718,7 +718,7 @@ n@client@tile@link@i@o@unwrapper
 !s101 -O0
 !i111 1
 vClientTileLinkIOWrapper_0
-R12
+R30
 I0Sg9ci>>abfe^<=7[U33=3
 R1
 R2
@@ -764,7 +764,7 @@ n@client@tile@link@i@o@wrapper_1
 !s101 -O0
 !i111 1
 vClientTileLinkNetworkPort_0
-R12
+R30
 I@D6hjWdf7JjD112dBR[8_2
 R1
 R2
@@ -787,7 +787,7 @@ n@client@tile@link@network@port_0
 !s101 -O0
 !i111 1
 vClientTileLinkNetworkPort_1
-R12
+R30
 I_7R77zTDgTjBlTzF?YQ=]1
 R1
 R2
@@ -810,7 +810,7 @@ n@client@tile@link@network@port_1
 !s101 -O0
 !i111 1
 vClientTileLinkNetworkPort_2
-R12
+R30
 I9>1;XQ9R1I93G]gCY27?d2
 R1
 R2
@@ -902,7 +902,7 @@ n@data@array
 !s101 -O0
 !i111 1
 vDataArray_T9
-Z29 !s110 1467747866
+R12
 IISZ>oCOBz`1[6`gmo3PLh2
 R1
 R2
@@ -925,7 +925,7 @@ n@data@array_@t9
 !s101 -O0
 !i111 1
 vdbg_reg
-R12
+R30
 I:PLMmjWY=BND`4BmAiW?R2
 R1
 R2
@@ -948,92 +948,92 @@ R11
 !i111 1
 Eeth_axi_mst
 R3
-Z30 DPx9 rocketlib 8 grethpkg 0 22 ]S0CfHWIVRFRJW@BIN;2m1
-R15
+Z31 DPx9 rocketlib 8 grethpkg 0 22 ]S0CfHWIVRFRJW@BIN;2m1
 R16
 R17
 R18
 R19
+R20
 R2
-Z31 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/eth_axi_mst.vhd
-Z32 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/eth_axi_mst.vhd
+Z32 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/eth_axi_mst.vhd
+Z33 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/eth_axi_mst.vhd
 l0
 L21
 V;n6SzJL1[:jY[DK_M:<jY3
-R22
+R23
 32
-Z33 !s110 1467747863
-Z34 !s108 1467747863.226000
-Z35 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/eth_axi_mst.vhd|
-Z36 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/eth_axi_mst.vhd|
-R27
+Z34 !s110 1468164100
+Z35 !s108 1468164100.923000
+Z36 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/eth_axi_mst.vhd|
+Z37 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/eth_axi_mst.vhd|
 R28
+R29
 !s100 MWd=U41d4VUzlc:>P>?Vi2
 !i10b 1
 !i111 0
 Artl
-R30
-R15
+R31
 R16
 R17
 R18
 R19
+R20
 DEx4 work 11 eth_axi_mst 0 22 ;n6SzJL1[:jY[DK_M:<jY3
 l51
 L37
 VdQ:ZjEQnDZ_iU?FP`FNNh3
-R22
+R23
 32
-R33
 R34
 R35
 R36
-R27
+R37
 R28
+R29
 !s100 ^;>c3dE?VPX2>TK:ZC[5M3
 !i10b 1
 !i111 0
 Eeth_rstgen
 R3
-R18
 R19
+R20
 R2
-Z37 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/eth_rstgen.vhd
-Z38 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/eth_rstgen.vhd
+Z38 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/eth_rstgen.vhd
+Z39 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/eth_rstgen.vhd
 l0
 L30
 VgaP?0QFHd9[Cj^d_BchGE1
-R22
+R23
 32
-Z39 !s110 1467747862
-Z40 !s108 1467747862.779000
+R34
+Z40 !s108 1468164100.737000
 Z41 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/eth_rstgen.vhd|
 Z42 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/eth_rstgen.vhd|
-R27
 R28
+R29
 !s100 i^jG@daa_a^26Ri9jl=a11
 !i10b 1
 !i111 0
 Artl
-R18
 R19
+R20
 DEx4 work 10 eth_rstgen 0 22 gaP?0QFHd9[Cj^d_BchGE1
 l54
 L41
 V5LRKz@DTMh[SKi@K9<A4b3
-R22
+R23
 32
-R39
+R34
 R40
 R41
 R42
-R27
 R28
+R29
 !s100 Qfk86lTVi8nWVCPHga<LJ3
 !i10b 1
 !i111 0
 vFinishQueue
-R12
+R30
 I>9[PYDBl9zFGMA9o5``UH3
 R1
 R2
@@ -1056,7 +1056,7 @@ n@finish@queue
 !s101 -O0
 !i111 1
 vFinishUnit_0
-R12
+R30
 IW2?zA_OV<EGL33]C;PC3O2
 R1
 R2
@@ -1079,7 +1079,7 @@ n@finish@unit_0
 !s101 -O0
 !i111 1
 vFinishUnit_1
-R12
+R30
 I65X4>6baLSG:Yo:MWLfjE0
 R1
 R2
@@ -1102,7 +1102,7 @@ n@finish@unit_1
 !s101 -O0
 !i111 1
 vFinishUnit_2
-R12
+R30
 IF614O`KnimIFz5Lgz5J6V0
 R1
 R2
@@ -1172,239 +1172,239 @@ n@frontend
 !i111 1
 Egreth_rx
 R3
-R15
-R30
-R17
 R16
+R31
 R18
+R17
 R19
+R20
 R2
 Z43 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/greth_rx.vhd
 Z44 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/greth_rx.vhd
 l0
 L34
 Vd5X9T@gYboSYiS_NKRFKn0
-R22
+R23
 32
-R39
-Z45 !s108 1467747862.829000
+R34
+Z45 !s108 1468164100.788000
 Z46 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/greth_rx.vhd|
 Z47 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/greth_rx.vhd|
-R27
 R28
+R29
 !s100 O3ozHeZIQ0PCLEToD1FCm0
 !i10b 1
 !i111 0
 Artl
-R15
-R30
-R17
 R16
+R31
 R18
+R17
 R19
+R20
 DEx4 work 8 greth_rx 0 22 d5X9T@gYboSYiS_NKRFKn0
 l102
 L50
 V[EGZQI4Z[SLQYmAZScWYD1
-R22
+R23
 32
-R39
+R34
 R45
 R46
 R47
-R27
 R28
+R29
 !s100 bJC<M[_Ho1JnePj6<_`d33
 !i10b 1
 !i111 0
 Egreth_tx
 R3
-R15
-R30
 R16
+R31
 R17
 R18
 R19
+R20
 R2
 Z48 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/greth_tx.vhd
 Z49 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/greth_tx.vhd
 l0
 L33
 VEn@aKA6kf8jV<7S>@hTXJ1
-R22
+R23
 32
-R39
-Z50 !s108 1467747862.888000
+R34
+Z50 !s108 1468164100.855000
 Z51 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/greth_tx.vhd|
 Z52 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/greth_tx.vhd|
-R27
 R28
+R29
 !s100 6nhYRV<j<1R7@O>7I11jj3
 !i10b 1
 !i111 0
 Artl
-R15
-R30
 R16
+R31
 R17
 R18
 R19
+R20
 DEx4 work 8 greth_tx 0 22 En@aKA6kf8jV<7S>@hTXJ1
 l175
 L50
 V@;Q5Hj8cTBSV7;U<NAldB1
-R22
+R23
 32
-R39
+R34
 R50
 R51
 R52
-R27
 R28
+R29
 !s100 @6KnHhWH:1z3@de8;V6>]3
 !i10b 1
 !i111 0
 Egrethaxi
 R3
-R30
-R15
-R17
+R31
 R16
 R18
+R17
 R19
+R20
 R2
 Z53 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/grethaxi.vhd
 Z54 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/grethaxi.vhd
 l0
 L137
 VBTU>hC3mbDfVVPeSVK3dk1
-R22
+R23
 32
-R33
-Z55 !s108 1467747863.364000
-Z56 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/grethaxi.vhd|
-Z57 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/grethaxi.vhd|
-R27
+Z55 !s110 1468164101
+Z56 !s108 1468164101.288000
+Z57 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/grethaxi.vhd|
+Z58 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/grethaxi.vhd|
 R28
+R29
 !s100 F]kkH9`9zSJMOggRn@Jh82
 !i10b 1
 !i111 0
 Aarch_grethaxi
-R30
-R15
-R17
+R31
 R16
 R18
+R17
 R19
+R20
 DEx4 work 8 grethaxi 0 22 BTU>hC3mbDfVVPeSVK3dk1
 l246
 L192
 V34gk?E4WQQ^PAW<kGO;4P3
-R22
+R23
 32
-R33
 R55
 R56
 R57
-R27
+R58
 R28
+R29
 !s100 ZkgNLI<@k8k5cVQUOC1=z0
 !i10b 1
 !i111 0
 Egrethc64
 R3
-R30
-R15
-Z58 DPx7 techmap 9 types_mem 0 22 5RM6[`b5O4U4PM^BE_12b2
-R13
-R17
+R31
 R16
+Z59 DPx7 techmap 9 types_mem 0 22 5RM6[`b5O4U4PM^BE_12b2
+R14
 R18
+R17
 R19
+R20
 R2
-Z59 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/grethc64.vhd
-Z60 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/grethc64.vhd
+Z60 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/grethc64.vhd
+Z61 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/grethc64.vhd
 l0
 L38
 V5Hd<QMGeOQzhV1YIiQE3Y2
-R22
+R23
 32
-R33
-Z61 !s108 1467747863.304000
-Z62 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/grethc64.vhd|
-Z63 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/grethc64.vhd|
-R27
+R55
+Z62 !s108 1468164101.214000
+Z63 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/grethc64.vhd|
+Z64 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/grethc64.vhd|
 R28
+R29
 !s100 A>TG]KNk9bADOg;7?:on=2
 !i10b 1
 !i111 0
 Artl
-R30
-R15
-R58
-R13
-R17
+R31
 R16
+R59
+R14
 R18
+R17
 R19
+R20
 DEx4 work 8 grethc64 0 22 5Hd<QMGeOQzhV1YIiQE3Y2
 l394
 L119
 VB`mF3GZM<G73DC<12Zl<J2
-R22
+R23
 32
-R33
-R61
+R55
 R62
 R63
-R27
+R64
 R28
+R29
 !s100 30o<5Vg7C3P8anV5HXHLh3
 !i10b 1
 !i111 0
 Pgrethpkg
-R15
 R16
 R17
 R18
 R19
+R20
 R3
 R2
-Z64 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/greth_pkg.vhd
-Z65 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/greth_pkg.vhd
+Z65 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/greth_pkg.vhd
+Z66 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/greth_pkg.vhd
 l0
 L30
 V]S0CfHWIVRFRJW@BIN;2m1
-R22
+R23
 32
 b1
-R39
-Z66 !s108 1467747862.729000
-Z67 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/greth_pkg.vhd|
-Z68 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/greth_pkg.vhd|
-R27
+R34
+Z67 !s108 1468164100.687000
+Z68 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/greth_pkg.vhd|
+Z69 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/eth/greth_pkg.vhd|
 R28
+R29
 !s100 2=^_:jAbEVM91S41S<VnF1
 !i10b 1
 !i111 0
 Bbody
 DPx4 work 8 grethpkg 0 22 ]S0CfHWIVRFRJW@BIN;2m1
-R15
 R16
 R17
 R18
 R19
+R20
+32
+R34
 l0
 L759
 VSOQ_QLz@dZFU=e3L>J36m1
-R22
-32
-R39
-R66
+R23
 R67
 R68
-R27
+R69
 R28
+R29
 nbody
 !s100 ojIfdoMjLP`k[Li`B<KCe0
 !i10b 1
@@ -1456,7 +1456,7 @@ n@hella@cache@arbiter
 !s101 -O0
 !i111 1
 vHtif
-R12
+R30
 I6EXBj`Qj?HMDGCWZ_L3Ze1
 R1
 R2
@@ -1480,99 +1480,99 @@ n@htif
 !i111 1
 Ehtif_serdes
 R3
-R15
-R13
-R14
-R17
 R16
+R14
+R15
 R18
+R17
 R19
+R20
 R2
-Z69 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/tilelink/htifserdes.vhd
-Z70 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/tilelink/htifserdes.vhd
+Z70 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/tilelink/htifserdes.vhd
+Z71 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/tilelink/htifserdes.vhd
 l0
 L20
 V1eFY1?DjhAZL`J5oSI_T42
-R22
-32
 R23
-Z71 !s108 1467747861.779000
-Z72 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/tilelink/htifserdes.vhd|
-Z73 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/tilelink/htifserdes.vhd|
-R27
+32
+R24
+Z72 !s108 1468164099.727000
+Z73 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/tilelink/htifserdes.vhd|
+Z74 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/tilelink/htifserdes.vhd|
 R28
+R29
 !s100 5SC5XJ=:P>S6ZX0NcTf7J0
 !i10b 1
 !i111 0
 Aarch_htif_serdes
-R15
-R13
-R14
-R17
 R16
+R14
+R15
 R18
+R17
 R19
+R20
 DEx4 work 11 htif_serdes 0 22 1eFY1?DjhAZL`J5oSI_T42
 l88
 L34
 VZP1D0f?5]030F[z<6BDJe0
-R22
-32
 R23
-R71
+32
+R24
 R72
 R73
-R27
+R74
 R28
+R29
 !s100 >l7?4o63jTIc9_VSI2i7D2
 !i10b 1
 !i111 0
 Ehtifctrl
 R3
-R15
-R13
-R14
 R16
+R14
+R15
 R17
 R18
 R19
+R20
 R2
-Z74 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/tilelink/htifctrl.vhd
-Z75 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/tilelink/htifctrl.vhd
+Z75 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/tilelink/htifctrl.vhd
+Z76 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/tilelink/htifctrl.vhd
 l0
 L16
 VXWhMkJV@ZI>^X0g^oh9eG3
-R22
-32
 R23
-Z76 !s108 1467747861.713000
-Z77 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/tilelink/htifctrl.vhd|
-Z78 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/tilelink/htifctrl.vhd|
-R27
+32
+R24
+Z77 !s108 1468164099.663000
+Z78 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/tilelink/htifctrl.vhd|
+Z79 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/tilelink/htifctrl.vhd|
 R28
+R29
 !s100 N4ciIZcTnaTeZeG<lU3W82
 !i10b 1
 !i111 0
 Aarch_htifctrl
-R15
-R13
-R14
 R16
+R14
+R15
 R17
 R18
 R19
+R20
 DEx4 work 8 htifctrl 0 22 XWhMkJV@ZI>^X0g^oh9eG3
+32
+R24
 l37
 L27
 VUiY]8c]@7<H:Ph^cR:54Z0
-R22
-32
 R23
-R76
 R77
 R78
-R27
+R79
 R28
+R29
 !s100 ShOj8ULio<h[>4doS<1SU0
 !i10b 1
 !i111 0
@@ -1600,7 +1600,7 @@ n@i@cache
 !s101 -O0
 !i111 1
 vICache_T178
-R29
+R12
 Ik?fKX_MTQ?cdJ=iIPi8U61
 R1
 R2
@@ -1623,7 +1623,7 @@ n@i@cache_@t178
 !s101 -O0
 !i111 1
 vICache_tag_array
-R29
+R12
 IlRRe9jK741dk:8C?IES?H0
 R1
 R2
@@ -1853,7 +1853,7 @@ n@locking@r@r@arbiter_2
 !s101 -O0
 !i111 1
 vLockingRRArbiter_3
-R12
+R30
 I>W@MnjT^^FQCNWkg>m2232
 R1
 R2
@@ -1876,7 +1876,7 @@ n@locking@r@r@arbiter_3
 !s101 -O0
 !i111 1
 vLockingRRArbiter_4
-R12
+R30
 IPSFe@Zo9X=22[^oF8_<9X0
 R1
 R2
@@ -1899,7 +1899,7 @@ n@locking@r@r@arbiter_4
 !s101 -O0
 !i111 1
 vLockingRRArbiter_5
-R12
+R30
 I]MOV3WXi=@d:D:8d0c29k2
 R1
 R2
@@ -1991,7 +1991,7 @@ n@locking@r@r@arbiter_8
 !s101 -O0
 !i111 1
 vManagerTileLinkNetworkPort_0
-R12
+R30
 Iz<?C>fl4]QB6K6N6>8TZd2
 R1
 R2
@@ -2014,7 +2014,7 @@ n@manager@tile@link@network@port_0
 !s101 -O0
 !i111 1
 vManagerTileLinkNetworkPort_1
-R12
+R30
 I>Z:am5m2GheHPb0jICQaE2
 R1
 R2
@@ -2060,7 +2060,7 @@ n@metadata@array
 !s101 -O0
 !i111 1
 vMetadataArray_T6
-R29
+R12
 Ih5WiYdmzT]:@LdHVUklPk3
 R1
 R2
@@ -2199,436 +2199,436 @@ n@mul@div
 !i111 1
 Enasti_bootrom
 R3
-R15
 R16
 R17
-R58
-R13
 R18
+R59
+R14
 R19
+R20
 R2
-Z79 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_bootrom.vhd
-Z80 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_bootrom.vhd
+Z80 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_bootrom.vhd
+Z81 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_bootrom.vhd
 l0
 L24
 VHnacof58XBk][3jRdTn`81
-R22
-32
 R23
-Z81 !s108 1467747861.954000
-Z82 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_bootrom.vhd|
-Z83 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_bootrom.vhd|
-R27
+32
+R24
+Z82 !s108 1468164099.919000
+Z83 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_bootrom.vhd|
+Z84 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_bootrom.vhd|
 R28
+R29
 !s100 :4H]TK4j;99?QHPiOA^h70
 !i10b 1
 !i111 0
 Aarch_nasti_bootrom
-R15
 R16
 R17
-R58
-R13
 R18
+R59
+R14
 R19
+R20
 DEx4 work 13 nasti_bootrom 0 22 Hnacof58XBk][3jRdTn`81
+32
+R24
 l64
 L41
 V<lZJAi@:fm6DW7RDnK[8L3
-R22
-32
 R23
-R81
 R82
 R83
-R27
+R84
 R28
+R29
 !s100 AIRYXS;Ez=d1aI6UP1RJZ3
 !i10b 1
 !i111 0
 Enasti_dsu
 R3
-R13
 R14
 R15
-R17
 R16
 R18
+R17
 R19
+R20
 R2
-Z84 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_dsu.vhd
-Z85 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_dsu.vhd
+Z85 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_dsu.vhd
+Z86 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_dsu.vhd
 l0
 L47
 VFjc]0?[3Ejh1oU<R25KHJ1
-R22
+R23
 32
-R39
-Z86 !s108 1467747862.204000
-Z87 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_dsu.vhd|
-Z88 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_dsu.vhd|
-R27
+R34
+Z87 !s108 1468164100.170000
+Z88 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_dsu.vhd|
+Z89 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_dsu.vhd|
 R28
+R29
 !s100 9AWW3kUzh_]]jAZ1jTI2R3
 !i10b 1
 !i111 0
 Aarch_nasti_dsu
-R13
 R14
 R15
-R17
 R16
 R18
+R17
 R19
+R20
 DEx4 work 9 nasti_dsu 0 22 Fjc]0?[3Ejh1oU<R25KHJ1
+32
+R34
 l97
 L67
 Vj1578YZXCm7:E^H=:TUIP0
-R22
-32
-R39
-R86
+R23
 R87
 R88
-R27
+R89
 R28
+R29
 !s100 1zcUL[?z5KNM6N[J4[Zm83
 !i10b 1
 !i111 0
 Enasti_gpio
 R3
-R15
 R16
 R17
 R18
 R19
+R20
 R2
-Z89 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_gpio.vhd
-Z90 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_gpio.vhd
+Z90 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_gpio.vhd
+Z91 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_gpio.vhd
 l0
 L18
 V2]I:Gmm7c[fK9]TkFn?jO2
-R22
-32
 R23
-Z91 !s108 1467747861.838000
-Z92 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_gpio.vhd|
-Z93 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_gpio.vhd|
-R27
+32
+R24
+Z92 !s108 1468164099.803000
+Z93 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_gpio.vhd|
+Z94 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_gpio.vhd|
 R28
+R29
 !s100 PoXJBjGhL3X8Ol9A[z5TY3
 !i10b 1
 !i111 0
 Aarch_nasti_gpio
-R15
 R16
 R17
 R18
 R19
+R20
 DEx4 work 10 nasti_gpio 0 22 2]I:Gmm7c[fK9]TkFn?jO2
+32
+R24
 l75
 L35
 VX?O:a1OLWZebBA>67J04P2
-R22
-32
 R23
-R91
 R92
 R93
-R27
+R94
 R28
+R29
 !s100 BEgI6m38hHlT92[:Y79G_1
 !i10b 1
 !i111 0
 Enasti_gptimers
-Z94 w1466715934
-R13
+Z95 w1466715934
 R14
 R15
 R16
 R17
 R18
 R19
+R20
 R2
-Z95 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_gptimers.vhd
-Z96 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_gptimers.vhd
+Z96 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_gptimers.vhd
+Z97 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_gptimers.vhd
 l0
 L19
 Vc6[RP=DhZTbZQ9L[k1G4@2
-R22
+R23
 32
-R39
-Z97 !s108 1467747862.264000
-Z98 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_gptimers.vhd|
-Z99 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_gptimers.vhd|
-R27
+R34
+Z98 !s108 1468164100.230000
+Z99 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_gptimers.vhd|
+Z100 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_gptimers.vhd|
 R28
+R29
 !s100 ;LmEgN1QPmG2z2bMnfGBC2
 !i10b 1
 !i111 0
 Aarch_nasti_gptimers
-R13
 R14
 R15
 R16
 R17
 R18
 R19
+R20
 DEx4 work 14 nasti_gptimers 0 22 c6[RP=DhZTbZQ9L[k1G4@2
+32
+R34
 l75
 L36
 VRSX?8<7:Xf;ocFc@_R8OD0
-R22
-32
-R39
-R97
+R23
 R98
 R99
-R27
+R100
 R28
+R29
 !s100 ;FNXbgS3OC[cl9RIgbmWL1
 !i10b 1
 !i111 0
 Enasti_irqctrl
 R3
-R13
 R14
 R15
-R17
 R16
 R18
+R17
 R19
+R20
 R2
-Z100 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_irqctrl.vhd
-Z101 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_irqctrl.vhd
+Z101 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_irqctrl.vhd
+Z102 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_irqctrl.vhd
 l0
 L22
 V<OkXO8jZOT_en_KXkLN_j2
-R22
+R23
 32
-R39
-Z102 !s108 1467747862.138000
-Z103 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_irqctrl.vhd|
-Z104 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_irqctrl.vhd|
-R27
+R34
+Z103 !s108 1468164100.103000
+Z104 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_irqctrl.vhd|
+Z105 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_irqctrl.vhd|
 R28
+R29
 !s100 ^hOjS@XSlOihSTHdPNglY1
 !i10b 1
 !i111 0
 Anasti_irqctrl_rtl
-R13
 R14
 R15
-R17
 R16
 R18
+R17
 R19
+R20
 DEx4 work 13 nasti_irqctrl 0 22 <OkXO8jZOT_en_KXkLN_j2
+32
+R34
 l89
 L42
 VD<<;`:@2O3@E<Pz=?m2501
-R22
-32
-R39
-R102
+R23
 R103
 R104
-R27
+R105
 R28
+R29
 !s100 z9>?^G8[LXQ9[;4fI@WN]3
 !i10b 1
 !i111 0
 Enasti_pnp
-R3
-R15
+Z106 w1468149728
 R16
 R17
-R13
 R18
+R14
 R19
+R20
 R2
-Z105 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_pnp.vhd
-Z106 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_pnp.vhd
+Z107 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_pnp.vhd
+Z108 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_pnp.vhd
 l0
 L21
-V7jl06ic`JRYf_[hzYfEE10
-R22
+VLblQ9L<e3MW^nTSKoBmZ^3
+R23
 32
-R39
-Z107 !s108 1467747862.329000
-Z108 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_pnp.vhd|
-Z109 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_pnp.vhd|
-R27
+R34
+Z109 !s108 1468164100.294000
+Z110 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_pnp.vhd|
+Z111 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_pnp.vhd|
 R28
-!s100 ALCI]0BIF]?5]eaRWcez43
+R29
+!s100 cdMYC@QaHe>S8Xblc[>Ci2
 !i10b 1
 !i111 0
 Aarch_nasti_pnp
-R15
 R16
 R17
-R13
 R18
+R14
 R19
-DEx4 work 9 nasti_pnp 0 22 7jl06ic`JRYf_[hzYfEE10
-l85
-L40
-V28OJ^TCZZ>NH=V]fDe4=:0
-R22
+R20
+DEx4 work 9 nasti_pnp 0 22 LblQ9L<e3MW^nTSKoBmZ^3
 32
-R39
-R107
-R108
+R34
+l86
+L41
+VYK?XYDiQhdEKkHji6of`<3
+R23
 R109
-R27
+R110
+R111
 R28
-!s100 h^oM`8FKRAzn7]2YC:h:>3
+R29
+!s100 [Td>n6Iejh36U_Gz74CJ32
 !i10b 1
 !i111 0
 Enasti_romimage
 R3
-R15
 R16
 R17
-R58
-R13
 R18
+R59
+R14
 R19
+R20
 R2
-Z110 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_romimage.vhd
-Z111 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_romimage.vhd
+Z112 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_romimage.vhd
+Z113 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_romimage.vhd
 l0
 L21
 VcQRRCIiKonC3`^iWKf0Yd1
-R22
+R23
 32
-R39
-Z112 !s108 1467747862.014000
-Z113 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_romimage.vhd|
-Z114 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_romimage.vhd|
-R27
+R24
+Z114 !s108 1468164099.979000
+Z115 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_romimage.vhd|
+Z116 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_romimage.vhd|
 R28
+R29
 !s100 o3FVkND`bG@4]>10@C@>30
 !i10b 1
 !i111 0
 Aarch_nasti_romimage
-R15
 R16
 R17
-R58
-R13
 R18
+R59
+R14
 R19
+R20
 DEx4 work 14 nasti_romimage 0 22 cQRRCIiKonC3`^iWKf0Yd1
+32
+R24
 l59
 L38
 Va]H>U>K1fFR9ABAm>YQ<=0
-R22
-32
-R39
-R112
-R113
+R23
 R114
-R27
+R115
+R116
 R28
+R29
 !s100 4QBU9D@YA1Bn`JH:zC]oc2
 !i10b 1
 !i111 0
 Enasti_sram
 R3
-R15
 R16
 R17
-R58
-R13
 R18
+R59
+R14
 R19
+R20
 R2
-Z115 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_sram.vhd
-Z116 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_sram.vhd
+Z117 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_sram.vhd
+Z118 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_sram.vhd
 l0
 L24
 VaJZ^PZO]KdGPCRRjf9D>b0
-R22
+R23
 32
-R39
-Z117 !s108 1467747862.079000
-Z118 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_sram.vhd|
-Z119 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_sram.vhd|
-R27
+R34
+Z119 !s108 1468164100.046000
+Z120 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_sram.vhd|
+Z121 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_sram.vhd|
 R28
+R29
 !s100 i3e^MNo28ae@m?B^FQCkT3
 !i10b 1
 !i111 0
 Aarch_nasti_sram
-R15
 R16
 R17
-R58
-R13
 R18
+R59
+R14
 R19
+R20
 DEx4 work 10 nasti_sram 0 22 aJZ^PZO]KdGPCRRjf9D>b0
+32
+R34
 l71
 L42
 V0jdQR[WAM_5z:CIWg66H62
-R22
-32
-R39
-R117
-R118
+R23
 R119
-R27
+R120
+R121
 R28
+R29
 !s100 i0IhdV[l^Zc>=7Tg4eE=h3
 !i10b 1
 !i111 0
 Enasti_uart
 R3
-R13
 R14
 R15
 R16
 R17
 R18
 R19
+R20
 R2
-Z120 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_uart.vhd
-Z121 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_uart.vhd
+Z122 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_uart.vhd
+Z123 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_uart.vhd
 l0
 L19
 VU5d__g>Y6M:00VIIR93BJ2
-R22
-32
 R23
-Z122 !s108 1467747861.895000
-Z123 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_uart.vhd|
-Z124 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_uart.vhd|
-R27
+32
+R24
+Z124 !s108 1468164099.863000
+Z125 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_uart.vhd|
+Z126 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/nasti_uart.vhd|
 R28
+R29
 !s100 hECeKV3MG1i[3VLSK9g;j0
 !i10b 1
 !i111 0
 Aarch_nasti_uart
-R13
 R14
 R15
 R16
 R17
 R18
 R19
+R20
 DEx4 work 10 nasti_uart 0 22 U5d__g>Y6M:00VIIR93BJ2
+32
+R24
 l93
 L38
 V_3a:<4DLOjC?_VcL]9gHk2
-R22
-32
 R23
-R122
-R123
 R124
-R27
+R125
+R126
 R28
+R29
 !s100 K<9Nk06iCF5geTcJ9bkF=0
 !i10b 1
 !i111 0
@@ -2978,7 +2978,7 @@ n@p@t@w
 !s101 -O0
 !i111 1
 vQueue_0
-R29
+R12
 IT9GAXmoBgTOg2SF_bCZ>U3
 R1
 R2
@@ -3001,7 +3001,7 @@ n@queue_0
 !s101 -O0
 !i111 1
 vQueue_1
-R29
+R12
 ISU3T5eoTd]M0hL6CISN]90
 R1
 R2
@@ -3024,7 +3024,7 @@ n@queue_1
 !s101 -O0
 !i111 1
 vQueue_10
-R12
+R30
 IINJ0CP1DVoC]go73elDLX0
 R1
 R2
@@ -3047,7 +3047,7 @@ n@queue_10
 !s101 -O0
 !i111 1
 vQueue_11
-R12
+R30
 ITO]I;<_dbc=hAUR?]Tfn93
 R1
 R2
@@ -3070,7 +3070,7 @@ n@queue_11
 !s101 -O0
 !i111 1
 vQueue_12
-R12
+R30
 I483JE2b32Y9=OAhHl8fi]1
 R1
 R2
@@ -3093,7 +3093,7 @@ n@queue_12
 !s101 -O0
 !i111 1
 vQueue_13
-R12
+R30
 IWl0mNS@I7CzW?mnNbh92>0
 R1
 R2
@@ -3300,7 +3300,7 @@ n@queue_7
 !s101 -O0
 !i111 1
 vQueue_8
-R12
+R30
 InB?D9<NVWI`YE84@RISBZ2
 R1
 R2
@@ -3323,7 +3323,7 @@ n@queue_8
 !s101 -O0
 !i111 1
 vQueue_9
-R12
+R30
 I6UDCB`_f^eO1Un?ZcafN40
 R1
 R2
@@ -3393,44 +3393,44 @@ n@reorder@queue_1
 !i111 1
 Ereset_global
 R3
-R16
 R17
 R18
 R19
+R20
 R2
-Z125 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/reset_glb.vhd
-Z126 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/reset_glb.vhd
+Z127 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/reset_glb.vhd
+Z128 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/reset_glb.vhd
 l0
 L20
 VY_6`R9VCYalh9UBoORJ2e1
-R22
-32
 R23
-Z127 !s108 1467747861.545000
-Z128 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/reset_glb.vhd|
-Z129 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/reset_glb.vhd|
-R27
+32
+R24
+Z129 !s108 1468164099.439000
+Z130 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/reset_glb.vhd|
+Z131 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/misc/reset_glb.vhd|
 R28
+R29
 !s100 @38[bUV`2QaPB2GneBb[^3
 !i10b 1
 !i111 0
 Aarch_reset_global
-R16
 R17
 R18
 R19
+R20
 DEx4 work 12 reset_global 0 22 Y_6`R9VCYalh9UBoORJ2e1
+32
+R24
 l36
 L29
 VJ@`[jdBl@aK_R;B[z341@1
-R22
-32
 R23
-R127
-R128
 R129
-R27
+R130
+R131
 R28
+R29
 !s100 JcI[B?J@[Cm<9mHFNkF9`0
 !i10b 1
 !i111 0
@@ -3459,100 +3459,100 @@ n@rocket
 !i111 1
 Erocket_l1only
 R3
-R14
 R15
-R13
 R16
+R14
 R17
 R18
 R19
+R20
 R2
-Z130 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/rocket_l1only.vhd
-Z131 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/rocket_l1only.vhd
+Z132 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/rocket_l1only.vhd
+Z133 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/rocket_l1only.vhd
 l0
 L34
 VJ79HUI672KKoh;3:2iL]f3
-!s100 Y`oW[OWnEfjTCLDh01BJ_2
-R22
+R23
 32
-R29
-!i10b 1
-Z132 !s108 1467747866.121000
-Z133 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/rocket_l1only.vhd|
-Z134 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/rocket_l1only.vhd|
-!i111 0
-R27
+R12
+Z134 !s108 1468164103.930000
+Z135 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/rocket_l1only.vhd|
+Z136 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/rocket_l1only.vhd|
 R28
+R29
+!s100 Y`oW[OWnEfjTCLDh01BJ_2
+!i10b 1
+!i111 0
 Aarch_rocket_l1only
-R14
 R15
-R13
 R16
+R14
 R17
 R18
 R19
-Z135 DEx4 work 13 rocket_l1only 0 22 J79HUI672KKoh;3:2iL]f3
+R20
+DEx4 work 13 rocket_l1only 0 22 J79HUI672KKoh;3:2iL]f3
+32
+R12
 l167
 L59
-Z136 VW8Zzk>4DWBlEgImVRbTCS2
-Z137 !s100 k@e7==W0lE12IEOK_<5JS2
-R22
-32
-R29
-!i10b 1
-R132
-R133
+VW8Zzk>4DWBlEgImVRbTCS2
+R23
 R134
-!i111 0
-R27
+R135
+R136
 R28
+R29
+!s100 k@e7==W0lE12IEOK_<5JS2
+!i10b 1
+!i111 0
 Erocket_l2cache
 R3
-R14
 R15
-R13
 R16
+R14
 R17
 R18
 R19
+R20
 R2
-Z138 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/rocket_l2cache.vhd
-Z139 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/rocket_l2cache.vhd
+Z137 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/rocket_l2cache.vhd
+Z138 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/rocket_l2cache.vhd
 l0
 L42
 V62ozel^8I@Cl0Od22BCG63
-R22
+R23
 32
-R29
-Z140 !s108 1467747866.051000
-Z141 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/rocket_l2cache.vhd|
-Z142 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/rocket_l2cache.vhd|
-R27
+R12
+Z139 !s108 1468164103.851000
+Z140 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/rocket_l2cache.vhd|
+Z141 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/rocket_l2cache.vhd|
 R28
+R29
 !s100 R@]h?`OoO9To12@MW_DQ12
 !i10b 1
 !i111 0
 Aarch_rocket_l2cache
-R14
 R15
-R13
 R16
+R14
 R17
 R18
 R19
+R20
 DEx4 work 14 rocket_l2cache 0 22 62ozel^8I@Cl0Od22BCG63
 l249
 L66
 Vi>;AmTgDzhmOUF4AYzJdo2
-!s100 :`3ZCW68WT^SdO7TF8=JU2
-R22
+R23
 32
-R29
+R12
+R139
 R140
 R141
-R142
-R27
 R28
+R29
+!s100 :`3ZCW68WT^SdO7TF8=JU2
 !i10b 1
 !i111 0
 vRocketCAM
@@ -3602,7 +3602,7 @@ n@rocket@chip@tile@link@crossbar
 !s101 -O0
 !i111 1
 vRocketTile
-R29
+R12
 I0cmA^9A]odA<2bDZ5K;]21
 R1
 R2
@@ -3994,55 +3994,55 @@ n@smi@i@o@nasti@write@i@o@converter_1
 !i111 1
 Estarter
 R3
-R15
-R13
-R17
-R14
 R16
+R14
 R18
+R15
+R17
 R19
+R20
 R2
-Z143 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/tilelink/starter.vhd
-Z144 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/tilelink/starter.vhd
+Z142 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/tilelink/starter.vhd
+Z143 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/tilelink/starter.vhd
 l0
 L25
 VZniH<Ni@3i?@i]@@FGjid2
-R22
+R23
 32
-R39
-Z145 !s108 1467747862.389000
-Z146 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/tilelink/starter.vhd|
-Z147 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/tilelink/starter.vhd|
-R27
+R34
+Z144 !s108 1468164100.353000
+Z145 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/tilelink/starter.vhd|
+Z146 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/tilelink/starter.vhd|
 R28
+R29
 !s100 n>7mEh2z]E?E7[<^hfKP`1
 !i10b 1
 !i111 0
 Aarch_starter
-R15
-R13
-R17
-R14
 R16
+R14
 R18
+R15
+R17
 R19
+R20
 DEx4 work 7 starter 0 22 ZniH<Ni@3i?@i]@@FGjid2
 l46
 L35
 VD:0GPVAbb2Q_PZ`]ZfEMf1
-R22
+R23
 32
-R39
+R34
+R144
 R145
 R146
-R147
-R27
 R28
+R29
 !s100 ]W>E3KH7D4XMPj3kHM10H3
 !i10b 1
 !i111 0
 vTileLinkEnqueuer_0
-R12
+R30
 IZmCC@kM_l:h]b:Aoi:ZUc2
 R1
 R2
@@ -4065,7 +4065,7 @@ n@tile@link@enqueuer_0
 !s101 -O0
 !i111 1
 vTileLinkEnqueuer_1
-R12
+R30
 IH>[9FBhcM_c3N7MXbf6D`1
 R1
 R2
@@ -4134,7 +4134,7 @@ n@t@l@b
 !s101 -O0
 !i111 1
 vTop
-R29
+R12
 IUi:EoH8CK;YMbWoG?^ccB0
 R1
 R2
@@ -4157,52 +4157,52 @@ n@top
 !s101 -O0
 !i111 1
 Ptypes_rocket
-R15
-R13
-R17
 R16
+R14
 R18
+R17
 R19
-R3
+R20
+Z147 w1468149744
 R2
 Z148 8E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/types_rocket.vhd
 Z149 FE:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/types_rocket.vhd
 l0
 L22
-V4Ne5OGbXfXfZO2=EzF@dd2
-R22
+V;PF0CCBIP=1kbcc8]N<DT0
+R23
 32
 b1
-Z150 !s110 1467747857
-Z151 !s108 1467747857.738000
+Z150 !s110 1468164094
+Z151 !s108 1468164094.565000
 Z152 !s90 -reportprogress|300|-work|rocketlib|-2002|-explicit|-vopt|E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/types_rocket.vhd|
 Z153 !s107 E:/Projects/VHDLProjects/riscv_vhdl/rocket_soc/rocketlib/types_rocket.vhd|
-R27
 R28
-!s100 ?R<=dBbQoD8D62II:1]z;0
+R29
+!s100 5R4ZEKaLLEQd4NEfYHV5Z3
 !i10b 1
 !i111 0
 Bbody
-DPx4 work 12 types_rocket 0 22 4Ne5OGbXfXfZO2=EzF@dd2
-R15
-R13
-R17
+DPx4 work 12 types_rocket 0 22 ;PF0CCBIP=1kbcc8]N<DT0
 R16
+R14
 R18
+R17
 R19
-l0
-L544
-V_^=ozETkOe9en:`DH9Vb52
-R22
+R20
 32
 R150
+l0
+L545
+VfVmTa;iam[MkWFg6<]DJH1
+R23
 R151
 R152
 R153
-R27
 R28
+R29
 nbody
-!s100 Wm6Mj=H[4Ie<FFL=J7V;d2
+!s100 o7[Nz5=EinJFd0[n4cLj91
 !i10b 1
 !i111 0
 vUncore

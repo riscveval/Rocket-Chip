@@ -334,363 +334,182 @@
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/types_ddr.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="115"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="108"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/v6/ddr_axi4.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="137"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="130"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/v6/iodelay_ctrl.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="199"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="89"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/v6/mem_intfc.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="200"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="77"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/v6/memc_ui_top.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="201"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="88"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/v6/mig_ml605.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="202"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="107"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/ui/ui_cmd.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="203"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="61"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/ui/ui_rd_data.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="204"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="60"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/ui/ui_top.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="205"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="78"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/ui/ui_wr_data.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="206"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="59"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/phy/circ_buffer.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="207"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="3"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/phy/phy_ck_iob.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="208"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="18"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/phy/phy_clock_io.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="209"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="42"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/phy/phy_control_io.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="210"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="41"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/phy/phy_data_io.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="211"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="40"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/phy/phy_dly_ctrl.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="212"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="39"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/phy/phy_dm_iob.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="213"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="17"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/phy/phy_dq_iob.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="214"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="15"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/phy/phy_dqs_iob.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="215"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="16"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/phy/phy_init.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="216"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="38"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/phy/phy_pd.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="217"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="14"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/phy/phy_pd_top.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="218"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="37"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/phy/phy_rdclk_gen.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="219"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="13"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/phy/phy_rdctrl_sync.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="220"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="12"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/phy/phy_rddata_sync.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="221"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="11"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/phy/phy_rdlvl.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="222"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="36"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/phy/phy_read.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="223"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="35"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/phy/phy_top.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="224"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="62"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/phy/phy_write.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="225"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="34"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/phy/phy_wrlvl.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="226"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="33"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/phy/rd_bitslip.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="227"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="2"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/ecc/ecc_buf.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="228"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="46"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/ecc/ecc_dec_fix.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="229"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="45"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/ecc/ecc_gen.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="230"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="44"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/ecc/ecc_merge_enc.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="231"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="43"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/controller/arb_mux.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="232"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="23"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/controller/arb_row_col.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="233"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="8"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/controller/arb_select.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="234"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="7"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/controller/bank_cntrl.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="235"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="22"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/controller/bank_common.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="236"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="21"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/controller/bank_compare.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="237"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="6"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/controller/bank_mach.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="238"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="49"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/controller/bank_queue.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="239"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="5"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/controller/bank_state.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="240"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="4"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/controller/col_mach.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="241"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="48"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/controller/mc.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="242"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="63"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/controller/rank_cntrl.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="243"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="20"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/controller/rank_common.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="244"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="19"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/controller/rank_mach.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="245"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="47"/>
       <library xil_pn:name="rocketlib"/>
     </file>
     <file xil_pn:name="../../rocketlib/ddr/controller/round_robin_arb.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="246"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="1"/>
       <library xil_pn:name="rocketlib"/>
     </file>
-    <file xil_pn:name="../../rocketlib/ddr/axi/axi_mc.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="247"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="79"/>
-    </file>
-    <file xil_pn:name="../../rocketlib/ddr/axi/axi_mc_ar_channel.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="248"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="70"/>
-    </file>
-    <file xil_pn:name="../../rocketlib/ddr/axi/axi_mc_aw_channel.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="249"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="69"/>
-    </file>
-    <file xil_pn:name="../../rocketlib/ddr/axi/axi_mc_b_channel.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="250"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="68"/>
-    </file>
-    <file xil_pn:name="../../rocketlib/ddr/axi/axi_mc_r_channel.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="251"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="66"/>
-    </file>
-    <file xil_pn:name="../../rocketlib/ddr/axi/axi_mc_w_channel.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="252"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="65"/>
-    </file>
-    <file xil_pn:name="../../rocketlib/ddr/axi/axi_mc_cmd_arbiter.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="253"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="67"/>
-    </file>
-    <file xil_pn:name="../../rocketlib/ddr/axi/axi_mc_cmd_fsm.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="254"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="57"/>
-    </file>
-    <file xil_pn:name="../../rocketlib/ddr/axi/axi_mc_cmd_translator.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="255"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="56"/>
-    </file>
-    <file xil_pn:name="../../rocketlib/ddr/axi/axi_mc_incr_cmd.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="256"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="32"/>
-    </file>
-    <file xil_pn:name="../../rocketlib/ddr/axi/axi_mc_simple_fifo.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="257"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="55"/>
-    </file>
-    <file xil_pn:name="../../rocketlib/ddr/axi/axi_mc_wr_cmd_fsm.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="258"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="54"/>
-    </file>
-    <file xil_pn:name="../../rocketlib/ddr/axi/axi_mc_wrap_cmd.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="259"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="31"/>
-    </file>
-    <file xil_pn:name="../../rocketlib/ddr/axi/ddr_a_upsizer.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="260"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="52"/>
-    </file>
-    <file xil_pn:name="../../rocketlib/ddr/axi/ddr_axi_register_slice.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="261"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="53"/>
-    </file>
-    <file xil_pn:name="../../rocketlib/ddr/axi/ddr_axi_upsizer.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="262"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="64"/>
-    </file>
-    <file xil_pn:name="../../rocketlib/ddr/axi/ddr_axic_register_slice.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="263"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="30"/>
-    </file>
-    <file xil_pn:name="../../rocketlib/ddr/axi/ddr_carry_and.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="264"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="10"/>
-    </file>
-    <file xil_pn:name="../../rocketlib/ddr/axi/ddr_carry_latch_and.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="265"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="29"/>
-    </file>
-    <file xil_pn:name="../../rocketlib/ddr/axi/ddr_carry_latch_or.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="266"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="9"/>
-    </file>
-    <file xil_pn:name="../../rocketlib/ddr/axi/ddr_carry_or.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="267"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="28"/>
-    </file>
-    <file xil_pn:name="../../rocketlib/ddr/axi/ddr_command_fifo.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="268"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="27"/>
-    </file>
-    <file xil_pn:name="../../rocketlib/ddr/axi/ddr_comparator.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="269"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="26"/>
-    </file>
-    <file xil_pn:name="../../rocketlib/ddr/axi/ddr_comparator_sel.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="270"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="25"/>
-    </file>
-    <file xil_pn:name="../../rocketlib/ddr/axi/ddr_comparator_sel_static.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="271"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="24"/>
-    </file>
-    <file xil_pn:name="../../rocketlib/ddr/axi/ddr_r_upsizer.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="272"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="51"/>
-    </file>
-    <file xil_pn:name="../../rocketlib/ddr/axi/ddr_w_upsizer.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="273"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="50"/>
-    </file>
+    <file xil_pn:name="../../rocketlib/ddr/axi/axi_mc.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="../../rocketlib/ddr/axi/axi_mc_ar_channel.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="../../rocketlib/ddr/axi/axi_mc_aw_channel.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="../../rocketlib/ddr/axi/axi_mc_b_channel.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="../../rocketlib/ddr/axi/axi_mc_r_channel.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="../../rocketlib/ddr/axi/axi_mc_w_channel.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="../../rocketlib/ddr/axi/axi_mc_cmd_arbiter.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="../../rocketlib/ddr/axi/axi_mc_cmd_fsm.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="../../rocketlib/ddr/axi/axi_mc_cmd_translator.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="../../rocketlib/ddr/axi/axi_mc_incr_cmd.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="../../rocketlib/ddr/axi/axi_mc_simple_fifo.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="../../rocketlib/ddr/axi/axi_mc_wr_cmd_fsm.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="../../rocketlib/ddr/axi/axi_mc_wrap_cmd.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="../../rocketlib/ddr/axi/ddr_a_upsizer.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="../../rocketlib/ddr/axi/ddr_axi_register_slice.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="../../rocketlib/ddr/axi/ddr_axi_upsizer.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="../../rocketlib/ddr/axi/ddr_axic_register_slice.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="../../rocketlib/ddr/axi/ddr_carry_and.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="../../rocketlib/ddr/axi/ddr_carry_latch_and.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="../../rocketlib/ddr/axi/ddr_carry_latch_or.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="../../rocketlib/ddr/axi/ddr_carry_or.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="../../rocketlib/ddr/axi/ddr_command_fifo.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="../../rocketlib/ddr/axi/ddr_comparator.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="../../rocketlib/ddr/axi/ddr_comparator_sel.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="../../rocketlib/ddr/axi/ddr_comparator_sel_static.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="../../rocketlib/ddr/axi/ddr_r_upsizer.v" xil_pn:type="FILE_VERILOG"/>
+    <file xil_pn:name="../../rocketlib/ddr/axi/ddr_w_upsizer.v" xil_pn:type="FILE_VERILOG"/>
   </files>
 
   <properties>

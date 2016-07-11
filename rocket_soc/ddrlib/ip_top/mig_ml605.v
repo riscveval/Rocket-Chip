@@ -168,17 +168,19 @@ module mig_ml605 #
    parameter REG_CTRL                = "OFF",
                                        // # = "ON" - RDIMMs,
                                        //   = "OFF" - Components, SODIMMs, UDIMMs.
-   parameter nDQS_COL0               = 6,
+   parameter nDQS_COL0               = 3,//6,!!!!!!!! mig_38
                                        // Number of DQS groups in I/O column #1.
-   parameter nDQS_COL1               = 2,
+   parameter nDQS_COL1               = 5,//2,!!!!!!!! mig_38
                                        // Number of DQS groups in I/O column #2.
    parameter nDQS_COL2               = 0,
                                        // Number of DQS groups in I/O column #3.
    parameter nDQS_COL3               = 0,
                                        // Number of DQS groups in I/O column #4.
-   parameter DQS_LOC_COL0            = 48'h050403020100,
+   //parameter DQS_LOC_COL0            = 48'h050403020100,//!!!!!!!! mig_38
+   parameter DQS_LOC_COL0            = 24'h020100,//!!!!!!!! mig_38
                                        // DQS groups in column #1.
-   parameter DQS_LOC_COL1            = 16'h0706,
+   //parameter DQS_LOC_COL1            = 16'h0706,//!!!!!!!! mig_38
+   parameter DQS_LOC_COL1            = 40'h0706050403,//!!!!!!!! mig_38
                                        // DQS groups in column #2.
    parameter DQS_LOC_COL2            = 0,
                                        // DQS groups in column #3.
@@ -247,8 +249,17 @@ module mig_ml605 #
    )
   (
 
-  input                             sys_clk,    //single ended system clocks
-  input                             clk_ref,     //single ended iodelayctrl clk
+  //input                             sys_clk,    //single ended system clocks
+   input                             clk_200,//clk_ref,     //single ended iodelayctrl clk
+   input                               clk_mem,
+   input                               clk,
+   input                               clk_rd_base,
+   input                               pll_locked,
+   // Phase Shift Interface
+   output  o_PSEN,               // For enabling fine-phase shift
+   output  o_PSINCDEC,           // = 1 increment phase shift, = 0
+   input i_PSDONE,
+
    inout  [DQ_WIDTH-1:0]                ddr3_dq,
    output [ROW_WIDTH-1:0]               ddr3_addr,
    output [BANK_WIDTH-1:0]              ddr3_ba,
@@ -264,8 +275,6 @@ module mig_ml605 #
    inout  [DQS_WIDTH-1:0]               ddr3_dqs_n,
    output [CK_WIDTH-1:0]                ddr3_ck_p,
    output [CK_WIDTH-1:0]                ddr3_ck_n,
-   inout                                sda,
-   output                               scl,
    input                                aresetn,
    input  [C_S_AXI_ID_WIDTH-1:0]        s_axi_awid,
    input  [C_S_AXI_ADDR_WIDTH-1:0]      s_axi_awaddr,
@@ -359,32 +368,25 @@ module mig_ml605 #
                                         // "CGEN_PRBS","CGEN_FIXED","CGEN_BRAM",
                                         // "CGEN_SEQUENTIAL", "CGEN_ALL"
 
-   localparam BEGIN_ADDRESS           = 32'h00000000;
-   localparam PRBS_SADDR_MASK_POS     = 32'h00000000;
-   localparam END_ADDRESS             = 32'h00ffffff;
-   localparam PRBS_EADDR_MASK_POS     = 32'hff000000;
-   localparam SEL_VICTIM_LINE         = 11;
    localparam DBG_WR_STS_WIDTH        = 32;
    localparam DBG_RD_STS_WIDTH        = 32;
   localparam APP_DATA_WIDTH      = PAYLOAD_WIDTH * 4;
   localparam APP_MASK_WIDTH      = APP_DATA_WIDTH / 8;
 
-  wire                                clk_ref_p;
-  wire                                clk_ref_n;
-  wire                                sys_clk_p;
-  wire                                sys_clk_n;
+  //wire                                clk_ref_p;
+  //wire                                clk_ref_n;
+  //wire                                sys_clk_p;
+  //wire                                sys_clk_n;
   wire                                mmcm_clk;
   wire                                iodelay_ctrl_rdy;
       
-  (* KEEP = "TRUE" *) wire            sda_i;
-  (* KEEP = "TRUE" *) wire            scl_i;
   wire                                rst;
-  wire                                clk;
-  wire                                clk_mem;
-  wire                                clk_rd_base;
-  wire                                pd_PSDONE;
-  wire                                pd_PSEN;
-  wire                                pd_PSINCDEC;
+  //wire                                clk;
+  //wire                                clk_mem;
+  //wire                                clk_rd_base;
+  //wire                                pd_PSDONE;
+  //wire                                pd_PSEN;
+  //wire                                pd_PSINCDEC;
   wire  [(BM_CNT_WIDTH)-1:0]          bank_mach_next;
   wire                                ddr3_parity;
   wire                                app_hi_pri;
@@ -480,53 +482,35 @@ module mig_ml605 #
 
   assign ui_clk = clk;
   assign ui_clk_sync_rst = rst;
-  MUXCY scl_inst
-    (
-     .O  (scl),
-     .CI (scl_i),
-     .DI (1'b0),
-     .S  (1'b1)
-     );
-
-  MUXCY sda_inst
-    (
-     .O  (sda),
-     .CI (sda_i),
-     .DI (1'b0),
-     .S  (1'b1)
-     );
-  assign clk_ref_p = 1'b0;
-  assign clk_ref_n = 1'b0;
-  assign sys_clk_p = 1'b0;
-  assign sys_clk_n = 1'b0;
 
 
   iodelay_ctrl #
     (
      .TCQ            (TCQ),
      .IODELAY_GRP    (IODELAY_GRP),
-     .INPUT_CLK_TYPE (INPUT_CLK_TYPE),
+     //.INPUT_CLK_TYPE (INPUT_CLK_TYPE),
      .RST_ACT_LOW    (RST_ACT_LOW)
      )
     u_iodelay_ctrl
       (
-       .clk_ref_p        (clk_ref_p),
-       .clk_ref_n        (clk_ref_n),
-       .clk_ref          (clk_ref),
+       //.clk_ref_p        (clk_ref_p),
+       //.clk_ref_n        (clk_ref_n),
+       //.clk_ref          (clk_ref),
+       .clk_200          (clk_200),
        .sys_rst          (sys_rst),
        .iodelay_ctrl_rdy (iodelay_ctrl_rdy)
        );
-  clk_ibuf #
-    (
-     .INPUT_CLK_TYPE (INPUT_CLK_TYPE)
-     )
-    u_clk_ibuf
-      (
-       .sys_clk_p         (sys_clk_p),
-       .sys_clk_n         (sys_clk_n),
-       .sys_clk           (sys_clk),
-       .mmcm_clk          (mmcm_clk)
-       );
+  //clk_ibuf #
+  //  (
+  //   .INPUT_CLK_TYPE (INPUT_CLK_TYPE)
+  //   )
+  //  u_clk_ibuf
+  //    (
+  //     .sys_clk_p         (sys_clk_p),
+  //     .sys_clk_n         (sys_clk_n),
+  //     .sys_clk           (sys_clk),
+  //     .mmcm_clk          (mmcm_clk)
+  //     );
   infrastructure #
     (
      .TCQ                (TCQ),
@@ -540,16 +524,18 @@ module mig_ml605 #
      )
     u_infrastructure
       (
-       .clk_mem          (clk_mem),
-       .clk              (clk),
-       .clk_rd_base      (clk_rd_base),
-       .rstdiv0          (rst),
-       .mmcm_clk         (mmcm_clk),
+       //.mmcm_clk         (mmcm_clk),
+       .clk_pll          (clk),// 200 MHz
+       .pll_locked       (pll_locked),
        .sys_rst          (sys_rst),
        .iodelay_ctrl_rdy (iodelay_ctrl_rdy),
-       .PSDONE           (pd_PSDONE),
-       .PSEN             (pd_PSEN),
-       .PSINCDEC         (pd_PSINCDEC)
+       //.clk_mem          (clk_mem),
+       //.clk              (clk),
+       //.clk_rd_base      (clk_rd_base),
+       .rstdiv0          (rst)
+       //.PSDONE           (pd_PSDONE),
+       //.PSEN             (pd_PSEN),
+       //.PSINCDEC         (pd_PSINCDEC)
        );
 
 
@@ -638,9 +624,9 @@ module mig_ml605 #
    .ddr_dq                           (ddr3_dq),
    .ddr_dqs_n                        (ddr3_dqs_n),
    .ddr_dqs                          (ddr3_dqs_p),
-   .pd_PSEN                          (pd_PSEN),
-   .pd_PSINCDEC                      (pd_PSINCDEC),
-   .pd_PSDONE                        (pd_PSDONE),
+   .pd_PSEN                          (o_PSEN),//(pd_PSEN),
+   .pd_PSINCDEC                      (o_PSINCDEC),//(pd_PSINCDEC),
+   .pd_PSDONE                        (i_PSDONE),//(pd_PSDONE),
    .phy_init_done                    (phy_init_done),
    .bank_mach_next                   (bank_mach_next),
    .app_ecc_multiple_err             (app_ecc_multiple_err_i),

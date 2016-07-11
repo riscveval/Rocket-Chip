@@ -34,51 +34,6 @@ package types_ddr is
   constant CFG_DDR_DQS_WIDTH : integer := 8;
   constant CFG_DDR_DM_BITS : integer := 2;
 
-  type ddr3_io_type is record
-    dq  : std_logic_vector(CFG_DDR_DQ_WIDTH-1 downto 0);
-    dqs_p : std_logic_vector(CFG_DDR_DQS_WIDTH-1 downto 0);
-    dqs_n : std_logic_vector(CFG_DDR_DQS_WIDTH-1 downto 0);
-  end record;
-
-  type ddr3_out_type is record
-    addr    : std_logic_vector(CFG_DDR_ROW_WIDTH-1 downto 0);
-    ba      : std_logic_vector(CFG_DDR_BANK_WIDTH-1 downto 0);
-    ras_n   : std_logic;
-    cas_n   : std_logic;
-    we_n    : std_logic;
-    reset_n : std_logic;
-    cs_n    : std_logic_vector((CFG_DDR_CS_WIDTH*CFG_DDR_nCS_PER_RANK)-1 downto 0);
-    odt     : std_logic_vector((CFG_DDR_CS_WIDTH*CFG_DDR_nCS_PER_RANK)-1 downto 0);
-    cke     : std_logic_vector(CFG_DDR_CKE_WIDTH-1 downto 0);
-    dm      : std_logic_vector(CFG_DDR_DM_WIDTH-1 downto 0);
-    ck_p    : std_logic_vector(CFG_DDR_CK_WIDTH-1 downto 0);
-    ck_n    : std_logic_vector(CFG_DDR_CK_WIDTH-1 downto 0);
-
-    phy_init_done : std_logic;
-  end record;
-
-
-  component ddr_axi4 is
-  generic (
-    xindex   : integer := 0;
-    xaddr    : integer := 0;
-    xmask    : integer := 16#fffff#
-  );
-  port 
-  (
-    rstn        : in std_logic;
-    clk200      : in std_logic; -- 200 MHz
-    clk         : in std_logic; -- 60 MHz
-    clk2x       : in std_logic; -- 120 MHz
-    clk2x_unbuf : in std_logic; -- 120 MHz
-    o_cfg  : out nasti_slave_config_type;
-    i_axi  : in nasti_slave_in_type;
-    o_axi  : out nasti_slave_out_type;
-    io_ddr3 : inout ddr3_io_type;
-    o_ddr3  : out ddr3_out_type
-  );
-  end component;
-
 
   component mig_ml605 
   generic (
@@ -97,7 +52,7 @@ package types_ddr is
                                        -- MMCM programming algorithm
    CLKFBOUT_MULT_F         : integer := 6;
                                        -- write PLL VCO multiplier.
-   DIVCLK_DIVIDE           : integer := 2;
+   DIVCLK_DIVIDE           : integer := 1;--2; 
                                        -- write PLL VCO divisor.
    CLKOUT_DIVIDE           : integer := 3;
                                        -- VCO output divisor for fast (memory) clocks.
@@ -174,17 +129,19 @@ package types_ddr is
    REG_CTRL                : string := "OFF";
                                        -- # = "ON" - RDIMMs,
                                        --   = "OFF" - Components, SODIMMs, UDIMMs.
-   nDQS_COL0               : integer := 6;
+   nDQS_COL0               : integer := 3;--6;!!!!!!!!!!!! mig_38
                                        -- Number of DQS groups in I/O column #1.
-   nDQS_COL1               : integer := 2;
+   nDQS_COL1               : integer := 5;--2;!!!!!!!!!!!! mig_38
                                        -- Number of DQS groups in I/O column #2.
    nDQS_COL2               : integer := 0;
                                        -- Number of DQS groups in I/O column #3.
    nDQS_COL3               : integer := 0;
                                        -- Number of DQS groups in I/O column #4.
-   DQS_LOC_COL0            : std_logic_vector(47 downto 0) := X"050403020100";
+   --DQS_LOC_COL0            : std_logic_vector(47 downto 0) := X"050403020100";--!!!!!!!!!!!! mig_38
+   DQS_LOC_COL0            : std_logic_vector(23 downto 0) := X"020100";--!!!!!!!!!!!! mig_38
                                        -- DQS groups in column #1.
-   DQS_LOC_COL1            : std_logic_vector(15 downto 0) := X"0706";
+   --DQS_LOC_COL1            : std_logic_vector(15 downto 0) := X"0706";--!!!!!!!!!!!! mig_38
+   DQS_LOC_COL1            : std_logic_vector(39 downto 0) := X"0706050403";--!!!!!!!!!!!! mig_38
                                        -- DQS groups in column #2.
    DQS_LOC_COL2            : integer := 0;
                                        -- DQS groups in column #3.
@@ -252,8 +209,17 @@ package types_ddr is
                                        -- # = 2,3,4.
    );
    port (
-     sys_clk : in std_logic;    --single ended system clocks
-     clk_ref : in std_logic;     --single ended iodelayctrl clk
+     --sys_clk : in std_logic;    --single ended system clocks
+     clk_200 : in std_logic;     --single ended iodelayctrl clk
+     clk_mem : in std_logic;
+     clk : in std_logic;
+     clk_rd_base : in std_logic;
+     pll_locked : in std_logic;
+     -- Phase Shift Interface
+     o_PSEN : out std_logic;             -- For enabling fine-phase shift
+     o_PSINCDEC : out std_logic;          -- = 1 increment phase shift, = 0
+     i_PSDONE : in std_logic;
+
      ddr3_dq : inout std_logic_vector(DQ_WIDTH-1 downto 0);
      ddr3_addr : out std_logic_vector(ROW_WIDTH-1 downto 0);
      ddr3_ba : out std_logic_vector(BANK_WIDTH-1 downto 0);
@@ -269,8 +235,6 @@ package types_ddr is
      ddr3_dqs_n : inout std_logic_vector(DQS_WIDTH-1 downto 0);
      ddr3_ck_p : out std_logic_vector(CK_WIDTH-1 downto 0);
      ddr3_ck_n : out std_logic_vector(CK_WIDTH-1 downto 0);
-     sda : inout std_logic;
-     scl : out std_logic;
      aresetn : in std_logic;
      s_axi_awid : in std_logic_vector(C_S_AXI_ID_WIDTH-1 downto 0);
      s_axi_awaddr : in std_logic_vector(C_S_AXI_ADDR_WIDTH-1 downto 0);
@@ -442,6 +406,112 @@ package types_ddr is
   );
   end component axi4_tg;
 
+  component ff_aw is
+  port (
+     rstn : in std_logic;
+     clk_fast : in std_logic;  
+     clk_slow : in std_logic;  
+     -- 60 MHz
+     slow_aw_valid : in std_logic;
+     slow_aw_bits : in nasti_metadata_type;
+     slow_aw_id   : in std_logic_vector(CFG_ROCKET_ID_BITS-1 downto 0);
+     slow_aw_user : in std_logic;
+     slow_aw_ready : out std_logic;
+
+     -- 200 MHz
+     fast_aw_valid : out std_logic;
+     fast_aw_bits : out nasti_metadata_type;
+     fast_aw_id   : out std_logic_vector(CFG_ROCKET_ID_BITS-1 downto 0);
+     fast_aw_user : out std_logic;
+     fast_aw_ready : in std_logic
+  );
+  end component;
+
+  component ff_w is
+  port (
+     rstn : in std_logic;
+     clk_fast : in std_logic;  
+     clk_slow : in std_logic;  
+     -- 60 MHz
+     slow_w_valid : in std_logic;
+     slow_w_data : in std_logic_vector(CFG_NASTI_DATA_BITS-1 downto 0);
+     slow_w_last : in std_logic;
+     slow_w_strb : in std_logic_vector(CFG_NASTI_DATA_BYTES-1 downto 0);
+     slow_w_user : in std_logic;
+     slow_w_ready : out std_logic;
+     -- 200 MHz
+     fast_w_valid : out std_logic;
+     fast_w_data : out std_logic_vector(CFG_NASTI_DATA_BITS-1 downto 0);
+     fast_w_last : out std_logic;
+     fast_w_strb : out std_logic_vector(CFG_NASTI_DATA_BYTES-1 downto 0);
+     fast_w_user : out std_logic;
+     fast_w_ready : in std_logic
+  );
+  end component;
+  
+  component ff_b is
+  port (
+     rstn : in std_logic;
+     clk_fast : in std_logic;  
+     clk_slow : in std_logic;  
+     -- 60 MHz
+     slow_b_ready : in std_logic;
+     slow_b_valid : out std_logic;
+     slow_b_resp : out std_logic_vector(1 downto 0);
+     slow_b_id   : out std_logic_vector(CFG_ROCKET_ID_BITS-1 downto 0);
+     slow_b_user : out std_logic;
+     -- 200 MHz
+     fast_b_ready : out std_logic;
+     fast_b_valid : in std_logic;
+     fast_b_resp : in std_logic_vector(1 downto 0);
+     fast_b_id   : in std_logic_vector(CFG_ROCKET_ID_BITS-1 downto 0);
+     fast_b_user : in std_logic
+  );
+  end component;
+
+  component ff_ar is
+  port (
+     rstn : in std_logic;
+     clk_fast : in std_logic;  
+     clk_slow : in std_logic;  
+     -- 60 MHz
+     slow_ar_valid : in std_logic;
+     slow_ar_bits : in nasti_metadata_type;
+     slow_ar_id   : in std_logic_vector(CFG_ROCKET_ID_BITS-1 downto 0);
+     slow_ar_user : in std_logic;
+     slow_ar_ready : out std_logic;
+     -- 200 MHz
+     fast_ar_valid : out std_logic;
+     fast_ar_bits : out nasti_metadata_type;
+     fast_ar_id   : out std_logic_vector(CFG_ROCKET_ID_BITS-1 downto 0);
+     fast_ar_user : out std_logic;
+     fast_ar_ready : in std_logic
+  );
+  end component;
+
+  component ff_r is
+  port (
+     rstn : in std_logic;
+     clk_slow : in std_logic;
+     clk_fast : in std_logic;  
+     -- 60 MHz
+     slow_r_ready : in std_logic;
+     slow_r_valid : out std_logic;
+     slow_r_resp : out std_logic_vector(1 downto 0);
+     slow_r_data : out std_logic_vector(CFG_NASTI_DATA_BITS-1 downto 0);
+     slow_r_last : out std_logic;
+     slow_r_id   : out std_logic_vector(CFG_ROCKET_ID_BITS-1 downto 0);
+     slow_r_user : out std_logic;
+     -- 200 MHz
+     fast_r_ready : out std_logic;
+     fast_r_valid : in std_logic;
+     fast_r_resp : in std_logic_vector(1 downto 0);
+     fast_r_data : in std_logic_vector(CFG_NASTI_DATA_BITS-1 downto 0);
+     fast_r_last : in std_logic;
+     fast_r_id   : in std_logic_vector(CFG_ROCKET_ID_BITS-1 downto 0);
+     fast_r_user : in std_logic
+  );
+  end component;
 
  component ddr3_model port (
     rst_n   : in std_logic;
@@ -455,7 +525,7 @@ package types_ddr is
     dm_tdqs : inout std_logic_vector(CFG_DDR_DM_BITS-1 downto 0); -- inout   [DM_BITS-1:0]   
     ba      : in std_logic_vector(CFG_DDR_BANK_WIDTH-1 downto 0); -- input   [BA_BITS-1:0]   
     addr    : in std_logic_vector(CFG_DDR_ROW_WIDTH-1 downto 0); -- input   [ADDR_BITS-1:0] 
-    dq      : inout std_logic_vector(CFG_DDR_DQ_WIDTH-1 downto 0);
+    dq      : inout std_logic_vector(15 downto 0);
     dqs     : inout std_logic_vector(CFG_DDR_DQS_WIDTH-1 downto 0);
     dqs_n   : inout std_logic_vector(CFG_DDR_DQS_WIDTH-1 downto 0);
     tdqs_n  : out std_logic_vector(CFG_DDR_DQS_WIDTH-1 downto 0);
@@ -463,5 +533,46 @@ package types_ddr is
 );
 end component ddr3_model;
 
+  component axi_ddr3_v6 is 
+  generic (
+    xindex   : integer := 0;
+    xaddr    : integer := 0;
+    xmask    : integer := 16#fffff#
+  );
+  port (
+   i_rstn : in std_logic;
+   i_clk_200 : in std_logic;
+   i_pll_bus : in std_logic;
+   i_pll_clk_mem : in std_logic;  --400 MHz
+   i_pll_clk : in std_logic;      --200 MHz
+   i_pll_rd_base : in std_logic;  -- 400 MHz
+   i_pll_locked : in std_logic;
+   o_PSEN : out std_logic;           -- For enabling fine-phase shift
+   o_PSINCDEC : out std_logic;        -- = 1 increment phase shift, = 0
+   i_PSDONE : in std_logic;
+
+   io_ddr3_dq : inout std_logic_vector(CFG_DDR_DQ_WIDTH-1 downto 0);
+   o_ddr3_addr : out std_logic_vector(CFG_DDR_ROW_WIDTH-1 downto 0);
+   o_ddr3_ba : out std_logic_vector(CFG_DDR_BANK_WIDTH-1 downto 0);
+   o_ddr3_ras_n : out std_logic;
+   o_ddr3_cas_n : out std_logic;
+   o_ddr3_we_n : out std_logic;
+   o_ddr3_reset_n : out std_logic;
+   o_ddr3_cs_n : out std_logic_vector((CFG_DDR_CS_WIDTH*CFG_DDR_nCS_PER_RANK)-1 downto 0);
+   o_ddr3_odt : out std_logic_vector((CFG_DDR_CS_WIDTH*CFG_DDR_nCS_PER_RANK)-1 downto 0);
+   o_ddr3_cke : out std_logic_vector(CFG_DDR_CKE_WIDTH-1 downto 0);
+   o_ddr3_dm : out std_logic_vector(CFG_DDR_DM_WIDTH-1 downto 0);
+   io_ddr3_dqs_p : inout std_logic_vector(CFG_DDR_DQS_WIDTH-1 downto 0);
+   io_ddr3_dqs_n : inout std_logic_vector(CFG_DDR_DQS_WIDTH-1 downto 0);
+   o_ddr3_ck_p : out std_logic_vector(CFG_DDR_CK_WIDTH-1 downto 0);
+   o_ddr3_ck_n : out std_logic_vector(CFG_DDR_CK_WIDTH-1 downto 0);
+
+   o_phy_init_done : out std_logic;
+
+   i_slv : in nasti_slave_in_type;
+   o_slv : out nasti_slave_out_type;
+   o_cfg  : out nasti_slave_config_type
+  );
+  end component;
 
 end; -- package body
