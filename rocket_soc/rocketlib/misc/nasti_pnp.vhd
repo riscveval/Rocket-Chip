@@ -85,7 +85,7 @@ architecture arch_nasti_pnp of nasti_pnp is
 
 begin
 
-  comblogic : process(i, slvcfg, r, r_adc_detect, nrst)
+  comblogic : process(i, slvcfg, r, r_adc_detect, nrst, i_ddr_init_done)
     variable v : registers;
     variable slvmap : slave_config_map;
     variable raddr_reg : local_addr_array_type;
