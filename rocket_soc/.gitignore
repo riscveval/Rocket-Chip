@@ -25,8 +25,10 @@ prj/kc705/*
 !prj/kc705/rocket_soc_kc705.ucf
 !prj/kc705/rocket_soc_kc705.xdc
 !prj/kc705/rocket_chip.xpr
+prj/modelsim/wlf*
 prj/modelsim/*.wlf
 prj/modelsim/*.mti
+prj/modelsim/*.do
 prj/modelsim/ambalib/*
 !prj/modelsim/ambalib/_info
 prj/modelsim/commonlib/*

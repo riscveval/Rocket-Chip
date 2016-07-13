@@ -227,23 +227,38 @@ architecture arch_axi_ddr3_v6 of axi_ddr3_v6 is
   signal s_axi_awlock1 : std_logic_vector(0 downto 0);
   signal s_axi_arlock1 : std_logic_vector(0 downto 0);
 
-  signal s_slv : nasti_slave_in_type;
+  signal si_slv : nasti_slave_in_type;
+  signal so_slv : nasti_slave_out_type;
   signal iaxi : nasti_slave_in_type;
   signal oaxi : nasti_slave_out_type;
   
-  signal s_ignore : std_logic;
-  signal r_ignore : std_logic;
+  type state_type is (state_idle, state_rd, state_wr, state_handshake);
+  type registers is record 
+      state : state_type;
+      burst_len : std_logic_vector(7 downto 0);
+  end record;
+  signal r, rin : registers;
 
 begin
 
   o_cfg <= xconfig;
   sys_rst_p <= not i_rstn;
+  
+  o_slv <= so_slv;
+  aresetn <= i_rstn;
 
-  comblogic : process(i_slv, r_ignore)
+  comblogic : process(i_rstn, i_slv, r, so_slv)
     variable v_slv : nasti_slave_in_type;
+    variable v : registers;
   begin
+    v := r;
 
     v_slv := i_slv;
+    v_slv.w_valid := '0';
+    v_slv.w_last := '0';
+    v_slv.w_strb := (others => '0');
+    v_slv.w_data := (others => '0');
+    
     if i_slv.ar_valid = '1' and 
       ((i_slv.ar_bits.addr(CFG_NASTI_ADDR_BITS-1 downto 12) and xconfig.xmask) = xconfig.xaddr) then
       v_slv.ar_valid := '1';
@@ -255,28 +270,68 @@ begin
 
     if i_slv.aw_valid = '1' and 
       ((i_slv.aw_bits.addr(CFG_NASTI_ADDR_BITS-1 downto 12) and xconfig.xmask) = xconfig.xaddr) then
-      s_ignore <= '0';
       v_slv.aw_valid := '1';
       v_slv.aw_bits.addr := (i_slv.aw_bits.addr(CFG_NASTI_ADDR_BITS-1 downto 12) and (not xconfig.xmask))
                    & i_slv.aw_bits.addr(11 downto 0);
+
     else
-      if i_slv.aw_valid = '1' then
-          s_ignore <= '1';
-      end if;
       v_slv.aw_valid := '0';
     end if;
     
-    v_slv.w_valid := i_slv.w_valid and not r_ignore;
-    s_slv <= v_slv;
+    if i_rstn = '0' then 
+      v.state := state_idle;
+    end if;
+    
+    case r.state is
+    when state_idle =>
+      if v_slv.ar_valid = '1' then
+        v.state := state_rd;
+        v.burst_len := i_slv.ar_bits.len;
+      elsif v_slv.aw_valid = '1' then
+        v.state := state_wr;
+        v.burst_len := i_slv.aw_bits.len;
+      end if;
+
+    when state_rd =>
+      if i_slv.r_ready = '1' and so_slv.r_valid = '1' then
+        if r.burst_len = X"00" then
+            v.state := state_idle;
+        else
+            v.burst_len := r.burst_len - 1;
+       end if;
+      end if;
+      
+    when state_wr =>
+      v_slv.w_valid := i_slv.w_valid;
+      v_slv.w_strb := i_slv.w_strb;
+      v_slv.w_data := i_slv.w_data;
+      if r.burst_len = X"00" then
+          v_slv.w_last := '1';
+      end if;
+      if i_slv.w_valid = '1' and so_slv.w_ready = '1' then
+        if r.burst_len = X"00" then
+            v.state := state_handshake;
+        else
+            v.burst_len := r.burst_len - 1;
+       end if;
+      end if;
+      
+    when state_handshake =>
+      if i_slv.b_ready = '1' and so_slv.b_valid = '1' then
+        v.state := state_idle;
+      end if;
+    when others =>
+    end case;
+
+    si_slv <= v_slv;
+    rin <= v;
   end process;
   
   
-  process (i_pll_bus, s_ignore)
+  process (i_pll_bus, rin)
   begin
-    if i_rstn = '0' then
-        r_ignore <= '0';
-    elsif rising_edge(i_pll_bus) then
-        r_ignore <= s_ignore;
+    if rising_edge(i_pll_bus) then
+        r <= rin;
     end if;
   end process;
 
@@ -439,11 +494,11 @@ begin
      clk_fast => clk,
      clk_slow => i_pll_bus,
      -- 60 MHz
-     slow_aw_valid => s_slv.aw_valid,
-     slow_aw_bits  => s_slv.aw_bits,
-     slow_aw_id    => s_slv.aw_id,
-     slow_aw_user  => s_slv.aw_user,
-     slow_aw_ready => o_slv.aw_ready,
+     slow_aw_valid => si_slv.aw_valid,
+     slow_aw_bits  => si_slv.aw_bits,
+     slow_aw_id    => si_slv.aw_id,
+     slow_aw_user  => si_slv.aw_user,
+     slow_aw_ready => so_slv.aw_ready,
      -- 200 MHz
      fast_aw_valid => iaxi.aw_valid,
      fast_aw_bits  => iaxi.aw_bits,
@@ -458,12 +513,12 @@ begin
      clk_fast => clk,
      clk_slow => i_pll_bus,
      -- 60 MHz
-     slow_w_valid => s_slv.w_valid,
-     slow_w_data  => s_slv.w_data,
-     slow_w_last  => s_slv.w_last,
-     slow_w_strb  => s_slv.w_strb,
-     slow_w_user  => s_slv.w_user,
-     slow_w_ready => o_slv.w_ready,
+     slow_w_valid => si_slv.w_valid,
+     slow_w_data  => si_slv.w_data,
+     slow_w_last  => si_slv.w_last,
+     slow_w_strb  => si_slv.w_strb,
+     slow_w_user  => si_slv.w_user,
+     slow_w_ready => so_slv.w_ready,
      -- 200 MHz
      fast_w_valid => iaxi.w_valid,
      fast_w_data  => iaxi.w_data,
@@ -478,11 +533,11 @@ begin
      clk_fast     => clk,
      clk_slow     => i_pll_bus,
      -- 60 MHz
-     slow_b_ready => s_slv.b_ready,
-     slow_b_valid => o_slv.b_valid,
-     slow_b_resp  => o_slv.b_resp,
-     slow_b_id    => o_slv.b_id,
-     slow_b_user  => o_slv.b_user,
+     slow_b_ready => si_slv.b_ready,
+     slow_b_valid => so_slv.b_valid,
+     slow_b_resp  => so_slv.b_resp,
+     slow_b_id    => so_slv.b_id,
+     slow_b_user  => so_slv.b_user,
      -- 200 MHz
      fast_b_ready => iaxi.b_ready,
      fast_b_valid => oaxi.b_valid,
@@ -497,11 +552,11 @@ begin
      clk_fast => clk,
      clk_slow => i_pll_bus,
      -- 60 MHz
-     slow_ar_valid => s_slv.ar_valid,
-     slow_ar_bits  => s_slv.ar_bits,
-     slow_ar_id    => s_slv.ar_id,
-     slow_ar_user  => s_slv.ar_user,
-     slow_ar_ready => o_slv.ar_ready,
+     slow_ar_valid => si_slv.ar_valid,
+     slow_ar_bits  => si_slv.ar_bits,
+     slow_ar_id    => si_slv.ar_id,
+     slow_ar_user  => si_slv.ar_user,
+     slow_ar_ready => so_slv.ar_ready,
      -- 200 MHz
      fast_ar_valid => iaxi.ar_valid,
      fast_ar_bits  => iaxi.ar_bits,
@@ -517,13 +572,13 @@ begin
      clk_fast => clk,
      clk_slow => i_pll_bus,
      -- 60 MHz
-     slow_r_ready => s_slv.r_ready,
-     slow_r_valid => o_slv.r_valid,
-     slow_r_resp => o_slv.r_resp,
-     slow_r_data => o_slv.r_data,
-     slow_r_last => o_slv.r_last,
-     slow_r_id   => o_slv.r_id,
-     slow_r_user => o_slv.r_user,
+     slow_r_ready => si_slv.r_ready,
+     slow_r_valid => so_slv.r_valid,
+     slow_r_resp => so_slv.r_resp,
+     slow_r_data => so_slv.r_data,
+     slow_r_last => so_slv.r_last,
+     slow_r_id   => so_slv.r_id,
+     slow_r_user => so_slv.r_user,
      -- 200 MHz
      fast_r_ready => iaxi.r_ready,
      fast_r_valid => oaxi.r_valid,

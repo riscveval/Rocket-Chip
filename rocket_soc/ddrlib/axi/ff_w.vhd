@@ -38,7 +38,7 @@ architecture arch_ff_w of ff_w is
      user : std_logic;
      ready : std_logic;
      wait_ready : std_logic;
-     skip_next : std_logic;
+     was_accepted : std_logic;
   end record;
 
   signal rin, r : registers_fast;
@@ -58,7 +58,8 @@ begin
           v.ready := fast_w_ready or r.wait_ready;
           v.wait_ready := '0';
     
-          v.valid := slow_w_valid and not r.skip_next;
+          v.was_accepted := slow_w_last and slow_w_valid;
+          v.valid := slow_w_valid and not r.was_accepted;
           v.data := slow_w_data;
           v.last := slow_w_last;
           v.strb := slow_w_strb;
@@ -68,7 +69,6 @@ begin
       if fast_w_ready = '1' and r.valid = '1' then
           v.valid := '0';
           v.wait_ready := not slow_negedge;
-          v.skip_next := not r.ready;
       end if;
 
 
@@ -83,7 +83,7 @@ begin
          v.user := '0';
          v.ready := '0';
          v.wait_ready := '0';
-         v.skip_next := '0';
+         v.was_accepted := '0';
       end if;
 
       rin <= v;
