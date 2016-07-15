@@ -49,7 +49,7 @@ SECTIONS
 {
 
   /* text: test code section */
-  . = 0x10000000;
+  . = 0x40000000;
   .text :
   {
     	*(.text)
