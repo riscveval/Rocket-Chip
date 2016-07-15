@@ -250,16 +250,7 @@ module mig_ml605 #
   (
 
   //input                             sys_clk,    //single ended system clocks
-   input                             clk_200,//clk_ref,     //single ended iodelayctrl clk
-   input                               clk_mem,
-   input                               clk,
-   input                               clk_rd_base,
-   input                               pll_locked,
-   // Phase Shift Interface
-   output  o_PSEN,               // For enabling fine-phase shift
-   output  o_PSINCDEC,           // = 1 increment phase shift, = 0
-   input i_PSDONE,
-
+   input                               clk_200,     //single ended iodelayctrl clk
    inout  [DQ_WIDTH-1:0]                ddr3_dq,
    output [ROW_WIDTH-1:0]               ddr3_addr,
    output [BANK_WIDTH-1:0]              ddr3_ba,
@@ -381,12 +372,12 @@ module mig_ml605 #
   wire                                iodelay_ctrl_rdy;
       
   wire                                rst;
-  //wire                                clk;
-  //wire                                clk_mem;
-  //wire                                clk_rd_base;
-  //wire                                pd_PSDONE;
-  //wire                                pd_PSEN;
-  //wire                                pd_PSINCDEC;
+  wire                                clk;
+  wire                                clk_mem;
+  wire                                clk_rd_base;
+  wire                                pd_PSDONE;
+  wire                                pd_PSEN;
+  wire                                pd_PSINCDEC;
   wire  [(BM_CNT_WIDTH)-1:0]          bank_mach_next;
   wire                                ddr3_parity;
   wire                                app_hi_pri;
@@ -523,20 +514,18 @@ module mig_ml605 #
      .RST_ACT_LOW        (RST_ACT_LOW)
      )
     u_infrastructure
-      (
-       //.mmcm_clk         (mmcm_clk),
-       .clk_pll          (clk),// 200 MHz
-       .pll_locked       (pll_locked),
+    (
+       .mmcm_clk         (clk_200),    // ML605 single input clock 200MHz from "iodelay_ctrl"
        .sys_rst          (sys_rst),
        .iodelay_ctrl_rdy (iodelay_ctrl_rdy),
-       //.clk_mem          (clk_mem),
-       //.clk              (clk),
-       //.clk_rd_base      (clk_rd_base),
-       .rstdiv0          (rst)
-       //.PSDONE           (pd_PSDONE),
-       //.PSEN             (pd_PSEN),
-       //.PSINCDEC         (pd_PSINCDEC)
-       );
+       .clk_mem          (clk_mem),
+       .clk              (clk),
+       .clk_rd_base      (clk_rd_base),
+       .rstdiv0          (rst),
+       .PSDONE           (pd_PSDONE),
+       .PSEN             (pd_PSEN),
+       .PSINCDEC         (pd_PSINCDEC)
+     );
 
 
   memc_ui_top #
@@ -624,9 +613,9 @@ module mig_ml605 #
    .ddr_dq                           (ddr3_dq),
    .ddr_dqs_n                        (ddr3_dqs_n),
    .ddr_dqs                          (ddr3_dqs_p),
-   .pd_PSEN                          (o_PSEN),//(pd_PSEN),
-   .pd_PSINCDEC                      (o_PSINCDEC),//(pd_PSINCDEC),
-   .pd_PSDONE                        (i_PSDONE),//(pd_PSDONE),
+   .pd_PSEN                          (pd_PSEN),
+   .pd_PSINCDEC                      (pd_PSINCDEC),
+   .pd_PSDONE                        (pd_PSDONE),
    .phy_init_done                    (phy_init_done),
    .bank_mach_next                   (bank_mach_next),
    .app_ecc_multiple_err             (app_ecc_multiple_err_i),

@@ -400,4 +400,4 @@ INST "ddr3/u_ip_top/u_memc_ui_top/u_mem_intfc/phy_top0/u_phy_read/u_phy_rdclk_ge
 ## MMCM_ADV CONSTRAINTS                                                             ##
 ######################################################################################
 
-#INST "ddr3/pll0/xv6/pll0/mmcm_adv_inst"      LOC = "MMCM_ADV_X0Y8"; #Banks 16, 26, 36
+#INST "ddr3/pll0/xv6.pll0/mmcm_adv_inst"      LOC = "MMCM_ADV_X0Y8"; #Banks 16, 26, 36

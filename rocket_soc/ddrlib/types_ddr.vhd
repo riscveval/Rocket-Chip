@@ -211,15 +211,6 @@ package types_ddr is
    port (
      --sys_clk : in std_logic;    --single ended system clocks
      clk_200 : in std_logic;     --single ended iodelayctrl clk
-     clk_mem : in std_logic;
-     clk : in std_logic;
-     clk_rd_base : in std_logic;
-     pll_locked : in std_logic;
-     -- Phase Shift Interface
-     o_PSEN : out std_logic;             -- For enabling fine-phase shift
-     o_PSINCDEC : out std_logic;          -- = 1 increment phase shift, = 0
-     i_PSDONE : in std_logic;
-
      ddr3_dq : inout std_logic_vector(DQ_WIDTH-1 downto 0);
      ddr3_addr : out std_logic_vector(ROW_WIDTH-1 downto 0);
      ddr3_ba : out std_logic_vector(BANK_WIDTH-1 downto 0);
@@ -543,13 +534,6 @@ end component ddr3_model;
    i_rstn : in std_logic;
    i_clk_200 : in std_logic;
    i_pll_bus : in std_logic;
-   i_pll_clk_mem : in std_logic;  --400 MHz
-   i_pll_clk : in std_logic;      --200 MHz
-   i_pll_rd_base : in std_logic;  -- 400 MHz
-   i_pll_locked : in std_logic;
-   o_PSEN : out std_logic;           -- For enabling fine-phase shift
-   o_PSINCDEC : out std_logic;        -- = 1 increment phase shift, = 0
-   i_PSDONE : in std_logic;
 
    io_ddr3_dq : inout std_logic_vector(CFG_DDR_DQ_WIDTH-1 downto 0);
    o_ddr3_addr : out std_logic_vector(CFG_DDR_ROW_WIDTH-1 downto 0);

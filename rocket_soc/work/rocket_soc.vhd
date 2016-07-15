@@ -178,14 +178,6 @@ architecture arch_rocket_soc of rocket_soc is
   signal wClkBus    : std_ulogic; -- bus clock from the internal PLL (100MHz virtex6/40MHz Spartan6)
   signal wClkAdc    : std_ulogic; -- 26 MHz from the internal PLL
   signal wPllLocked : std_ulogic; -- PLL status signal. 0=Unlocked; 1=locked.
-
-  signal pll_clk_mem : std_logic;  --400 MHz
-  signal pll_clk : std_logic;      --200 MHz
-  signal pll_rd_base : std_logic;  -- 400 MHz
-  signal ui_PSEN : std_logic;           -- For enabling fine-phase shift
-  signal ui_PSINCDEC : std_logic;        -- = 1 increment phase shift, = 0
-  signal pll_PSDONE : std_logic;
-
   
   signal uart1i : uart_in_type;
   signal uart1o : uart_out_type;
@@ -253,15 +245,7 @@ begin
     i_clk_adc   => ib_clk_adc,
     o_clk_bus   => wClkBus,
     o_clk_adc   => wClkAdc,
-    o_locked    => wPllLocked,
-    -- DDR3 needs
-    o_clk400_buf      => pll_clk_mem,  --400 MHz
-    o_clk200_buf      => pll_clk,      --200 MHz
-    o_clk400_unbuf    => pll_rd_base,  -- 400 MHz
-    -- Phase Shift Interface
-    i_PSEN     => ui_PSEN,           -- For enabling fine-phase shift
-    i_PSINCDEC => ui_PSINCDEC,        -- = 1 increment phase shift, = 0
-    o_PSDONE   => pll_PSDONE
+    o_locked    => wPllLocked
   );
   wSysReset <= ib_rst or not wPllLocked;
 
@@ -709,14 +693,6 @@ end generate;
     i_rstn            => wNReset,
     i_clk_200            => ib_clk_200,
     i_pll_bus            => wClkBus,
-    i_pll_clk_mem        => pll_clk_mem,
-    i_pll_clk            => pll_clk,
-    i_pll_rd_base    => pll_rd_base,
-    i_pll_locked         => wPllLocked,
-    -- Phase Shift Interface
-    o_PSEN               => ui_PSEN,
-    o_PSINCDEC           => ui_PSINCDEC,
-    i_PSDONE             => pll_PSDONE,
 
     o_ddr3_ck_p            => o_ddr3_ck_p,
     o_ddr3_ck_n            => o_ddr3_ck_n,

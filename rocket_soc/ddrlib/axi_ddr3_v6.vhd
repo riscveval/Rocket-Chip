@@ -23,13 +23,6 @@ port (
    i_rstn : in std_logic;
    i_clk_200 : in std_logic;
    i_pll_bus : in std_logic;
-   i_pll_clk_mem : in std_logic;  --400 MHz
-   i_pll_clk : in std_logic;      --200 MHz
-   i_pll_rd_base : in std_logic;  -- 400 MHz
-   i_pll_locked : in std_logic;
-   o_PSEN : out std_logic;           -- For enabling fine-phase shift
-   o_PSINCDEC : out std_logic;        -- = 1 increment phase shift, = 0
-   i_PSDONE : in std_logic;
 
    io_ddr3_dq : inout std_logic_vector(CFG_DDR_DQ_WIDTH-1 downto 0);
    o_ddr3_addr : out std_logic_vector(CFG_DDR_ROW_WIDTH-1 downto 0);
@@ -218,10 +211,9 @@ architecture arch_axi_ddr3_v6 of axi_ddr3_v6 is
   signal sys_rst_p : std_logic;
 
 
-  signal clk : std_logic;
-  signal rst : std_logic;
-
-  signal aresetn : std_logic; -- reg
+  signal ui_clk : std_logic;
+  signal ui_rst : std_logic;
+  signal ui_rst_n : std_logic;
 
   -- Slave Interface Write Address Ports
   signal s_axi_awlock1 : std_logic_vector(0 downto 0);
@@ -245,9 +237,9 @@ begin
   sys_rst_p <= not i_rstn;
   
   o_slv <= so_slv;
-  aresetn <= i_rstn;
+  ui_rst_n <= not ui_rst;
 
-  comblogic : process(i_rstn, i_slv, r, so_slv)
+  comblogic : process(ui_rst, i_slv, r, so_slv)
     variable v_slv : nasti_slave_in_type;
     variable v : registers;
   begin
@@ -278,10 +270,7 @@ begin
       v_slv.aw_valid := '0';
     end if;
     
-    if i_rstn = '0' then 
-      v.state := state_idle;
-    end if;
-    
+   
     case r.state is
     when state_idle =>
       if v_slv.ar_valid = '1' then
@@ -322,6 +311,10 @@ begin
       end if;
     when others =>
     end case;
+
+    if ui_rst = '1' then 
+      v.state := state_idle;
+    end if;
 
     si_slv <= v_slv;
     rin <= v;
@@ -397,14 +390,7 @@ begin
      )
      port map (
        clk_200              => i_clk_200,
-       clk_mem              => i_pll_clk_mem,
-       clk                  => i_pll_clk,
-       clk_rd_base          => i_pll_rd_base,
-       pll_locked           => i_pll_locked,
        -- Phase Shift Interface
-       o_PSEN               => o_PSEN,
-       o_PSINCDEC           => o_PSINCDEC,
-       i_PSDONE             => i_PSDONE,
        sys_rst              => i_rstn,
        ddr3_ck_p            => o_ddr3_ck_p,
        ddr3_ck_n            => o_ddr3_ck_n,
@@ -421,9 +407,9 @@ begin
        ddr3_dq              => io_ddr3_dq,
        ddr3_dqs_p           => io_ddr3_dqs_p,
        ddr3_dqs_n           => io_ddr3_dqs_n,
-       ui_clk               => clk,
-       ui_clk_sync_rst      => rst,
-       aresetn              => aresetn,
+       ui_clk               => ui_clk,
+       ui_clk_sync_rst      => ui_rst,
+       aresetn              => ui_rst_n,--i_rstn,
 
        s_axi_awid              => iaxi.aw_id,
        s_axi_awaddr            => iaxi.aw_bits.addr,
@@ -490,8 +476,8 @@ begin
 
 
  aw0 : ff_aw port map (
-     rstn => aresetn,
-     clk_fast => clk,
+     rstn => ui_rst_n,
+     clk_fast => ui_clk,
      clk_slow => i_pll_bus,
      -- 60 MHz
      slow_aw_valid => si_slv.aw_valid,
@@ -509,8 +495,8 @@ begin
   s_axi_awlock1(0) <= iaxi.aw_bits.lock;
 
   w0 : ff_w port map (
-     rstn => aresetn,
-     clk_fast => clk,
+     rstn => ui_rst_n,
+     clk_fast => ui_clk,
      clk_slow => i_pll_bus,
      -- 60 MHz
      slow_w_valid => si_slv.w_valid,
@@ -529,8 +515,8 @@ begin
   );
   
   b0 : ff_b port map (
-     rstn => aresetn,
-     clk_fast     => clk,
+     rstn => ui_rst_n,
+     clk_fast     => ui_clk,
      clk_slow     => i_pll_bus,
      -- 60 MHz
      slow_b_ready => si_slv.b_ready,
@@ -548,8 +534,8 @@ begin
   
  
  ar0 : ff_ar port map (
-     rstn => aresetn,
-     clk_fast => clk,
+     rstn => ui_rst_n,
+     clk_fast => ui_clk,
      clk_slow => i_pll_bus,
      -- 60 MHz
      slow_ar_valid => si_slv.ar_valid,
@@ -568,8 +554,8 @@ begin
 
 
   r0 : ff_r port map (
-     rstn => aresetn,
-     clk_fast => clk,
+     rstn => ui_rst_n,
+     clk_fast => ui_clk,
      clk_slow => i_pll_bus,
      -- 60 MHz
      slow_r_ready => si_slv.r_ready,

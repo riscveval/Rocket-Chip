@@ -42,15 +42,8 @@ package types_pll is
     i_clk_adc         : in     std_logic;
     o_clk_bus         : out    std_logic;
     o_clk_adc         : out    std_logic;
-    -- DDR3 needs
-    o_clk400_buf      : out    std_logic;  --400 MHz
-    o_clk200_buf      : out    std_logic;  --200 MHz
-    o_clk400_unbuf    : out    std_logic;  --400 MHz
-    o_locked          : out    std_logic;
-   -- Phase Shift Interface
-    i_PSEN     : in std_logic;           -- For enabling fine-phase shift
-    i_PSINCDEC : in std_logic;           -- = 1 increment phase shift, = 0
-    o_PSDONE   : out std_logic
+    o_locked          : out    std_logic
+
   );
   end component;
 

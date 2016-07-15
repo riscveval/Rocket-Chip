@@ -92,22 +92,21 @@ module infrastructure #
    )
   (
    // Clock inputs
-   input  clk_pll,//mmcm_clk,          // System clock diff input
-   input pll_locked,
+   input  mmcm_clk,          // System clock diff input
    // System reset input
    input  sys_rst,            // core reset from user application
    // MMCM/IDELAYCTRL Lock status
    input  iodelay_ctrl_rdy,   // IDELAYCTRL lock status
    // Clock outputs
-   ////output clk_mem,            // 2x logic clock
-   ////output clk,                // 1x logic clock
-   ////output clk_rd_base,        // 2x base read clock
+   output clk_mem,            // 2x logic clock
+   output clk,                // 1x logic clock
+   output clk_rd_base,        // 2x base read clock
    // Reset outputs
-   output rstdiv0            // Reset CLK and CLKDIV logic (incl I/O),
+   output rstdiv0,            // Reset CLK and CLKDIV logic (incl I/O),
    // Phase Shift Interface
-   ////input  PSEN,               // For enabling fine-phase shift
-   ////input  PSINCDEC,           // = 1 increment phase shift, = 0
-   ////output PSDONE
+   input  PSEN,               // For enabling fine-phase shift
+   input  PSINCDEC,           // = 1 increment phase shift, = 0
+   output PSDONE
    );
 
   // # of clock cycles to delay deassertion of reset. Needs to be a fairly
@@ -160,12 +159,12 @@ module infrastructure #
   end
   //synthesis translate_on
 
-  //wire                       clk_bufg;
-  //wire                       clk_mem_bufg;
-  //wire                       clk_mem_pll;
-  //wire                       clk_pll;
-  //wire                       clkfbout_pll;
-  //wire                       pll_lock
+  wire                       clk_bufg;
+  wire                       clk_mem_bufg;
+  wire                       clk_mem_pll;
+  wire                       clk_pll;
+  wire                       clkfbout_pll;
+  wire                       pll_lock
                              /* synthesis syn_maxfan = 10 */;
   reg [RST_DIV_SYNC_NUM-1:0] rstdiv0_sync_r
                              /* synthesis syn_maxfan = 10 */;
@@ -180,8 +179,8 @@ module infrastructure #
   //   2. clk     : Half rate (used for majority of internal logic)
   //***************************************************************************
 
-  //assign clk_mem = clk_mem_bufg;
-  //assign clk     = clk_bufg;
+  assign clk_mem = clk_mem_bufg;
+  assign clk     = clk_bufg;
 
   //***************************************************************************
   // Global base clock generation and distribution
@@ -200,98 +199,98 @@ module infrastructure #
   //     according (in general to run the VCO as fast as possible).
   //*****************************************************************
 
-  //MMCM_ADV #
-  //  (
-  //   .BANDWIDTH             (MMCM_ADV_BANDWIDTH),
-  //   .CLOCK_HOLD            (0),//("FALSE"),
-  //   .COMPENSATION          ("INTERNAL"),
-  //   .REF_JITTER1           (0.005),
-  //   .REF_JITTER2           (0.005),
-  //   .STARTUP_WAIT          (0),//("FALSE"),
-  //   .CLKIN1_PERIOD         (CLKIN1_PERIOD),
-  //   .CLKIN2_PERIOD         (10.000),
-  //   .CLKFBOUT_MULT_F       (CLKFBOUT_MULT_F),
-  //   .DIVCLK_DIVIDE         (DIVCLK_DIVIDE),
-  //   .CLKFBOUT_PHASE        (0.000),
-  //   .CLKFBOUT_USE_FINE_PS  (0),//("FALSE"),
-  //   .CLKOUT0_DIVIDE_F      (CLKOUT0_DIVIDE_F),
-  //   .CLKOUT0_DUTY_CYCLE    (0.500),
-  //   .CLKOUT0_PHASE         (0.000),
-  //   .CLKOUT0_USE_FINE_PS   (0),//("FALSE"),
-  //   .CLKOUT1_DIVIDE        (CLKOUT1_DIVIDE),
-  //   .CLKOUT1_DUTY_CYCLE    (0.500),
-  //   .CLKOUT1_PHASE         (0.000),
-  //   .CLKOUT1_USE_FINE_PS   (0),//("FALSE"),
-  //   .CLKOUT2_DIVIDE        (CLKOUT2_DIVIDE),
-  //   .CLKOUT2_DUTY_CYCLE    (0.500),
-  //   .CLKOUT2_PHASE         (0.000),
-  //   .CLKOUT2_USE_FINE_PS   (1),//("TRUE"),
-  //   .CLKOUT3_DIVIDE        (1),
-  //   .CLKOUT3_DUTY_CYCLE    (0.500),
-  //   .CLKOUT3_PHASE         (0.000),
-  //   .CLKOUT3_USE_FINE_PS   (0),//("FALSE"),
-  //   .CLKOUT4_CASCADE       (0),//("FALSE"),
-  //   .CLKOUT4_DIVIDE        (1),
-  //   .CLKOUT4_DUTY_CYCLE    (0.500),
-  //   .CLKOUT4_PHASE         (0.000),
-  //   .CLKOUT4_USE_FINE_PS   (0),//("FALSE"),
-  //   .CLKOUT5_DIVIDE        (1),
-  //   .CLKOUT5_DUTY_CYCLE    (0.500),
-  //   .CLKOUT5_PHASE         (0.000),
-  //   .CLKOUT5_USE_FINE_PS   (0),//("FALSE"),
-  //   .CLKOUT6_DIVIDE        (1),
-  //   .CLKOUT6_DUTY_CYCLE    (0.500),
-  //   .CLKOUT6_PHASE         (0.000),
-  //   .CLKOUT6_USE_FINE_PS   (0)//("FALSE")
-  //   )
-  //  u_mmcm_adv
-  //    (
-  //     .CLKFBOUT     (clkfbout_pll),
-  //     .CLKFBOUTB    (),
-  //     .CLKFBSTOPPED (),
-  //     .CLKINSTOPPED (),
-  //     .CLKOUT0      (clk_mem_pll),
-  //     .CLKOUT0B     (),
-  //     .CLKOUT1      (clk_pll),
-  //     .CLKOUT1B     (),
-  //     .CLKOUT2      (clk_rd_base),
-  //     .CLKOUT2B     (),
-  //     .CLKOUT3      (),
-  //     .CLKOUT3B     (),
-  //     .CLKOUT4      (),
-  //     .CLKOUT5      (),
-  //     .CLKOUT6      (),
-  //     .DO           (),
-  //     .DRDY         (),
-  //     .LOCKED       (pll_lock),
-  //     .PSDONE       (PSDONE),
-  //     .CLKFBIN      (clkfbout_pll),
-  //     .CLKIN1       (mmcm_clk),
-  //     .CLKIN2       (1'b0),
-  //     .CLKINSEL     (1'b1),
-  //     .DADDR        (7'b0000000),
-  //     .DCLK         (1'b0),
-  //     .DEN          (1'b0),
-  //     .DI           (16'h0000),
-  //     .DWE          (1'b0),
-  //     .PSCLK        (clk_bufg),
-  //     .PSEN         (PSEN),
-  //     .PSINCDEC     (PSINCDEC),
-  //     .PWRDWN       (1'b0),
-   //    .RST          (sys_rst_act_hi)
-   //    );
+  MMCM_ADV #
+    (
+     .BANDWIDTH             (MMCM_ADV_BANDWIDTH),
+     .CLOCK_HOLD            (0),//("FALSE"),
+     .COMPENSATION          ("INTERNAL"),
+     .REF_JITTER1           (0.005),
+     .REF_JITTER2           (0.005),
+     .STARTUP_WAIT          (0),//("FALSE"),
+     .CLKIN1_PERIOD         (CLKIN1_PERIOD),
+     .CLKIN2_PERIOD         (10.000),
+     .CLKFBOUT_MULT_F       (CLKFBOUT_MULT_F),
+     .DIVCLK_DIVIDE         (DIVCLK_DIVIDE),
+     .CLKFBOUT_PHASE        (0.000),
+     .CLKFBOUT_USE_FINE_PS  (0),//("FALSE"),
+     .CLKOUT0_DIVIDE_F      (CLKOUT0_DIVIDE_F),
+     .CLKOUT0_DUTY_CYCLE    (0.500),
+     .CLKOUT0_PHASE         (0.000),
+     .CLKOUT0_USE_FINE_PS   (0),//("FALSE"),
+     .CLKOUT1_DIVIDE        (CLKOUT1_DIVIDE),
+     .CLKOUT1_DUTY_CYCLE    (0.500),
+     .CLKOUT1_PHASE         (0.000),
+     .CLKOUT1_USE_FINE_PS   (0),//("FALSE"),
+     .CLKOUT2_DIVIDE        (CLKOUT2_DIVIDE),
+     .CLKOUT2_DUTY_CYCLE    (0.500),
+     .CLKOUT2_PHASE         (0.000),
+     .CLKOUT2_USE_FINE_PS   (1),//("TRUE"),
+     .CLKOUT3_DIVIDE        (1),
+     .CLKOUT3_DUTY_CYCLE    (0.500),
+     .CLKOUT3_PHASE         (0.000),
+     .CLKOUT3_USE_FINE_PS   (0),//("FALSE"),
+     .CLKOUT4_CASCADE       (0),//("FALSE"),
+     .CLKOUT4_DIVIDE        (1),
+     .CLKOUT4_DUTY_CYCLE    (0.500),
+     .CLKOUT4_PHASE         (0.000),
+     .CLKOUT4_USE_FINE_PS   (0),//("FALSE"),
+     .CLKOUT5_DIVIDE        (1),
+     .CLKOUT5_DUTY_CYCLE    (0.500),
+     .CLKOUT5_PHASE         (0.000),
+     .CLKOUT5_USE_FINE_PS   (0),//("FALSE"),
+     .CLKOUT6_DIVIDE        (1),
+     .CLKOUT6_DUTY_CYCLE    (0.500),
+     .CLKOUT6_PHASE         (0.000),
+     .CLKOUT6_USE_FINE_PS   (0)//("FALSE")
+     )
+    u_mmcm_adv
+      (
+       .CLKFBOUT     (clkfbout_pll),
+       .CLKFBOUTB    (),
+       .CLKFBSTOPPED (),
+       .CLKINSTOPPED (),
+      .CLKOUT0      (clk_mem_pll),
+       .CLKOUT0B     (),
+       .CLKOUT1      (clk_pll),
+       .CLKOUT1B     (),
+       .CLKOUT2      (clk_rd_base),
+       .CLKOUT2B     (),
+       .CLKOUT3      (),
+       .CLKOUT3B     (),
+       .CLKOUT4      (),
+       .CLKOUT5      (),
+       .CLKOUT6      (),
+       .DO           (),
+       .DRDY         (),
+       .LOCKED       (pll_lock),
+       .PSDONE       (PSDONE),
+       .CLKFBIN      (clkfbout_pll),
+       .CLKIN1       (mmcm_clk),
+       .CLKIN2       (1'b0),
+       .CLKINSEL     (1'b1),
+       .DADDR        (7'b0000000),
+       .DCLK         (1'b0),
+       .DEN          (1'b0),
+       .DI           (16'h0000),
+       .DWE          (1'b0),
+       .PSCLK        (clk_bufg),
+       .PSEN         (PSEN),
+       .PSINCDEC     (PSINCDEC),
+       .PWRDWN       (1'b0),
+       .RST          (sys_rst_act_hi)
+       );
 
-  //BUFG u_bufg_clk0
-  //  (
-  //   .O (clk_mem_bufg),
-  //   .I (clk_mem_pll)
-  //   );
+  BUFG u_bufg_clk0
+    (
+     .O (clk_mem_bufg),
+     .I (clk_mem_pll)
+     );
 
-  //BUFG u_bufg_clkdiv0
-  //  (
-  //   .O (clk_bufg),
-  //   .I (clk_pll)
-  //   );
+  BUFG u_bufg_clkdiv0
+    (
+     .O (clk_bufg),
+     .I (clk_pll)
+     );
 
   //***************************************************************************
   // RESET SYNCHRONIZATION DESCRIPTION:
@@ -318,7 +317,7 @@ module infrastructure #
   //*****************************************************************
 
   // Wait for MMCM and IDELAYCTRL to lock before releasing reset
-  assign rst_tmp = sys_rst_act_hi | ~pll_locked | ~iodelay_ctrl_rdy;
+  assign rst_tmp = sys_rst_act_hi | ~pll_lock | ~iodelay_ctrl_rdy;
 
   always @(posedge clk_pll or posedge rst_tmp)//clk_bufg or posedge rst_tmp)
     if (rst_tmp)
