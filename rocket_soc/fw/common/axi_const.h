@@ -12,7 +12,7 @@
 
 typedef uint64_t adr_type;
 
-static const int AXI4_SYSTEM_CLOCK = 60000000;  /// 60 MHz
+static const int AXI4_SYSTEM_CLOCK = 50000000;  /// 60 MHz
 
 #define VENDOR_GNSSSENSOR        0x00F1
 

@@ -27,16 +27,32 @@ void print_uart(const char *buf, int sz) {
 void copy_image() { 
     uint32_t tech;
     uint64_t *fwrom = (uint64_t *)ADDR_NASTI_SLAVE_FWIMAGE;
-    uint64_t *sram = (uint64_t *)ADDR_NASTI_SLAVE_SRAM;
+    //uint64_t *sram = (uint64_t *)ADDR_NASTI_SLAVE_SRAM;
+    uint64_t *sram = (uint64_t *)0x40000000;
     pnp_map *pnp = (pnp_map *)ADDR_NASTI_SLAVE_PNP;
+    uint32_t ddr_status = 0;
 
     /** 
      * Speed-up RTL simulation by skipping coping stage.
      * Or skip this stage to avoid rewritting of externally loaded image.
      */
     tech = pnp->tech & 0xFF;
+
+    do {
+        ddr_status = pnp->rsrv1;
+        led_set(0x55);
+    } while (ddr_status == 0);
+
+    led_set(0x77);
+
     if (tech != TECH_INFERRED && pnp->fwid == 0) {
         memcpy(sram, fwrom, FW_IMAGE_SIZE_BYTES);
+    } else {
+        /** Just to test DDR access in ModelSim */
+        memcpy(sram, fwrom, 256);
+        for (int i = 0; i < 32; i++) {
+             sram[256 + i] = sram[i];
+        }
     }
 
 #if 0
@@ -68,7 +84,8 @@ void _init() {
 
     // Half period of the uart = Fbus / 115200 / 2 = 70 MHz / 115200 / 2:
     //uart->scaler = 304;  // 70 MHz
-    uart->scaler = 260;  // 60 MHz
+    //uart->scaler = 260;  // 60 MHz
+    uart->scaler = 217;  // 50 MHz
 
     led_set(0x01);
     print_uart("Boot . . .", 10);
